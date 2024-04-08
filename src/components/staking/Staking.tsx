@@ -6,6 +6,7 @@ import TabFilter from "./TabFilter";
 import { Chain } from "@/lib/common";
 import data from "@/data/data";
 import StakingCards from "./StakingCards";
+import Accordion from "../common/Accordion";
 
 const { title, tabFilter, items } = data.staking;
 

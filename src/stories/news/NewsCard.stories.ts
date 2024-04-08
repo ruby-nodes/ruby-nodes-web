@@ -1,20 +1,18 @@
-import Accordion from "@/components/common/Accordion";
 import type { Meta, StoryObj } from "@storybook/react";
-import { fn } from "@storybook/test";
+import StakingCard from "@/components/staking/StakingCard";
+import NewsCard from "@/components/news/newsCard";
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
-  title: "Common/Accordion",
-  component: Accordion,
+  title: "News/NewsCard",
+  component: NewsCard,
   parameters: {
     // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/configure/story-layout
-    layout: "padded",
+    layout: "centered",
   },
   // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/writing-docs/autodocs
   tags: ["autodocs"],
-
-  // Use `fn` to spy on the onClick arg, which will appear in the actions panel once invoked: https://storybook.js.org/docs/essentials/actions#action-args
-} satisfies Meta<typeof Accordion>;
+} satisfies Meta<typeof NewsCard>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
@@ -22,8 +20,12 @@ type Story = StoryObj<typeof meta>;
 // More on writing stories with args: https://storybook.js.org/docs/writing-stories/args
 export const Primary: Story = {
   args: {
-    title: "Accordion",
-    content:
-      "This is a decently long text that should be hidden by default. It should be visible when the accordion is clicked. This is a decently long text that should be hidden by default. It should be visible when the accordion is clicked.",
+    title: "Polkadot - A brief overview",
+    description:
+      "Polkadot is a heterogeneous multi-chain interchange and translation architecture which enables customised side-chains to connect with public blockchains.",
+    date: new Date(),
+    href: "https://polkadot.network",
+    imgSrc:
+      "https://t4.ftcdn.net/jpg/05/81/90/71/360_F_581907195_EWTWX9mmu5esZl2ceB6lhBavKprfTXV7.jpg",
   },
 };

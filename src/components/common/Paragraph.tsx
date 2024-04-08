@@ -7,7 +7,13 @@ type Props = {
 
 export default function Paragraph({ text, className }: Props) {
   return (
-    <p className={twMerge("leading-6 text-sm text-c-text font-inter")}>
+    <p
+      className={twMerge("text-sm text-c-text font-inter", className)}
+      style={{
+        // does not work with tailwind for some reason
+        lineHeight: "1.563rem",
+      }}
+    >
       {text}
     </p>
   );

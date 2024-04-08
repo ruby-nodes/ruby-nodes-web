@@ -13,7 +13,7 @@ type ButtonProps = {
 function getButtonVariant(variant: string, active?: boolean) {
   if (variant === "primary") {
     return active
-      ? "bg-c-primary text-white hover:bg-c-primary-hover"
+      ? "bg-c-primary hover:bg-c-primary-hover"
       : "bg-c-container-accent text-c-text-inactive hover:bg-c-container-accent-hover";
   } else {
     return "border border-c-primary bg-c-container hover:bg-c-primary";

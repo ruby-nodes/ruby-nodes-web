@@ -13,20 +13,22 @@ export default function TabFilter({
   setSelected,
 }: TabFilterProps) {
   return (
-    <div className="bg-c-container rounded-md py-4 font-inter w-full px-6">
-      <div className="flex gap-5 items-center">
+    <div className="bg-c-container text-c-text rounded-md py-4 font-inter w-full px-6">
+      <div className="flex gap-5 items-baseline">
         <div>{label}</div>
-        {chains.map((chain) => (
-          <Button
-            key={chain}
-            label={chain}
-            variant="primary"
-            size="small"
-            className={chain === selected ? "pointer-events-none" : ""}
-            active={chain === selected}
-            onClick={() => setSelected(chain)}
-          />
-        ))}
+        <div className="flex gap-5 flex-wrap">
+          {chains.map((chain) => (
+            <Button
+              key={chain}
+              label={chain}
+              variant="primary"
+              size="small"
+              className={chain === selected ? "pointer-events-none" : ""}
+              active={chain === selected}
+              onClick={() => setSelected(chain)}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );

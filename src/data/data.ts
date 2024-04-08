@@ -11,6 +11,14 @@ type StakingData = {
   };
 };
 
+type FaqData = {
+  title: string;
+  items: {
+    question: string;
+    answer: string;
+  }[];
+};
+
 const stakingData = {
   title: "Staking",
   tabFilter: {
@@ -71,8 +79,50 @@ const stakingData = {
   },
 } satisfies StakingData;
 
+const faqData = {
+  title: "FAQ",
+  items: [
+    {
+      question: "What is staking?",
+      answer:
+        "Staking is the process of actively participating in transaction validation (similar to mining) on a proof-of-stake (PoS) blockchain.",
+    },
+    {
+      question: "What is a validator?",
+      answer:
+        "A validator is a participant in a PoS blockchain that is chosen to create new blocks and validate transactions.",
+    },
+    {
+      question: "What is a nominator?",
+      answer:
+        "A nominator is a participant in a PoS blockchain that selects validators to nominate their stake for.",
+    },
+    {
+      question: "What is a nominating committee?",
+      answer:
+        "A nominating committee is a group of nominators that are chosen to nominate validators in a PoS blockchain.",
+    },
+    {
+      question: "What is a nominating committee?",
+      answer:
+        "A nominating committee is a group of nominators that are chosen to nominate validators in a PoS blockchain.",
+    },
+    {
+      question: "What is a nominating committee?",
+      answer:
+        "A nominating committee is a group of nominators that are chosen to nominate validators in a PoS blockchain.",
+    },
+    {
+      question: "What is a nominating committee?",
+      answer:
+        "A nominating committee is a group of nominators that are chosen to nominate validators in a PoS blockchain.",
+    },
+  ],
+} satisfies FaqData;
+
 const data = {
   staking: stakingData,
+  faq: faqData,
 };
 
 export default data;

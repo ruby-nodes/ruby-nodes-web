@@ -7,6 +7,7 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/stories/**/*.{js,ts,jsx,tsx}",
   ],
+  safelist: ["leading-6"],
   theme: {
     fontSize: {
       "2xl": "4.063rem",
@@ -29,6 +30,16 @@ const config: Config = {
       "c-container-accent": "#1C1E2C",
       "c-container-accent-hover": "#323441",
       "c-menu-border": "#353B52",
+      "c-accordion-border": "#8D1927",
+    },
+    container: {
+      padding: {
+        DEFAULT: "1.25rem",
+        xxl: "4rem",
+      },
+      screens: {
+        xl: "1440px",
+      },
     },
     borderRadius: {
       md: "1.25rem",
@@ -42,6 +53,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 };
 export default config;

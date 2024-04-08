@@ -9,6 +9,19 @@ const inter = Inter({ subsets: ["latin"] });
 
 const preview: Preview = {
   parameters: {
+    backgrounds: {
+      default: "dark",
+      values: [
+        {
+          name: "dark",
+          value: "#1a202c",
+        },
+        {
+          name: "light",
+          value: "#f7fafc",
+        },
+      ],
+    },
     controls: {
       matchers: {
         color: /(background|color)$/i,
@@ -18,7 +31,7 @@ const preview: Preview = {
   },
   decorators: [
     (Story) => (
-      <main className={inter.className + " " + rubik.className}>
+      <main className={inter.className + " " + rubik.className + "w-full"}>
         <Story />
       </main>
     ),
