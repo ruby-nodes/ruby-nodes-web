@@ -19,12 +19,14 @@ export type StakingCardProps = {
 export default function StakingCard({
   chain,
   description,
+  className,
   button,
 }: StakingCardProps) {
   return (
     <article
       className={twMerge(
-        "bg-c-container rounded-md text-sm p-[1.88rem] max-w-[400px]"
+        "bg-c-container rounded-md text-sm p-[1.88rem] ",
+        className
       )}
     >
       <div className="flex flex-col gap-9">

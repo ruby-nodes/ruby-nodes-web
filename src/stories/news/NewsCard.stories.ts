@@ -25,7 +25,7 @@ export const Primary: Story = {
       "Polkadot is a heterogeneous multi-chain interchange and translation architecture which enables customised side-chains to connect with public blockchains.",
     date: new Date(),
     href: "https://polkadot.network",
-    imgSrc:
+    image:
       "https://t4.ftcdn.net/jpg/05/81/90/71/360_F_581907195_EWTWX9mmu5esZl2ceB6lhBavKprfTXV7.jpg",
   },
 };

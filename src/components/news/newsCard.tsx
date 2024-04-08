@@ -27,14 +27,18 @@ export default function NewsCard({
       <figure className="relative h-[204px] rounded-t-md overflow-hidden">
         <Image src={imgSrc} alt={title} fill className="object-cover" />
       </figure>
-      <div className="p-5">
-        <div className="flex items-center justify-between">
+      <div className="p-5 flex flex-col">
+        <div className="flex items-baseline justify-between">
           <h3 className="font-bold font-rubik text-md">{title}</h3>
           <p className="text-sm text-c-primary">{formatDate(date)}</p>
         </div>
         <Paragraph text={description} className="mt-2.5" />
         <Link href={href}>
-          <Button label="Read" className="mt-7" variant="secondary" />
+          <Button
+            label="Read"
+            className="mt-7 justify-self-end"
+            variant="secondary"
+          />
         </Link>
       </div>
     </article>

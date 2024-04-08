@@ -1,17 +1,23 @@
 import type { Config } from "tailwindcss";
+import { fluidExtractor, fluidCorePlugins, FluidConfig } from "fluid-tailwind";
 
 const config: Config = {
-  content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/stories/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: {
+    files: [
+      "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+      "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+      "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+      "./src/stories/**/*.{js,ts,jsx,tsx}",
+    ],
+    extract: fluidExtractor(),
+  },
   safelist: ["leading-6"],
   theme: {
     fontSize: {
       "2xl": "4.063rem",
+      "2xl-clamped": "2.188rem",
       xl: "2.5rem",
+      "xl-clamped": "1.875rem",
       lg: "1.563rem",
       md: "1.25rem",
       sm: "0.938rem",
@@ -38,13 +44,16 @@ const config: Config = {
         xxl: "4rem",
       },
       screens: {
-        xl: "1440px",
+        xl: "90rem",
       },
     },
     borderRadius: {
       md: "1.25rem",
       lg: "2rem",
     },
+    fluid: {
+      defaultScreens: ["20rem", "90rem"],
+    } satisfies FluidConfig,
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -53,6 +62,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [require("@tailwindcss/typography")],
+  plugins: [require("@tailwindcss/typography"), fluidCorePlugins],
 };
 export default config;

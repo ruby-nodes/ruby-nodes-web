@@ -22,7 +22,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={twMerge(rubik.className, "bg-c-bg text-c-text")}>
         <Menu />
-        {children}
+        <main>{children}</main>
         <Footer />
       </body>
     </html>

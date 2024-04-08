@@ -19,7 +19,7 @@ export default function Navigation({ items, className }: NavigationProps) {
       )}
     >
       {items.map((item) => (
-        <Link href={item} key={item.title}>
+        <Link href={item.href} key={item.title}>
           <Paragraph
             text={item.title}
             className="hover:text-c-text-inactive transition-colors"

@@ -6,4 +6,5 @@ html {
   -moz-osx-font-smoothing: antialiased;
   font-smoothing: antialiased;
   -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
 }

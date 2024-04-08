@@ -8,11 +8,12 @@ import Logo from "./logo";
 import Navigation from "./nav";
 import Socials from "./socials";
 import { twMerge } from "tailwind-merge";
+import Link from "next/link";
 
 export default function Menu() {
   const [open, setOpen] = useState(false);
   return (
-    <header className="bg-c-bg border-b border-c-menu-border sticky top-0">
+    <header className="bg-c-bg border-b border-c-menu-border sticky top-0 z-50">
       <Container className="flex justify-between items-center h-[84px]">
         <Logo />
         <div
@@ -23,12 +24,14 @@ export default function Menu() {
         >
           <Navigation
             items={[
-              { title: "Home", href: "/" },
-              { title: "About", href: "/about" },
-              { title: "Contact", href: "/contact" },
+              { title: "FAQ", href: "#faq" },
+              { title: "News", href: "/news" },
+              { title: "About Us", href: "#about-us" },
             ]}
           />
-          <Button label="Login" variant="primary" />
+          <Link href="#staking">
+            <Button label="Stake with us" variant="primary" />
+          </Link>
           <Socials
             links={{
               x: "https://x.com",
