@@ -16,7 +16,7 @@ export default function RootLayout({
       <body
         className={twMerge(
           rubik.className,
-          "bg-c-bg text-c-text overflow-hidden"
+          "bg-c-bg text-c-text overflow-x-hidden"
         )}
       >
         <Menu />
