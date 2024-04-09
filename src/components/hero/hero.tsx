@@ -6,17 +6,11 @@ import Button from "../common/Button";
 import Link from "next/link";
 import Container from "../common/Container";
 import React from "react";
+import indexData from "@/data";
 
-export type HeroProps = {
-  title: React.ReactNode;
-  description: string;
-  cta: {
-    title: string;
-    href: string;
-  };
-};
+const { cta, description, title } = indexData.hero;
 
-export default function Hero({ title, description, cta }: HeroProps) {
+export default function Hero() {
   return (
     <Container className="overflow-hidden ">
       <section className="bg-c-bg relative min-h-screen flex items-center w-full justify-center pb-28">
@@ -45,7 +39,7 @@ export default function Hero({ title, description, cta }: HeroProps) {
               className="max-w-[500px] mt-2.5 text-center"
             />
             <Link href={cta.href}>
-              <Button label={cta.title} className="~mt-7/11" />
+              <Button label={cta.label} className="~mt-7/11" />
             </Link>
           </div>
         </div>

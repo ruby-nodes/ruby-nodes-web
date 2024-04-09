@@ -20,7 +20,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="overflow-x-hidden">
-      <body className={twMerge(rubik.className, "bg-c-bg text-c-text")}>
+      <body
+        className={twMerge(
+          rubik.className,
+          "bg-c-bg text-c-text overflow-hidden"
+        )}
+      >
         <Menu />
         <main>{children}</main>
         <Footer />

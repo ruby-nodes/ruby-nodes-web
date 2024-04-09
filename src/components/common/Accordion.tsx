@@ -20,7 +20,7 @@ export default function Accordion({
 }: Props) {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <article className=" w-full text-c-text flex flex-col relative">
+    <article className=" w-full text-c-text flex flex-col relative gap-5">
       <header className="flex justify-between items-center">
         <button
           onClick={() => setIsOpen(!isOpen)}
@@ -48,11 +48,11 @@ export default function Accordion({
             transition={{ duration: 0.2 }}
             className={
               collapsibleShouldTakeSpace
-                ? "absolute w-full mt-[4.5rem]"
+                ? "absolute w-full mt-[3.5rem]"
                 : "w-full"
             }
           >
-            <Paragraph text={content} className="pt-5" />
+            <Paragraph text={content} />
           </motion.div>
         )}
       </AnimatePresence>
@@ -64,7 +64,7 @@ export default function Accordion({
 function DottedLine() {
   return (
     <div
-      className="h-[1px] mt-5"
+      className="h-[1px]"
       style={{
         background: `linear-gradient(to right, #8D1927 0%, #8D1927 40%, transparent 40%, transparent 100%) 0 0 / 20px 1px `,
       }}

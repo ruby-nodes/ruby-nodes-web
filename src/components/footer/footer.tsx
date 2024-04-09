@@ -14,12 +14,12 @@ const {
 export default function Footer() {
   return (
     <>
-      <div className="mt-40" />
+      <div className="mt-12 lg:mt-40" />
       <footer className=" bg-c-container relative w-full ">
         <Image
           src={Ruby}
           alt="Ruby"
-          className="absolute bottom-14 -right-10 z-10"
+          className="absolute hidden lg:block bottom-14 -right-10 z-10"
         />
         <div className="bg-c-container z-10 relative">
           <Container>
