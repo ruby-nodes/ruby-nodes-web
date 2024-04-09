@@ -3,7 +3,7 @@ import Subheading from "../common/Subheading";
 import NewsCard from "./newsCard";
 import { getArticles } from "@/lib/news";
 
-export default function News() {
+export default async function News() {
   const { data } = getArticles({ limit: 3 });
 
   return (

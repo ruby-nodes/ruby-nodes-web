@@ -1,7 +1,7 @@
 import Button from "@/components/common/Button";
 import Container from "@/components/common/Container";
 import NewsCard from "@/components/news/newsCard";
-import { getArticles } from "@/lib/news";
+import { fetchArticles } from "@/lib/news";
 import Link from "next/link";
 
 type NewsPageProps = {
@@ -10,9 +10,9 @@ type NewsPageProps = {
   };
 };
 
-export default function NewsPage({ searchParams }: NewsPageProps) {
+export default async function NewsPage({ searchParams }: NewsPageProps) {
   const limit = parseInt(searchParams["limit"] || "9", 10);
-  const { data, total } = getArticles({ limit });
+  const { data, total } = await fetchArticles({ limit });
 
   return (
     <Container className="bg-c-bg min-h-screen flex flex-col items-center w-full">

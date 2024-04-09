@@ -73,6 +73,38 @@ export function getArticles(opts?: { limit?: number }) {
 }
 
 export function getArticleByIndex(index: number) {
-  const articles = getArticles();
-  return articles.data.find((article) => article.index === index);
+  const article = getArticles().data.find((article) => article.index === index);
+  return article;
+}
+
+const fetchArticleSchema = z.object({
+  title: z.string(),
+  description: z.string(),
+  date: z.coerce.date(),
+  imgSrc: z.string(),
+  slug: z.string(),
+  href: z.string(),
+  index: z.number(),
+});
+
+export async function fetchArticles(params?: { limit?: number }) {
+  const data = await (
+    await fetch(process.env.NEXT_PUBLIC_VERCEL_URL + "/api/article")
+  ).json();
+  const schema = z.object({
+    total: z.number(),
+    data: z.array(fetchArticleSchema),
+  });
+  const parsed = schema.parse(data);
+  return params?.limit
+    ? { ...parsed, data: parsed.data.slice(0, params.limit) }
+    : parsed;
+}
+
+export async function fetchArticleByIndex(index: number) {
+  const data = await (
+    await fetch(process.env.NEXT_PUBLIC_VERCEL_URL + `/api/article/${index}`)
+  ).json();
+  const parsed = fetchArticleSchema.parse(data);
+  return parsed;
 }
