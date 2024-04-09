@@ -4,7 +4,13 @@ import React from "react";
 import { AboutUsData, FaqData, HeroData, StakingData } from "./types";
 
 const heroData = {
-  title: "Boundless Networks,\nFlawless Rubies",
+  title: (
+    <span>
+      Boundless Networks,
+      <br />
+      Flawless Rubies
+    </span>
+  ),
   description:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin lobortis et nulla et imperdiet. Sed vitae tincidunt elit, pulvinar laoreet ex. Class aptent taciti sociosqu ad litora torquent per conubia nostra,",
   cta: {
