@@ -25,7 +25,7 @@ export default function Menu() {
           <Logo />
           <div
             className={twMerge(
-              "fixed lg:justify-between flex justify-center items-center gap-12 flex-col lg:flex-row lg:static lg:h-auto top-[84px] transition-all h-[calc(100vh-84px)] bg-c-bg z-10 w-full lg:w-auto",
+              "fixed lg:justify-between flex justify-center items-center gap-[3.75rem] flex-col lg:flex-row lg:static lg:h-auto top-[84px] transition-all h-[calc(100vh-84px)] bg-c-bg z-10 w-full lg:w-auto",
               open ? "left-0" : "left-[100%]"
             )}
           >
