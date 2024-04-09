@@ -4,6 +4,12 @@ import Logo from "../menu/logo";
 import Navigation from "../menu/nav";
 import Socials from "../menu/socials";
 import Ruby from "@/assets/rubys/07.png";
+import commonData from "@/data/common";
+
+const {
+  footer: { navigation },
+  socials: { links },
+} = commonData;
 
 export default function Footer() {
   return (
@@ -24,20 +30,9 @@ export default function Footer() {
               <div className="flex flex-col lg:flex-row justify-between lg:items-center gap-7 lg:gap-14">
                 <Navigation
                   className="text-start gap-7 lg:gap-12"
-                  items={[
-                    { title: "Home", href: "/" },
-                    { title: "About", href: "/about" },
-                    { title: "Contact", href: "/contact" },
-                    { title: "Staking", href: "/staking" },
-                  ]}
+                  items={navigation}
                 />
-                <Socials
-                  links={{
-                    x: "https://x.com",
-                    discord: "https://discord.com",
-                    telegram: "https://telegram.com",
-                  }}
-                />
+                <Socials links={links} />
               </div>
             </div>
           </Container>

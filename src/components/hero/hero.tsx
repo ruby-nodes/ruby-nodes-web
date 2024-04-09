@@ -18,11 +18,16 @@ export type HeroProps = {
 
 export default function Hero({ title, description, cta }: HeroProps) {
   return (
-    <Container>
-      <section className="bg-c-bg relative overflow-hidden min-h-screen flex items-center w-full justify-center pb-28">
+    <Container className="overflow-hidden ">
+      <section className="bg-c-bg relative min-h-screen flex items-center w-full justify-center pb-28">
         <div className="flex flex-col items-center z-0">
-          <figure className="relative max-w-[1116px] w-full flex justify-center ">
-            <Image src={Ruby} alt="Ruby" className="relative z-20" />
+          <figure className="relative max-w-[1116px] w-full flex justify-center">
+            <Image
+              loading="eager"
+              src={Ruby}
+              alt="Ruby"
+              className="relative z-20"
+            />
             <Image
               src={BgImage}
               alt="Hero Background"
@@ -35,7 +40,10 @@ export default function Hero({ title, description, cta }: HeroProps) {
             <h1 className="~text-2xl-clamped/2xl  font-rubik font-bold text-c-text max-w-[700px] text-center leading-[1.2]">
               {title}
             </h1>
-            <Paragraph text={description} className="max-w-[500px] mt-2.5" />
+            <Paragraph
+              text={description}
+              className="max-w-[500px] mt-2.5 text-center"
+            />
             <Link href={cta.href}>
               <Button label={cta.title} className="~mt-7/11" />
             </Link>

@@ -1,9 +1,9 @@
-import data from "@/data/data";
+import indexData from "@/data";
 import Subheading from "../common/Subheading";
 import Accordion from "../common/Accordion";
 import ScrollAnchor from "../common/ScrollAnchor";
 
-const { title, items } = data.faq;
+const { title, items } = indexData.faq;
 
 export default function FAQ() {
   return (

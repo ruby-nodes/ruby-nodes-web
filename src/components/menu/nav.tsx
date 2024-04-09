@@ -1,12 +1,10 @@
 import Link from "next/link";
 import Paragraph from "../common/Paragraph";
 import { twMerge } from "tailwind-merge";
+import { LinkProps } from "@/data/types";
 
 type NavigationProps = {
-  items: {
-    title: string;
-    href: string;
-  }[];
+  items: LinkProps[];
   className?: string;
 };
 
@@ -19,9 +17,9 @@ export default function Navigation({ items, className }: NavigationProps) {
       )}
     >
       {items.map((item) => (
-        <Link href={item.href} key={item.title}>
+        <Link href={item.href} key={item.label}>
           <Paragraph
-            text={item.title}
+            text={item.label}
             className="hover:text-c-text-inactive transition-colors"
           />
         </Link>

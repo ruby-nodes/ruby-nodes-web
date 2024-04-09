@@ -9,6 +9,12 @@ import Navigation from "./nav";
 import Socials from "./socials";
 import { twMerge } from "tailwind-merge";
 import Link from "next/link";
+import commonData from "@/data/common";
+
+const {
+  menu: { navigation, cta },
+  socials: { links },
+} = commonData;
 
 export default function Menu() {
   const [open, setOpen] = useState(false);
@@ -22,23 +28,11 @@ export default function Menu() {
             open ? "left-0" : "left-[100%]"
           )}
         >
-          <Navigation
-            items={[
-              { title: "FAQ", href: "/#faq" },
-              { title: "News", href: "/news" },
-              { title: "About Us", href: "/#about-us" },
-            ]}
-          />
-          <Link href="#staking">
-            <Button label="Stake with us" variant="primary" />
+          <Navigation items={navigation} />
+          <Link href={cta.href}>
+            <Button label={cta.label} variant="primary" />
           </Link>
-          <Socials
-            links={{
-              x: "https://x.com",
-              discord: "https://discord.com",
-              telegram: "https://telegram.com",
-            }}
-          />
+          <Socials links={links} />
           <div className="p-8 lg:hidden" />
         </div>
         <Hamburger open={open} setOpen={setOpen} className="lg:hidden" />

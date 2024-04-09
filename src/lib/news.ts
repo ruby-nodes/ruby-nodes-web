@@ -90,7 +90,6 @@ const fetchArticleSchema = z.object({
 const API_URL = `${process.env.NEXT_PUBLIC_PROTOCOL ?? "https"}://${process.env.NEXT_PUBLIC_VERCEL_URL}/api`;
 
 export async function fetchArticles(params?: { limit?: number }) {
-  console.log(`${API_URL}/article`);
   const data = await (await fetch(`${API_URL}/article`)).json();
   const schema = z.object({
     total: z.number(),
