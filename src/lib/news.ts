@@ -87,10 +87,10 @@ const fetchArticleSchema = z.object({
   index: z.number(),
 });
 
+const API_URL = `${process.env.NEXT_PUBLIC_PROTOCOL ?? "https"}://${process.env.NEXT_PUBLIC_VERCEL_URL}/api`;
+
 export async function fetchArticles(params?: { limit?: number }) {
-  const data = await (
-    await fetch(process.env.NEXT_PUBLIC_VERCEL_URL + "/api/article")
-  ).json();
+  const data = await (await fetch(`${API_URL}/article`)).json();
   const schema = z.object({
     total: z.number(),
     data: z.array(fetchArticleSchema),
@@ -102,9 +102,7 @@ export async function fetchArticles(params?: { limit?: number }) {
 }
 
 export async function fetchArticleByIndex(index: number) {
-  const data = await (
-    await fetch(process.env.NEXT_PUBLIC_VERCEL_URL + `/api/article/${index}`)
-  ).json();
+  const data = await (await fetch(`${API_URL}/article/${index}`)).json();
   const parsed = fetchArticleSchema.parse(data);
   return parsed;
 }
