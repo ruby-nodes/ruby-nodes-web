@@ -101,10 +101,3 @@ export async function fetchArticles(params?: { limit?: number }) {
     ? { ...parsed, data: parsed.data.slice(0, params.limit) }
     : parsed;
 }
-
-export async function fetchArticleByIndex(index: number) {
-  console.log(`${API_URL}/article`);
-  const data = await (await fetch(`${API_URL}/article/${index}`)).json();
-  const parsed = fetchArticleSchema.parse(data);
-  return parsed;
-}

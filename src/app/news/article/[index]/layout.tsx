@@ -1,6 +1,6 @@
 import Container from "@/components/common/Container";
 import ReleaseDate from "@/components/news/releaseDate";
-import { fetchArticleByIndex } from "@/lib/news";
+import { fetchArticles } from "@/lib/news";
 import type { Metadata } from "next";
 import Image from "next/image";
 import { notFound } from "next/navigation";
@@ -17,7 +17,10 @@ export default async function NewsLayout({
   children: React.ReactNode;
   params: { index: string };
 }>) {
-  const article = await fetchArticleByIndex(parseInt(index));
+  const articles = await fetchArticles();
+  const article = articles.data.find(
+    (article) => article.index === parseInt(index, 10)
+  );
 
   if (!article) {
     return notFound();
