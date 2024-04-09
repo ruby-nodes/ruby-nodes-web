@@ -2,12 +2,19 @@ import Button from "@/components/common/Button";
 import Container from "@/components/common/Container";
 import NewsCard from "@/components/news/newsCard";
 import { fetchArticles } from "@/lib/news";
+import { Metadata } from "next";
 import Link from "next/link";
 
 type NewsPageProps = {
   searchParams: {
     [key: string]: string;
   };
+};
+
+export const metadata: Metadata = {
+  title: "News",
+  description:
+    "Read the latest news and updates from Ruby Nodes. Stay up to date with the latest developments in the blockchain space.",
 };
 
 export default async function NewsPage({ searchParams }: NewsPageProps) {
