@@ -24,9 +24,9 @@ export default function Menu() {
         >
           <Navigation
             items={[
-              { title: "FAQ", href: "#faq" },
+              { title: "FAQ", href: "/#faq" },
               { title: "News", href: "/news" },
-              { title: "About Us", href: "#about-us" },
+              { title: "About Us", href: "/#about-us" },
             ]}
           />
           <Link href="#staking">
