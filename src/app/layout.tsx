@@ -3,8 +3,13 @@ import "./globals.css";
 import Menu from "@/components/menu/menu";
 import Footer from "@/components/footer/footer";
 import { twMerge } from "tailwind-merge";
+import { Metadata } from "next";
 
 const rubik = Rubik({ subsets: ["latin"] });
+
+export const metadata: Metadata = {
+  icons: [],
+};
 
 export default function RootLayout({
   children,
