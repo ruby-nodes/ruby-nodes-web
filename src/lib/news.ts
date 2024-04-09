@@ -1,6 +1,15 @@
 import fs from "fs";
 import path from "path";
 import { z } from "zod";
+
+const articleSchema = z.object({
+  title: z.string(),
+  description: z.string(),
+  date: z.date(),
+  imgSrc: z.string(),
+  slug: z.string(),
+});
+
 // Helper function to read and parse the metadata from an MDX file
 const parseMetadata = (fileContent: string) => {
   // Match the content between "export const metadata =" and the next semicolon
@@ -22,8 +31,11 @@ const parseMetadata = (fileContent: string) => {
 };
 
 // Function to get metadata from all .mdx files in a directory
-export const getNewsMetadata = () => {
-  const directoryPath = path.join(process.cwd(), "src/app/news/article");
+export function getArticles(opts?: { limit?: number }) {
+  const directoryPath = path.join(
+    process.cwd(),
+    "src/app/news/article/[index]"
+  );
 
   const subdirectiories = fs
     .readdirSync(directoryPath, {
@@ -35,17 +47,32 @@ export const getNewsMetadata = () => {
     const filePath = path.join(directoryPath, dirent.name, "page.mdx");
     const fileContent = fs.readFileSync(filePath, "utf8");
     const metadata = parseMetadata(fileContent);
-    return metadata;
+    return {
+      ...metadata,
+      slug: dirent.name,
+    };
   });
 
-  const schema = z.array(
-    z.object({
-      title: z.string(),
-      description: z.string(),
-      date: z.date(),
-      imgSrc: z.string(),
-      href: z.string(),
-    })
-  );
-  return schema.parse(allMetadata);
-};
+  const schema = z.array(articleSchema);
+  const parsed = schema.parse(allMetadata);
+  const sorted = parsed.sort((a, b) => b.date.getTime() - a.date.getTime());
+  const withIndex = sorted.map((article, index) => ({
+    ...article,
+    index: index + 1,
+  }));
+
+  const withUrls = withIndex.map((article) => ({
+    ...article,
+    href: `/news/article/${article.index}/${article.slug}`,
+  }));
+
+  return {
+    total: sorted.length,
+    data: opts?.limit ? withUrls.slice(0, opts.limit) : withUrls,
+  };
+}
+
+export function getArticleByIndex(index: number) {
+  const articles = getArticles();
+  return articles.data.find((article) => article.index === index);
+}

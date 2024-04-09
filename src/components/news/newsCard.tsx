@@ -2,6 +2,7 @@ import Image from "next/image";
 import Paragraph from "../common/Paragraph";
 import Button from "../common/Button";
 import Link from "next/link";
+import ReleaseDate from "./releaseDate";
 
 type BlogProps = {
   title: string;
@@ -10,10 +11,6 @@ type BlogProps = {
   href: string;
   imgSrc: string;
 };
-
-function formatDate(date: Date) {
-  return `${date.getDate()}.${date.getMonth() + 1}.${date.getFullYear()}`;
-}
 
 export default function NewsCard({
   title,
@@ -30,7 +27,7 @@ export default function NewsCard({
       <div className="p-5 flex flex-col">
         <div className="flex items-baseline justify-between">
           <h3 className="font-bold font-rubik text-md">{title}</h3>
-          <p className="text-sm text-c-primary">{formatDate(date)}</p>
+          <ReleaseDate date={date} />
         </div>
         <Paragraph text={description} className="mt-2.5" />
         <Link href={href}>
