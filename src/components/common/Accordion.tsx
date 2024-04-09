@@ -26,7 +26,7 @@ export default function Accordion({
           onClick={() => setIsOpen(!isOpen)}
           className=" flex justify-between items-baseline w-full"
         >
-          <h3 className="font-rubik text-lg font-medium text-left">{title}</h3>
+          <h3 className=" text-lg font-medium text-left">{title}</h3>
           <Image
             src={DoubleArrow}
             width={22}

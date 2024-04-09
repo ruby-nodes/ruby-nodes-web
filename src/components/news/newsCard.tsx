@@ -26,7 +26,7 @@ export default function NewsCard({
       </figure>
       <div className="p-5 flex flex-col">
         <div className="flex items-baseline justify-between">
-          <h3 className="font-bold font-rubik text-md">{title}</h3>
+          <h3 className="font-bold  text-md">{title}</h3>
           <ReleaseDate date={date} />
         </div>
         <Paragraph text={description} className="mt-2.5" />

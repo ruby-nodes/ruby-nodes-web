@@ -32,7 +32,7 @@ export default async function NewsLayout({
         />
         <div>
           <ReleaseDate date={article.date} />
-          <h1 className="~text-xl/xl-clamped font-bold font-rubik leading-[1.2]">
+          <h1 className="~text-xl/xl-clamped font-bold  leading-[1.2]">
             {article.title}
           </h1>
           <p className="text-md font-inter ">{article.description}</p>
@@ -40,7 +40,7 @@ export default async function NewsLayout({
         <div className="h-[1px] w-full bg-c-primary" />
         <div className="h-[1px]" />
       </div>
-      <article className="prose prose-invert font-inter prose-headings:font-rubik lg:prose-lg min-h-screen w-full">
+      <article className="prose prose-invert font-inter prose-headings: lg:prose-lg min-h-screen w-full">
         {children}
       </article>
     </Container>
