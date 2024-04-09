@@ -40,7 +40,7 @@ export default async function NewsLayout({
         <div className="h-[1px] w-full bg-c-primary" />
         <div className="h-[1px]" />
       </div>
-      <article className="prose prose-invert font-inter prose-headings: lg:prose-lg min-h-screen w-full">
+      <article className="prose prose-invert font-inter prose-p:font-inter lg:prose-lg min-h-screen w-full">
         {children}
       </article>
     </Container>
