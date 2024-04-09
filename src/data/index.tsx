@@ -1,5 +1,3 @@
-import { StakingCardProps } from "@/components/staking/StakingCard";
-import { Chain } from "@/lib/common";
 import React from "react";
 import { AboutUsData, FaqData, HeroData, StakingData } from "./types";
 
