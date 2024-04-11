@@ -19,7 +19,13 @@ type Story = StoryObj<typeof meta>;
 // More on writing stories with args: https://storybook.js.org/docs/writing-stories/args
 export const Primary: Story = {
   args: {
-    chain: "Polkadot",
+    project: {
+      img: {
+        src: require("@/assets/algorand.svg"),
+        alt: "Algorand",
+      },
+      href: "https://www.algorand.com",
+    },
     description:
       "Polkadot is a heterogeneous multi-chain interchange and translation architecture which enables customised side-chains to connect with public blockchains.",
     button: {
