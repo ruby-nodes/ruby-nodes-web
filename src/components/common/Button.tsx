@@ -16,7 +16,7 @@ function getButtonVariant(variant: string, active?: boolean) {
       ? "bg-c-primary hover:bg-c-primary-hover"
       : "bg-c-container-accent text-c-text-inactive hover:bg-c-container-accent-hover";
   } else {
-    return "border border-c-primary bg-c-container hover:bg-c-primary";
+    return "border border-c-primary bg-[transparent] hover:bg-c-primary";
   }
 }
 
@@ -32,7 +32,7 @@ export default function Button({
     <button
       onClick={onClick}
       className={twMerge(
-        "font-bold text-c-text transition-colors text-sm",
+        "font-bold text-c-text transition-colors duration-300 ease-in-out text-sm",
         size === "small"
           ? "px-5 py-3 rounded-md"
           : "py-4 px-[3.75rem] rounded-lg",

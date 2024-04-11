@@ -23,9 +23,9 @@ export default function TextBlock({
   return (
     <div className={twMerge("text-c-text", className)}>
       <Subheading title={title} className="text-start" />
-      <Paragraph text={description} className="mt-4" />
+      <Paragraph text={description} className="mt-1" />
       <Link href={cta.href}>
-        <Button label={cta.label} className="mt-[1.88rem]" />
+        <Button label={cta.label} className="mt-[2.4rem]" />
       </Link>
     </div>
   );

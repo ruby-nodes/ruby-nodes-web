@@ -21,6 +21,7 @@ const config: Config = {
       lg: "1.563rem",
       md: "1.25rem",
       sm: "0.938rem",
+      xs: "0.75rem",
     },
     fontFamily: {
       inter: ["Inter", "sans-serif"],
@@ -44,7 +45,7 @@ const config: Config = {
         xxl: "4rem",
       },
       screens: {
-        xl: "90rem",
+        xl: "81.25rem",
       },
     },
     borderRadius: {
@@ -52,7 +53,7 @@ const config: Config = {
       lg: "2rem",
     },
     fluid: {
-      defaultScreens: ["20rem", "90rem"],
+      defaultScreens: ["20rem", "81.25rem"],
     } satisfies FluidConfig,
     extend: {
       backgroundImage: {

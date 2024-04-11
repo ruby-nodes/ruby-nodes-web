@@ -26,7 +26,7 @@ export default function Accordion({
           onClick={() => setIsOpen(!isOpen)}
           className=" flex justify-between items-baseline w-full"
         >
-          <h3 className=" text-lg font-medium text-left">{title}</h3>
+          <h3 className=" text-lg font-bold text-left">{title}</h3>
           <Image
             src={DoubleArrow}
             width={22}
@@ -39,23 +39,23 @@ export default function Accordion({
           />
         </button>
       </header>
-      <AnimatePresence>
-        {isOpen && (
-          <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: "auto" }}
-            exit={{ opacity: 0, height: 0 }}
-            transition={{ duration: 0.2 }}
-            className={
-              collapsibleShouldTakeSpace
-                ? "absolute w-full mt-[3.5rem]"
-                : "w-full"
-            }
-          >
-            <Paragraph text={content} />
-          </motion.div>
-        )}
-      </AnimatePresence>
+      {/* <AnimatePresence mode="popLayout"> */}
+      {isOpen && (
+        <motion.div
+          initial={{ opacity: 0, height: 0 }}
+          animate={{ opacity: 1, height: "auto" }}
+          exit={{ opacity: 0, height: 0 }}
+          transition={{ duration: 0.3 }}
+          className={
+            collapsibleShouldTakeSpace
+              ? "absolute w-full mt-[3.5rem]"
+              : "w-full"
+          }
+        >
+          <Paragraph text={content} />
+        </motion.div>
+      )}
+      {/* </AnimatePresence> */}
       <DottedLine />
     </article>
   );

@@ -1,5 +1,6 @@
 import React from "react";
 import { AboutUsData, FaqData, HeroData, StakingData } from "./types";
+import PolkadotIcon from "@/assets/polkadot.png";
 
 const heroData = {
   title: (
@@ -35,7 +36,13 @@ const stakingData = {
   items: {
     Polkadot: [
       {
-        chain: "Polkadot",
+        project: {
+          img: {
+            src: PolkadotIcon,
+            alt: "Polkadot",
+          },
+          href: "https://polkadot.network",
+        },
         description:
           "Polkadot is a heterogeneous multi-chain interchange and translation architecture which enables customised side-chains to connect with public blockchains.",
         button: {
@@ -44,7 +51,13 @@ const stakingData = {
         },
       },
       {
-        chain: "Polkadot",
+        project: {
+          img: {
+            src: PolkadotIcon,
+            alt: "Polkadot",
+          },
+          href: "https://polkadot.network",
+        },
         description:
           "Polkadot is a heterogeneous multi-chain interchange and translation architecture which enables customised side-chains to connect with public blockchains.",
         button: {
@@ -53,7 +66,13 @@ const stakingData = {
         },
       },
       {
-        chain: "Polkadot",
+        project: {
+          img: {
+            src: PolkadotIcon,
+            alt: "Polkadot",
+          },
+          href: "https://polkadot.network",
+        },
         description:
           "Polkadot is a heterogeneous multi-chain interchange and translation architecture which enables customised side-chains to connect with public blockchains.",
         button: {
@@ -64,7 +83,13 @@ const stakingData = {
     ],
     Cosmos: [
       {
-        chain: "Cosmos",
+        project: {
+          img: {
+            src: PolkadotIcon,
+            alt: "Polkadot",
+          },
+          href: "https://polkadot.network",
+        },
         description:
           "Cosmos is a decentralized network of independent parallel blockchains, each powered by BFT consensus algorithms like Tendermint consensus.",
         button: {
@@ -75,7 +100,13 @@ const stakingData = {
     ],
     Algorand: [
       {
-        chain: "Algorand",
+        project: {
+          img: {
+            src: PolkadotIcon,
+            alt: "Polkadot",
+          },
+          href: "https://polkadot.network",
+        },
         description:
           "Algorand is a permissionless, pure proof-of-stake blockchain that ensures full participation, protection, and speed within a truly decentralized network.",
         button: {

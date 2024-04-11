@@ -2,7 +2,7 @@ import fs from "fs";
 import path from "path";
 import { z } from "zod";
 
-const articleSchema = z.object({
+const plainArticleSchema = z.object({
   title: z.string(),
   description: z.string(),
   date: z.date(),
@@ -53,7 +53,7 @@ export function getArticles(opts?: { limit?: number }) {
     };
   });
 
-  const schema = z.array(articleSchema);
+  const schema = z.array(plainArticleSchema);
   const parsed = schema.parse(allMetadata);
   const sorted = parsed.sort((a, b) => b.date.getTime() - a.date.getTime());
   const withIndex = sorted.map((article, index) => ({
@@ -77,7 +77,7 @@ export function getArticleByIndex(index: number) {
   return article;
 }
 
-const fetchArticleSchema = z.object({
+const articleSchema = z.object({
   title: z.string(),
   description: z.string(),
   date: z.coerce.date(),
@@ -87,15 +87,20 @@ const fetchArticleSchema = z.object({
   index: z.number(),
 });
 
+const fetchArticlesSchema = z.object({
+  total: z.number(),
+  data: z.array(articleSchema),
+});
+
+export type Article = z.infer<typeof articleSchema>;
+export type FetchArticlesResponse = z.infer<typeof fetchArticlesSchema>;
+
 const API_URL = `${process.env.NEXT_PUBLIC_PROTOCOL ?? "https"}://${process.env.NEXT_PUBLIC_VERCEL_URL}/api`;
 
 export async function fetchArticles(params?: { limit?: number }) {
   const data = await (await fetch(`${API_URL}/article`)).json();
-  const schema = z.object({
-    total: z.number(),
-    data: z.array(fetchArticleSchema),
-  });
-  const parsed = schema.parse(data);
+
+  const parsed = fetchArticlesSchema.parse(data);
   return params?.limit
     ? { ...parsed, data: parsed.data.slice(0, params.limit) }
     : parsed;

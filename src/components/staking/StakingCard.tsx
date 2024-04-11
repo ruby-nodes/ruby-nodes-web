@@ -1,13 +1,17 @@
 import { twMerge } from "tailwind-merge";
-import PolkadotLogo from "../../assets/polkadot.png";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import Paragraph from "../common/Paragraph";
 import Link from "next/link";
 import Button from "../common/Button";
-import { Chain } from "@/lib/common";
 
 export type StakingCardProps = {
-  chain: Chain;
+  project: {
+    img: {
+      src: StaticImageData;
+      alt: string;
+    };
+    href: string;
+  };
   description: string;
   className?: string;
   button: {
@@ -17,7 +21,7 @@ export type StakingCardProps = {
 };
 
 export default function StakingCard({
-  chain,
+  project: { img, href },
   description,
   className,
   button,
@@ -31,7 +35,9 @@ export default function StakingCard({
     >
       <div className="flex flex-col gap-9">
         <div className="flex flex-col gap-4">
-          <Image height={29} src={PolkadotLogo} alt="Polkadot logo" />
+          <Link href={href}>
+            <Image height={29} src={img.src} alt={img.alt} />
+          </Link>
           <hr className="border-c-primary border" />
           <Paragraph text={description} />
         </div>

@@ -34,7 +34,7 @@ type SocialsItemProps = {
 
 function SocialsItem({ icon, href }: SocialsItemProps) {
   return (
-    <Link href={href}>
+    <Link href={href} target="_blank">
       <img src={icon.src} alt={icon.alt} className="h-4 w-auto" />
     </Link>
   );

@@ -13,7 +13,7 @@ const { cta, description, title } = indexData.hero;
 export default function Hero() {
   return (
     <Container className="overflow-hidden ">
-      <section className="bg-c-bg relative min-h-screen flex items-center w-full justify-center pb-28">
+      <section className="bg-c-bg relative min-h-screen flex items-center w-full justify-center pb-40">
         <div className="flex flex-col items-center z-0">
           <figure className="relative max-w-[1116px] w-full flex justify-center">
             <Image
@@ -39,7 +39,7 @@ export default function Hero() {
               className="max-w-[500px] mt-2.5 text-center"
             />
             <Link href={cta.href}>
-              <Button label={cta.label} className="~mt-7/11" />
+              <Button label={cta.label} className="mt-8" />
             </Link>
           </div>
         </div>

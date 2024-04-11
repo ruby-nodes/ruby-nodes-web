@@ -20,7 +20,7 @@ export default function Navigation({ items, className }: NavigationProps) {
         <Link href={item.href} key={item.label}>
           <Paragraph
             text={item.label}
-            className="hover:text-c-text-inactive transition-colors"
+            className="hover:text-c-text-inactive transition-colors duration-300 ease-in-out"
           />
         </Link>
       ))}

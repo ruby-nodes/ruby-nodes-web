@@ -7,7 +7,7 @@ export default function AboutUs() {
   return (
     <section className="relative">
       <Container>
-        <ScrollAnchor id="#about-us" />
+        <ScrollAnchor id="about-us" />
         <div className="flex flex-col lg:flex-row">
           <AboutUsBanner />
           <TextBlock

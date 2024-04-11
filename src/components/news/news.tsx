@@ -10,9 +10,9 @@ export default async function News() {
 
   return (
     <section className="bg-c-bg pt-[8.4rem] pb-10">
-      <Container className="flex flex-col gap-[3.8rem] items-center">
+      <Container className="flex flex-col items-center">
         <Subheading title={"News"} />
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-7 w-full">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-7 w-full mt-[3.8rem]">
           {data.map((news) => (
             <NewsCard key={news.title} {...news} />
           ))}
