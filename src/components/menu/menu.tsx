@@ -33,8 +33,15 @@ export default function Menu() {
             )}
           >
             <Navigation items={navigation} onClickLink={closeMenu} />
-            <Link href={cta.href}>
-              <Button label={cta.label} variant="primary" onClick={closeMenu} />
+            <Link href={cta.href} className="w-full lg:w-auto">
+              <Container>
+                <Button
+                  label={cta.label}
+                  variant="primary"
+                  onClick={closeMenu}
+                  className="w-full lg:w-auto"
+                />
+              </Container>
             </Link>
             <Socials links={links} />
             <div className="p-8 lg:hidden" />

@@ -27,7 +27,7 @@ export default function Navigation({
         <Link href={item.href} key={item.label} onClick={onClickLink}>
           <Paragraph
             text={item.label}
-            className="hover:text-c-text-inactive transition-colors duration-300 ease-in-out"
+            className="hover:text-c-text-inactive transition-colors duration-300 ease-in-out text-md lg:text-sm"
           />
         </Link>
       ))}
