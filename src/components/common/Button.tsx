@@ -13,10 +13,10 @@ type ButtonProps = {
 function getButtonVariant(variant: string, active?: boolean) {
   if (variant === "primary") {
     return active
-      ? "bg-c-primary hover:bg-c-primary-hover"
-      : "bg-c-container-accent text-c-text-inactive hover:bg-c-container-accent-hover";
+      ? "bg-c-primary lg:hover:bg-c-primary-hover"
+      : "bg-c-container-accent text-c-text-inactive lg:hover:bg-c-container-accent-hover";
   } else {
-    return "border border-c-primary bg-[transparent] hover:bg-c-primary";
+    return "border border-c-primary bg-[transparent] lg:hover:bg-c-primary";
   }
 }
 
