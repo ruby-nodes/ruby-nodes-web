@@ -8,10 +8,10 @@ export default function AboutUs() {
     <section className="relative">
       <Container>
         <ScrollAnchor id="about-us" />
-        <div className="flex flex-col lg:flex-row">
+        <div className="flex flex-col md:flex-row ">
           <AboutUsBanner />
           <TextBlock
-            className="pt-16 lg:pt-[300px]"
+            className="pt-16 md:~pt-[0rem]/[18.75rem]"
             title="About us"
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin lobortis et nulla et imperdiet. Sed vitae tincidunt elit, pulvinar laoreet ex. Class aptent taciti sociosqu ad litora torquent per conubia nostra,"
             cta={{

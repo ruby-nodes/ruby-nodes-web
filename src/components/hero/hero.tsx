@@ -28,6 +28,8 @@ export default function Hero() {
               <Image
                 loading="eager"
                 src={Ruby}
+                width={500}
+                height={514}
                 alt="Ruby"
                 className="relative z-20"
               />
