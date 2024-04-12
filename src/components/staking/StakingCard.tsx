@@ -29,7 +29,7 @@ export default function StakingCard({
   return (
     <article
       className={twMerge(
-        "bg-c-container rounded-md text-sm p-[1.88rem] ",
+        "bg-c-container rounded-md text-sm ~p-[0.94rem]/[1.88rem] ",
         className
       )}
     >

@@ -10,14 +10,9 @@ import { twMerge } from "tailwind-merge";
 type Props = {
   title: string;
   content: string;
-  collapsibleShouldTakeSpace?: boolean;
 };
 
-export default function Accordion({
-  title,
-  content,
-  collapsibleShouldTakeSpace = true,
-}: Props) {
+export default function Accordion({ title, content }: Props) {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <article className=" w-full text-c-text flex flex-col relative gap-5">
@@ -46,11 +41,7 @@ export default function Accordion({
           animate={{ opacity: 1, height: "auto" }}
           exit={{ opacity: 0, height: 0 }}
           transition={{ duration: 0.3 }}
-          className={
-            collapsibleShouldTakeSpace
-              ? "absolute w-full mt-[3.5rem]"
-              : "w-full"
-          }
+          className={"w-full"}
         >
           <Paragraph text={content} />
         </motion.div>

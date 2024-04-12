@@ -14,7 +14,7 @@ const { title, tabFilter, items } = indexData.staking;
 export default function Staking() {
   const [selected, setSelected] = useState<Chain>("Polkadot");
   return (
-    <section className="bg-c-bg pb-40 relative">
+    <section className="bg-c-bg ~pb-56/40 relative">
       <ScrollAnchor id="staking" />
       <Container className="flex flex-col gap-[3.8rem]">
         <Subheading title={title} />

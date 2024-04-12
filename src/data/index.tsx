@@ -5,9 +5,9 @@ import PolkadotIcon from "@/assets/polkadot.png";
 const heroData = {
   title: (
     <span>
-      Boundless Networks,
+      Ruby Toughness,
       <br />
-      Flawless Rubies
+      Node Precision
     </span>
   ),
   description:
