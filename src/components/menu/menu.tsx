@@ -18,6 +18,9 @@ const {
 
 export default function Menu() {
   const [open, setOpen] = useState(false);
+
+  const closeMenu = () => setOpen(false);
+
   return (
     <>
       <header className="bg-c-bg border-b border-c-menu-border fixed top-0 z-50 inset-x-0">
@@ -29,9 +32,9 @@ export default function Menu() {
               open ? "left-0" : "left-[100%]"
             )}
           >
-            <Navigation items={navigation} />
+            <Navigation items={navigation} onClickLink={closeMenu} />
             <Link href={cta.href}>
-              <Button label={cta.label} variant="primary" />
+              <Button label={cta.label} variant="primary" onClick={closeMenu} />
             </Link>
             <Socials links={links} />
             <div className="p-8 lg:hidden" />
