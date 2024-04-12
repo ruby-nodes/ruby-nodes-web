@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Button from "../common/Button";
 import Container from "../common/Container";
 import Hamburger from "./hamburgerIcon";
@@ -20,6 +20,16 @@ export default function Menu() {
   const [open, setOpen] = useState(false);
 
   const closeMenu = () => setOpen(false);
+
+  useEffect(() => {
+    if (open) {
+      document.documentElement.style.overflowY = "hidden";
+      document.documentElement.style.overflowX = "hidden";
+    } else {
+      document.documentElement.style.overflowY = "auto";
+      document.documentElement.style.overflowX = "hidden";
+    }
+  }, [open]);
 
   return (
     <>
