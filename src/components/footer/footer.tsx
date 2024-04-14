@@ -29,7 +29,8 @@ export default function Footer() {
               <Logo className="mb-7 lg:mb-0" />
               <div className="flex flex-col lg:flex-row justify-between lg:items-center gap-7 lg:gap-14">
                 <Navigation
-                  className="text-start gap-7 lg:gap-12"
+                  small
+                  className="text-start gap-7 lg:gap-12 text-sm"
                   items={navigation}
                 />
                 <Socials links={links} />
