@@ -17,7 +17,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="overflow-x-hidden scroll-auto lg:scroll-smooth">
+    <html
+      lang="en"
+      className="overflow-x-hidden scroll-auto lg:scroll-smooth overscroll-none"
+    >
       <body
         className={twMerge(
           rubik.className,

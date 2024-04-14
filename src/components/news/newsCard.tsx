@@ -3,6 +3,8 @@ import Paragraph from "../common/Paragraph";
 import Button from "../common/Button";
 import Link from "next/link";
 import ReleaseDate from "./releaseDate";
+import { twMerge } from "tailwind-merge";
+import { transition } from "@/lib/common";
 
 type BlogProps = {
   title: string;
@@ -20,7 +22,13 @@ export default function NewsCard({
   href,
 }: BlogProps) {
   return (
-    <article className="flex flex-col w-full rounded-md bg-c-container text-c-text">
+    <article
+      className={twMerge(
+        "flex flex-col w-full rounded-md bg-c-container text-c-text",
+        transition,
+        "hover:scale-[103%]"
+      )}
+    >
       <figure className="relative h-[204px] rounded-t-md overflow-hidden">
         <Image src={imgSrc} alt={title} fill className="object-cover" />
       </figure>

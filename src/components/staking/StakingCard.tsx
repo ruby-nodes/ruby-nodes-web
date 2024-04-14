@@ -3,6 +3,7 @@ import Image, { StaticImageData } from "next/image";
 import Paragraph from "../common/Paragraph";
 import Link from "next/link";
 import Button from "../common/Button";
+import { transition } from "@/lib/common";
 
 export type StakingCardProps = {
   project: {
@@ -30,7 +31,9 @@ export default function StakingCard({
     <article
       className={twMerge(
         "bg-c-container rounded-md text-sm ~p-[0.94rem]/[1.88rem] ",
-        className
+        className,
+        transition,
+        "hover:scale-[103%]"
       )}
     >
       <div className="flex flex-col gap-9">

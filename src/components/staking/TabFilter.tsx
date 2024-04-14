@@ -15,7 +15,7 @@ export default function TabFilter({
   return (
     <div className="bg-c-container text-c-text rounded-md ~py-3.5/4 font-inter w-full ~px-3.5/8">
       <div className="flex gap-5 items-baseline">
-        <p className="text-xs">{label}</p>
+        <p className="text-xs font-[600]">{label}</p>
         <div className="flex gap-5 flex-wrap">
           {chains.map((chain) => (
             <Button
