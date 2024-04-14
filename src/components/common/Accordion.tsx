@@ -15,7 +15,7 @@ type Props = {
 export default function Accordion({ title, content }: Props) {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <article className=" w-full text-c-text flex flex-col relative gap-5">
+    <article className=" w-full text-c-text flex flex-col relative">
       <header className="flex justify-between items-center">
         <button
           onClick={() => setIsOpen(!isOpen)}
@@ -34,20 +34,22 @@ export default function Accordion({ title, content }: Props) {
           />
         </button>
       </header>
-      {/* <AnimatePresence mode="popLayout"> */}
-      {isOpen && (
-        <motion.div
-          initial={{ opacity: 0, height: 0 }}
-          animate={{ opacity: 1, height: "auto" }}
-          exit={{ opacity: 0, height: 0 }}
-          transition={{ duration: 0.3 }}
-          className={"w-full"}
-        >
-          <Paragraph text={content} />
-        </motion.div>
-      )}
-      {/* </AnimatePresence> */}
-      <DottedLine />
+      <div className="pt-5">
+        <AnimatePresence>
+          {isOpen && (
+            <motion.div
+              initial={{ opacity: 0, height: 0 }}
+              animate={{ opacity: 1, height: "auto" }}
+              exit={{ opacity: 0, height: 0 }}
+              transition={{ duration: 0.3 }}
+              className={"w-full overflow-hidden"}
+            >
+              <Paragraph text={content} className="pb-5" />
+            </motion.div>
+          )}
+        </AnimatePresence>
+        <DottedLine />
+      </div>
     </article>
   );
 }

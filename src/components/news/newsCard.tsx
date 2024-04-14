@@ -24,13 +24,20 @@ export default function NewsCard({
   return (
     <article
       className={twMerge(
-        "flex flex-col w-full rounded-md bg-c-container text-c-text",
-        transition,
-        "hover:scale-[103%]"
+        "flex flex-col w-full rounded-md bg-c-container text-c-text group"
       )}
     >
       <figure className="relative h-[204px] rounded-t-md overflow-hidden">
-        <Image src={imgSrc} alt={title} fill className="object-cover" />
+        <Image
+          src={imgSrc}
+          alt={title}
+          fill
+          className={twMerge(
+            "object-cover",
+            transition,
+            "group-hover:scale-[103%]"
+          )}
+        />
       </figure>
       <div className="p-5 flex flex-col">
         <div className="flex items-baseline justify-between">

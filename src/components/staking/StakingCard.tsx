@@ -31,9 +31,7 @@ export default function StakingCard({
     <article
       className={twMerge(
         "bg-c-container rounded-md text-sm ~p-[0.94rem]/[1.88rem] ",
-        className,
-        transition,
-        "hover:scale-[103%]"
+        className
       )}
     >
       <div className="flex flex-col gap-9">
