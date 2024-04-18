@@ -21,7 +21,7 @@ export const Primary: Story = {
   args: {
     project: {
       img: {
-        src: require("@/assets/algorand.svg"),
+        src: require("@/assets/polkadot.png"),
         alt: "Algorand",
       },
       href: "https://www.algorand.com",

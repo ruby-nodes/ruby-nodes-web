@@ -1,7 +1,10 @@
+import indexData from "@/data";
 import Container from "../common/Container";
 import ScrollAnchor from "../common/ScrollAnchor";
 import TextBlock from "../common/TextBlock";
 import AboutUsBanner from "./aboutUsBanner";
+
+const { aboutUs } = indexData;
 
 export default function AboutUs() {
   return (
@@ -11,13 +14,8 @@ export default function AboutUs() {
         <div className="flex flex-col md:flex-row ">
           <AboutUsBanner />
           <TextBlock
-            className="pt-16 md:~pt-[0rem]/[18.75rem]"
-            title="About us"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin lobortis et nulla et imperdiet. Sed vitae tincidunt elit, pulvinar laoreet ex. Class aptent taciti sociosqu ad litora torquent per conubia nostra,"
-            cta={{
-              href: "#",
-              label: "Contact Us",
-            }}
+            className="pt-16 md:~pt-[0rem]/[14.75rem] lg:max-w-[50%]"
+            {...aboutUs}
           />
         </div>
       </Container>
