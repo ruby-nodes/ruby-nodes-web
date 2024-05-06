@@ -42,7 +42,7 @@ export default function StakingCard({
           <hr className="border-c-primary border" />
           <Paragraph text={description} />
         </div>
-        <Link href={button.href}>
+        <Link href={button.href} target="_blank">
           <Button label={button.label} variant="secondary" className="w-full" />
         </Link>
       </div>
