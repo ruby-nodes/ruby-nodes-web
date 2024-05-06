@@ -11,10 +11,10 @@ export default function AboutUs() {
     <section className="relative">
       <Container>
         <ScrollAnchor id="about-us" />
-        <div className="flex flex-col md:flex-row ">
+        <div className="flex flex-col lg:flex-row ">
           <AboutUsBanner />
           <TextBlock
-            className="pt-16 md:~pt-[0rem]/[14.75rem] lg:max-w-[50%]"
+            className="pt-16 lg:~pt-[0rem]/[14.75rem] lg:max-w-[50%]"
             {...aboutUs}
           />
         </div>

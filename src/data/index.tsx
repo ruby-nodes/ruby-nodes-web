@@ -1,6 +1,9 @@
 import React from "react";
 import { AboutUsData, FaqData, HeroData, StakingData } from "./types";
-import PolkadotIcon from "@/assets/polkadot.png";
+import FantomIcon from "@/assets/staking/fantom.svg";
+import JoystreamIcon from "@/assets/staking/joystream.svg";
+import SwisstronikIcon from "@/assets/staking/swisstronik.svg";
+import HyperbridgeIcon from "@/assets/staking/hyperbridge.svg";
 
 const heroData = {
   title: (
@@ -39,7 +42,7 @@ const stakingData = {
       {
         project: {
           img: {
-            src: PolkadotIcon,
+            src: HyperbridgeIcon,
             alt: "Hyperbridge",
           },
           href: "https://hyperbridge.network/",
@@ -54,7 +57,7 @@ const stakingData = {
       {
         project: {
           img: {
-            src: PolkadotIcon,
+            src: JoystreamIcon,
             alt: "Joystream",
           },
           href: "https://www.joystream.org/",
@@ -71,7 +74,7 @@ const stakingData = {
       {
         project: {
           img: {
-            src: PolkadotIcon,
+            src: SwisstronikIcon,
             alt: "Swisstronik",
           },
           href: "https://swisstronik.com/",
@@ -88,7 +91,7 @@ const stakingData = {
       {
         project: {
           img: {
-            src: PolkadotIcon,
+            src: FantomIcon,
             alt: "Fantom",
           },
           href: "https://fantom.foundation/",
