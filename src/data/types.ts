@@ -52,3 +52,8 @@ export type SocialsData = {
 export type FooterData = {
   navigation: LinkProps[];
 };
+
+export type SuccessStoriesData = {
+  title: string;
+  description: string;
+}[];

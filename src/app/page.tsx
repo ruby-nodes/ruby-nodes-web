@@ -3,6 +3,7 @@ import FAQ from "@/components/faq/Faq";
 import Hero from "@/components/hero/hero";
 import News from "@/components/news/news";
 import Staking from "@/components/staking/Staking";
+import SuccessStories from "@/components/successStories/SuccessStories";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -19,6 +20,7 @@ export default function Home() {
       <FAQ />
       <News />
       <AboutUs />
+      <SuccessStories />
     </div>
   );
 }

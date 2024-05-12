@@ -143,11 +143,25 @@ const faqData = {
   ],
 } satisfies FaqData;
 
+const successStoriesData = [
+  {
+    title: "Polkadot",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec tellus rutrum, maximus justo consectetur, lacinia augue. Vivamus ac sagittis sapien. Nunc ultricies ultrices posuere. Donec commodo facilisis lacus at lobortis. Phasellus dapibus pellentesque mattis. Phasellus eget diam augue. Integer lacinia, turpis id vestibulum semper, felis mi luctus libero, sit amet sagittis nibh justo ut arcu. Nam dapibus congue tellus nec consectetur.",
+  },
+  {
+    title: "Kusama",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec tellus rutrum, maximus justo consectetur, lacinia augue. Vivamus ac sagittis sapien. Nunc ultricies ultrices posuere. Donec commodo facilisis lacus at lobortis. Phasellus dapibus pellentesque mattis. Phasellus eget diam augue. Integer lacinia, turpis id vestibulum semper, felis mi luctus libero",
+  },
+];
+
 const indexData = {
   staking: stakingData,
   faq: faqData,
   hero: heroData,
   aboutUs: aboutUsData,
+  successStories: successStoriesData,
 };
 
 export default indexData;
