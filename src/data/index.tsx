@@ -145,14 +145,10 @@ const faqData = {
 
 const successStoriesData = [
   {
-    title: "Polkadot",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec tellus rutrum, maximus justo consectetur, lacinia augue. Vivamus ac sagittis sapien. Nunc ultricies ultrices posuere. Donec commodo facilisis lacus at lobortis. Phasellus dapibus pellentesque mattis. Phasellus eget diam augue. Integer lacinia, turpis id vestibulum semper, felis mi luctus libero, sit amet sagittis nibh justo ut arcu. Nam dapibus congue tellus nec consectetur.",
-  },
-  {
-    title: "Kusama",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec tellus rutrum, maximus justo consectetur, lacinia augue. Vivamus ac sagittis sapien. Nunc ultricies ultrices posuere. Donec commodo facilisis lacus at lobortis. Phasellus dapibus pellentesque mattis. Phasellus eget diam augue. Integer lacinia, turpis id vestibulum semper, felis mi luctus libero",
+    title: "IBP success story",
+    description: `Infrastructure Builders Programme is an initiative that aims to ultimately decentralize Polkadot network\`s infrastructure (mainly RPCs and bootnodes) by using dedicated HW owned by community members. Currently we have two bare metal machines housed in New Zealand that are serving Oceania region and hosting 34 load-balanced RPC nodes together with 17 bootnodes. 
+      We run on AMD EPYC 9554 64-core machines with 512 GB of RAM 4x 3.84 NVMe SSD drives. 
+      Thanks to this setup, IBP is the fastest RPC provider  (with latency 50ms at most) while being the only one which is truly global, decentralized and geo-distributed.`,
   },
 ];
 

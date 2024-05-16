@@ -4,9 +4,8 @@ import SuccessStoryCard from "./SuccessStoryCard";
 
 export default function SuccessStories() {
   return (
-    <section className="bg-c-bg text-c-text mt-20 container mx-auto pb-12">
-      <Subheading title="Success Stories" />
-      <div className="grid md:grid-cols-2 gap-8 mt-7">
+    <section className="bg-c-container text-c-text mt-20  mx-auto pb-12">
+      <div className="container flex justify-center items-center mx-auto">
         {indexData.successStories.map((story) => (
           <SuccessStoryCard key={story.title} {...story} />
         ))}

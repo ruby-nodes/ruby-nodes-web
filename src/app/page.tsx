@@ -19,8 +19,8 @@ export default function Home() {
       <Staking />
       <FAQ />
       <News />
-      <AboutUs />
       <SuccessStories />
+      <AboutUs />
     </div>
   );
 }

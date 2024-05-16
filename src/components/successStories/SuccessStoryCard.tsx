@@ -9,22 +9,20 @@ type Props = {
 
 export default function SuccessStoryCard({ title, description }: Props) {
   return (
-    <article className="bg-c-container rounded-md p-8 flex flex-col gap-4">
-      <div className="flex gap-4 items-center">
-        <div>
-          <div className="p-3.5 bg-c-primary w-max rounded-[999px]">
-            <Image
-              className="translate-y-[1px]"
-              src={Diamond}
-              alt="Diamond"
-              width={20}
-              height={15}
-            />
-          </div>
-        </div>
-        <h3 className="text-c-text text-md font-bold font-rubik">{title}</h3>
+    <article className="bg-c-container  flex flex-col gap-3.5 items-center max-w-[640px] pt-16 pb-10 ~px-0/8">
+      <div className="p-3.5 bg-c-primary w-max rounded-[999px]">
+        <Image
+          className="translate-y-[1px]"
+          src={Diamond}
+          alt="Diamond"
+          width={20}
+          height={15}
+        />
       </div>
-      <Paragraph text={description} />
+      <h3 className="text-c-text text-md font-bold font-rubik mb-2.5">
+        {title}
+      </h3>
+      <Paragraph text={description} className="text-center" />
     </article>
   );
 }
