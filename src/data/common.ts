@@ -10,8 +10,10 @@ const socialsData = {
 
 const menuData = {
   navigation: [
-    { label: "FAQ", href: "/#faq" },
     { label: "News", href: "/news" },
+    { label: "Ecosystems", href: "/#staking" },
+    { label: "Success Stories", href: "/#success-stories" },
+    { label: "FAQ", href: "/#faq" },
     { label: "About Us", href: "/#about-us" },
   ],
   cta: { label: "Stake with us", href: "/#staking" },
