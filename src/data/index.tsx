@@ -4,6 +4,20 @@ import FantomIcon from "@/assets/staking/fantom.svg";
 import JoystreamIcon from "@/assets/staking/joystream.svg";
 import SwisstronikIcon from "@/assets/staking/swisstronik.svg";
 import HyperbridgeIcon from "@/assets/staking/hyperbridge.svg";
+import AcurastIcon from "@/assets/staking/acurast.svg";
+import BifrostIcon from "@/assets/staking/bifrost.svg";
+import CalamariIcon from "@/assets/staking/calamari.svg";
+import CentrifugeIcon from "@/assets/staking/centrifuge.svg";
+import HashedIcon from "@/assets/staking/hashed.svg";
+import HydraIcon from "@/assets/staking/hydra.svg";
+import InterlayIcon from "@/assets/staking/interlay.svg";
+import KusamaIcon from "@/assets/staking/kusama.svg";
+import MangataIcon from "@/assets/staking/mangata.svg";
+import MoonbeamIcon from "@/assets/staking/moonbeam.svg";
+import PicassoIcon from "@/assets/staking/picaso.svg";
+import PolkadotIcon from "@/assets/staking/polkadot.svg";
+import ZeitgeistIcon from "@/assets/staking/zeitgeist.svg";
+
 
 const heroData = {
   title: (
@@ -38,7 +52,176 @@ const stakingData = {
     label: "Projects:",
   },
   items: {
+    "Non-EVM": [
+      {
+        project: {
+          img: {
+            src: CalamariIcon,
+            alt: "Cardano",
+          },
+          href: "https://cardano.org/",
+        },
+        description:
+          "Cardano is a blockchain platform for changemakers, innovators, and visionaries, with the tools and technologies required to create possibility for the many, as well as the few, and bring about positive global change.",
+        button: {
+          label: "Learn more",
+          href: "https://cardano.org/",
+        },
+      },
+    ],
+    EVM: [
+      {
+        project: {
+          img: {
+            src: FantomIcon,
+            alt: "Fantom",
+          },
+          href: "https://fantom.foundation/",
+        },
+        description:
+          "Fantom is a high-performance blockchain platform with low transaction costs. It offers DeFi, NFTs, and GameFi applications.",
+        button: {
+          label: "Learn more",
+          href: "https://fantom.foundation/",
+        },
+      },
+      {
+        project: {
+          img: {
+            src: MoonbeamIcon,
+            alt: "Kusama",
+          },
+          href: "https://moonbeam.network/",
+        },
+        description:
+          "Moonbeam is a new Polkadot smart contract platform that makes it easy to build natively interoperable blockchain applications.",
+        button: {
+          label: "Learn more",
+          href: "https://moonbeam.network/",
+        },
+      },
+    ],
     Polkadot: [
+      {
+        project: {
+          img: {
+            src: PolkadotIcon,
+            alt: "Polkadot",
+          },
+          href: "https://polkadot.com/",
+        },
+        description:
+          "Polkadot is the first layer-0 (L0) blockchain that provides shared security and secure interoperability to layer-1 (L1) blockchains. Those L1 blockchain attached to Polkadot are also called parachains as their transactions are processed in parallel by Polkadot.",
+        button: {
+          label: "Learn more",
+          href: "https://polkadot.com/",
+        },
+      },
+      {
+        project: {
+          img: {
+            src: KusamaIcon,
+            alt: "Kusama",
+          },
+          href: "https://kusama.network/",
+        },
+        description:
+          "Kusama is a scalable network of specialized blockchains built using Substrate and nearly the same codebase as Polkadot. The network is an experimental development environment for teams who want to move fast and innovate on Kusama, or prepare for deployment on Polkadot.",
+        button: {
+          label: "Learn more",
+          href: "https://kusama.network/",
+        },
+      },
+      {
+        project: {
+          img: {
+            src: CentrifugeIcon,
+            alt: "Centrifuge",
+          },
+          href: "https://centrifuge.io/",
+        },
+        description:
+          "Centrifuge is the infrastructure that facilitates the decentralized financing of real-world assets natively on-chain, creating a fully transparent market which allows borrowers and lenders to transact without unnecessary intermediaries.",
+        button: {
+          label: "Learn more",
+          href: "https://centrifuge.io/",
+        },
+      },
+      {
+        project: {
+          img: {
+            src: HydraIcon,
+            alt: "Hydration",
+          },
+          href: "https://hydration.net/",
+        },
+        description:
+          "HydraDX is a cross-chain liquidity protocol built on Substrate. Our mission is to enable frictionless liquidity for all cryptoassets by building the first of its kind multi-asset liquidity pool - the HydraDX Omnipool. In the Omnipool, various assets аrе priced against each other by using our pool token Lerna (LRNA) as a proxy for determining their relative value. With the Omnipool, HydraDX breaks with the traditional conception according to which assets are traded in pairs using isolated pools.",
+        button: {
+          label: "Learn more",
+          href: "https://hydration.net/",
+        },
+      },
+      {
+        project: {
+          img: {
+            src: BifrostIcon,
+            alt: "Bifrost",
+          },
+          href: "https://bifrost.app/",
+        },
+        description:
+          "Bifrost is a liquid staking derivatives protocol that provides decentralized cross-chain liquidity for staked assets. By leveraging on the cross-consensus message (XCM) it can provide cross-chain liquid staking services for multiple chains.",
+        button: {
+          label: "Learn more",
+          href: "https://bifrost.app/",
+        },
+      },
+      {
+        project: {
+          img: {
+            src: BifrostIcon,
+            alt: "Kilt",
+          },
+          href: "https://kilt.io/",
+        },
+        description:
+          "KILT is a protocol for self-sovereign data and interoperability built on top of the permissionless KILT blockchain. The core component of KILT is a digital identity protocol for 1. generating and managing decentralized identifiers (DIDs), and 2. issuing and presenting digital verifiable credentials (VCs).",
+        button: {
+          label: "Learn more",
+          href: "https://kilt.io/",
+        },
+      },
+      {
+        project: {
+          img: {
+            src: MoonbeamIcon,
+            alt: "Kusama",
+          },
+          href: "https://moonbeam.network/",
+        },
+        description:
+          "Moonbeam is a new Polkadot smart contract platform that makes it easy to build natively interoperable blockchain applications.",
+        button: {
+          label: "Learn more",
+          href: "https://moonbeam.network/",
+        },
+      },
+      {
+        project: {
+          img: {
+            src: InterlayIcon,
+            alt: "Interlay",
+          },
+          href: "https://interlay.io/",
+        },
+        description:
+          "Swisstronik is a blockchain ecosystem for building compliant and privacy-focused decentralized applications.",
+        button: {
+          label: "Learn more",
+          href: "https://interlay.io/",
+        },
+      },
       {
         project: {
           img: {
@@ -57,6 +240,142 @@ const stakingData = {
       {
         project: {
           img: {
+            src: AcurastIcon,
+            alt: "Acurast",
+          },
+          href: "https://acurast.com/",
+        },
+        description:
+          "Swisstronik is a blockchain ecosystem for building compliant and privacy-focused decentralized applications.",
+        button: {
+          label: "Learn more",
+          href: "https://acurast.com/",
+        },
+      },
+      {
+        project: {
+          img: {
+            src: PicassoIcon,
+            alt: "Picasso",
+          },
+          href: "https://picasso.network/",
+        },
+        description:
+          "Swisstronik is a blockchain ecosystem for building compliant and privacy-focused decentralized applications.",
+        button: {
+          label: "Learn more",
+          href: "https://picasso.network/",
+        },
+      },
+      {
+        project: {
+          img: {
+            src: ZeitgeistIcon,
+            alt: "Zeitgeist",
+          },
+          href: "https://zeitgeist.pm/",
+        },
+        description:
+          "Swisstronik is a blockchain ecosystem for building compliant and privacy-focused decentralized applications.",
+        button: {
+          label: "Learn more",
+          href: "https://zeitgeist.pm/",
+        },
+      },
+      {
+        project: {
+          img: {
+            src: ZeitgeistIcon,
+            alt: "Litentry",
+          },
+          href: "https://litentry.com/",
+        },
+        description:
+          "Litentry",
+        button: {
+          label: "Learn more",
+          href: "https://litentry.com/",
+        },
+      },
+      {
+        project: {
+          img: {
+            src: HashedIcon,
+            alt: "Hashed",
+          },
+          href: "https://zeitgeist.network/",
+        },
+        description:
+          "Swisstronik is a blockchain ecosystem for building compliant and privacy-focused decentralized applications.",
+        button: {
+          label: "Learn more",
+          href: "https://zeitgeist.network/",
+        },
+      },
+      {
+        project: {
+          img: {
+            src: MangataIcon,
+            alt: "Mangata",
+          },
+          href: "https://mangata.finance/",
+        },
+        description:
+          "Swisstronik is a blockchain ecosystem for building compliant and privacy-focused decentralized applications.",
+        button: {
+          label: "Learn more",
+          href: "https://mangata.finance/",
+        },
+      },
+      {
+        project: {
+          img: {
+            src: CalamariIcon,
+            alt: "Calamari",
+          },
+          href: "https://manta.network/",
+        },
+        description:
+          "Swisstronik is a blockchain ecosystem for building compliant and privacy-focused decentralized applications.",
+        button: {
+          label: "Learn more",
+          href: "https://manta.network/",
+        },
+      },
+    ],
+    Substrate: [
+      {
+        project: {
+          img: {
+            src: SwisstronikIcon,
+            alt: "Avail"
+          },
+          href: "https://www.availproject.org/"
+        },
+        description: "Avail",
+        button: {
+          label: "Learn more",
+          href: "https://www.availproject.org/"
+        }
+      },
+      {
+        project: {
+          img: {
+            src: JoystreamIcon,
+            alt: "Vara",
+          },
+          href: "https://www.vara.network/",
+        },
+        description:
+          "Joystream is a video platform that uses blockchain technology to empower creators to earn money through NFTs and creator tokens.",
+        button: {
+          label: "Learn more",
+          href: "https://www.vara.network/",
+        },
+      },
+      {
+        project: {
+          img: {
             src: JoystreamIcon,
             alt: "Joystream",
           },
@@ -69,12 +388,42 @@ const stakingData = {
           href: "https://www.joystream.org/",
         },
       },
+      {
+        project: {
+          img: {
+            src: JoystreamIcon,
+            alt: "Sora",
+          },
+          href: "https://www.sora.org/",
+        },
+        description:
+          "Joystream is a video platform that uses blockchain technology to empower creators to earn money through NFTs and creator tokens.",
+        button: {
+          label: "Learn more",
+          href: "https://www.sora.org/",
+        },
+      },
+      {
+        project: {
+          img: {
+            src: JoystreamIcon,
+            alt: "Reef",
+          },
+          href: "https://www.reef.io/",
+        },
+        description:
+          "Joystream is a video platform that uses blockchain technology to empower creators to earn money through NFTs and creator tokens.",
+        button: {
+          label: "Learn more",
+          href: "https://www.reef.io/",
+        },
+      },
     ],
     Cosmos: [
       {
         project: {
           img: {
-            src: SwisstronikIcon,
+            src: CalamariIcon,
             alt: "Swisstronik",
           },
           href: "https://swisstronik.com/",
@@ -86,24 +435,131 @@ const stakingData = {
           href: "https://swisstronik.com/",
         },
       },
-    ],
-    Fantom: [
       {
         project: {
           img: {
-            src: FantomIcon,
-            alt: "Fantom",
+            src: CalamariIcon,
+            alt: "Neutaro"
           },
-          href: "https://fantom.foundation/",
+          href: "https://neutaro.com/",
         },
         description:
-          "Fantom is a high-performance blockchain platform with low transaction costs. It offers DeFi, NFTs, and GameFi applications.",
+          "Swisstronik is a blockchain ecosystem for building compliant and privacy-focused decentralized applications.",
         button: {
           label: "Learn more",
-          href: "https://fantom.foundation/",
+          href: "https://neutaro.com/",
         },
       },
     ],
+    Bridges: [
+      {
+        project: {
+          img: {
+            src: HyperbridgeIcon,
+            alt: "Hyperbridge",
+          },
+          href: "https://hyperbridge.network/",
+        },
+        description:
+          "Hyperbridge is a cryptographically secure cross-chain interoperability tool secured by Polkadot and powered by zero-knowledge cryptography.",
+        button: {
+          label: "Learn more",
+          href: "https://hyperbridge.network/",
+        },
+      },
+      {
+        project: {
+          img: {
+            src: HyperbridgeIcon,
+            alt: "Equito",
+          },
+          href: "https://equito.network/",
+        },
+        description:
+          "Hyperbridge is a cryptographically secure cross-chain interoperability tool secured by Polkadot and powered by zero-knowledge cryptography.",
+        button: {
+          label: "Learn more",
+          href: "https://equito.network/",
+        },
+      },
+    ],
+    RPCs: [
+      {
+        project: {
+          img: {
+            src: HyperbridgeIcon,
+            alt: "Polkadot",
+          },
+          href: "https://polkadot.network/",
+        },
+        description:
+          "Polkadot and its system chains.",
+        button: {
+          label: "Learn more",
+          href: "https://polkadot.network/",
+        },
+      },
+      {
+        project: {
+          img: {
+            src: HyperbridgeIcon,
+            alt: "Ethereum",
+          },
+          href: "https://ethereum.org/",
+        },
+        description:
+          "Polkadot and its system chains.",
+        button: {
+          label: "Learn more",
+          href: "https://ethereum.org/",
+        },
+      },
+      {
+        project: {
+          img: {
+            src: HyperbridgeIcon,
+            alt: "Arbitrum",
+          },
+          href: "https://arbitrum.foundation/",
+        },
+        description:
+          "Polkadot and its system chains.",
+        button: {
+          label: "Learn more",
+          href: "https://arbitrum.foundation/",
+        },
+      },
+      {
+        project: {
+          img: {
+            src: HyperbridgeIcon,
+            alt: "Base",
+          },
+          href: "https://base.org/",
+        },
+        description:
+          "Polkadot and its system chains.",
+        button: {
+          label: "Learn more",
+          href: "https://base.org/",
+        },
+      },
+      {
+        project: {
+          img: {
+            src: HyperbridgeIcon,
+            alt: "Optimism",
+          },
+          href: "https://optimism.io/",
+        },
+        description:
+          "Polkadot and its system chains.",
+        button: {
+          label: "Learn more",
+          href: "https://polkadot.network/",
+        },
+      },
+    ]
   },
 } satisfies StakingData;
 
