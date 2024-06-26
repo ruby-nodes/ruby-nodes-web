@@ -17,6 +17,7 @@ import MoonbeamIcon from "@/assets/staking/moonbeam.svg";
 import PicassoIcon from "@/assets/staking/picaso.svg";
 import PolkadotIcon from "@/assets/staking/polkadot.svg";
 import ZeitgeistIcon from "@/assets/staking/zeitgeist.svg";
+import EquitoIcon from "@/assets/staking/equito.png";
 
 
 const heroData = {
@@ -470,13 +471,13 @@ const stakingData = {
       {
         project: {
           img: {
-            src: HyperbridgeIcon,
+            src: EquitoIcon,
             alt: "Equito",
           },
           href: "https://equito.network/",
         },
         description:
-          "Hyperbridge is a cryptographically secure cross-chain interoperability tool secured by Polkadot and powered by zero-knowledge cryptography.",
+          "Equito is a cross-chain messaging protocol for institutions and Web3 ecosystems to interoperate approaching real-time.",
         button: {
           label: "Learn more",
           href: "https://equito.network/",
