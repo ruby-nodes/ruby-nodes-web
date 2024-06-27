@@ -18,6 +18,14 @@ import PicassoIcon from "@/assets/staking/picaso.svg";
 import PolkadotIcon from "@/assets/staking/polkadot.svg";
 import ZeitgeistIcon from "@/assets/staking/zeitgeist.svg";
 import EquitoIcon from "@/assets/staking/equito.png";
+import KiltIcon from "@/assets/staking/kilt.png";
+import AvailIcon from "@/assets/staking/avail.png";
+import VaraIcon from "@/assets/staking/vara.png";
+import SoraIcon from "@/assets/staking/sora.png";
+import ReefIcon from "@/assets/staking/reef.png";
+import NeutaroIcon from "@/assets/staking/neutaro.png";
+import CardanoIcon from "@/assets/staking/cardano.png";
+import LitentryIcon from "@/assets/staking/litentry.png";
 
 
 const heroData = {
@@ -57,13 +65,13 @@ const stakingData = {
       {
         project: {
           img: {
-            src: CalamariIcon,
+            src: CardanoIcon,
             alt: "Cardano",
           },
           href: "https://cardano.org/",
         },
         description:
-          "Cardano is a blockchain platform for changemakers, innovators, and visionaries, with the tools and technologies required to create possibility for the many, as well as the few, and bring about positive global change.",
+          "Cardano is a proof-of-stake blockchain platform that utilizes the UTXO model for secure and scalable transactions, aiming to power a range of decentralized applications.",
         button: {
           label: "Learn more",
           href: "https://cardano.org/",
@@ -157,7 +165,7 @@ const stakingData = {
           href: "https://hydration.net/",
         },
         description:
-          "HydraDX is a cross-chain liquidity protocol built on Substrate. Our mission is to enable frictionless liquidity for all cryptoassets by building the first of its kind multi-asset liquidity pool - the HydraDX Omnipool. In the Omnipool, various assets аrе priced against each other by using our pool token Lerna (LRNA) as a proxy for determining their relative value. With the Omnipool, HydraDX breaks with the traditional conception according to which assets are traded in pairs using isolated pools.",
+          "HydraDX is a cross-chain liquidity protocol built on Substrate. It's mission is to enable frictionless liquidity for all cryptoassets by building the first of its kind multi-asset liquidity pool called the Omnipool. In the Omnipool, various assets аrе priced against each other by using the pool token H2O as a proxy for determining their relative value. With the Omnipool, HydraDX breaks with the traditional conception according to which assets are traded in pairs using isolated pools.",
         button: {
           label: "Learn more",
           href: "https://hydration.net/",
@@ -181,7 +189,7 @@ const stakingData = {
       {
         project: {
           img: {
-            src: BifrostIcon,
+            src: KiltIcon,
             alt: "Kilt",
           },
           href: "https://kilt.io/",
@@ -217,7 +225,7 @@ const stakingData = {
           href: "https://interlay.io/",
         },
         description:
-          "Swisstronik is a blockchain ecosystem for building compliant and privacy-focused decentralized applications.",
+          "Interlay is a bridge between Bitcoin and other blockchains, allowing you to use your Bitcoin in DeFi applications without giving up control.",
         button: {
           label: "Learn more",
           href: "https://interlay.io/",
@@ -247,7 +255,7 @@ const stakingData = {
           href: "https://acurast.com/",
         },
         description:
-          "Swisstronik is a blockchain ecosystem for building compliant and privacy-focused decentralized applications.",
+          "Acurast is a permissionless, decentralized blockchain that acts as a serverless cloud for developers, enabling secure and scalable computations.",
         button: {
           label: "Learn more",
           href: "https://acurast.com/",
@@ -262,7 +270,7 @@ const stakingData = {
           href: "https://picasso.network/",
         },
         description:
-          "Swisstronik is a blockchain ecosystem for building compliant and privacy-focused decentralized applications.",
+          "Picasso is a blockchain project focusing on enabling seamless communication and value transfer between different blockchain ecosystems such as Polkadot, Cosmos or Solana.",
         button: {
           label: "Learn more",
           href: "https://picasso.network/",
@@ -277,7 +285,7 @@ const stakingData = {
           href: "https://zeitgeist.pm/",
         },
         description:
-          "Swisstronik is a blockchain ecosystem for building compliant and privacy-focused decentralized applications.",
+          "Zeitgeist is a blockchain designed for prediction markets, allowing users to bet on the outcomes of events and potentially profit from their foresight.",
         button: {
           label: "Learn more",
           href: "https://zeitgeist.pm/",
@@ -286,13 +294,13 @@ const stakingData = {
       {
         project: {
           img: {
-            src: ZeitgeistIcon,
+            src: LitentryIcon,
             alt: "Litentry",
           },
           href: "https://litentry.com/",
         },
         description:
-          "Litentry",
+          "Litentry is a blockchain-based system for managing your digital identities across different platforms, giving you control over your data.",
         button: {
           label: "Learn more",
           href: "https://litentry.com/",
@@ -304,13 +312,13 @@ const stakingData = {
             src: HashedIcon,
             alt: "Hashed",
           },
-          href: "https://zeitgeist.network/",
+          href: "https://hashed.network/",
         },
         description:
-          "Swisstronik is a blockchain ecosystem for building compliant and privacy-focused decentralized applications.",
+          "Hashed Network enables the full business lifecycle for digitally-native organizations and web3-curious businesses seeking benefits of decentralized digital economies.",
         button: {
           label: "Learn more",
-          href: "https://zeitgeist.network/",
+          href: "https://hashed.network/",
         },
       },
       {
@@ -322,7 +330,7 @@ const stakingData = {
           href: "https://mangata.finance/",
         },
         description:
-          "Swisstronik is a blockchain ecosystem for building compliant and privacy-focused decentralized applications.",
+          "Mangata is a DEX for experienced traders with gas-free swaps and MEV minimalization.",
         button: {
           label: "Learn more",
           href: "https://mangata.finance/",
@@ -337,7 +345,7 @@ const stakingData = {
           href: "https://manta.network/",
         },
         description:
-          "Swisstronik is a blockchain ecosystem for building compliant and privacy-focused decentralized applications.",
+          "Calamari is a testnet version of Manta Network, designed to bring privacy-preserving transactions and swaps to Kusama's DeFi ecosystem.",
         button: {
           label: "Learn more",
           href: "https://manta.network/",
@@ -348,12 +356,12 @@ const stakingData = {
       {
         project: {
           img: {
-            src: SwisstronikIcon,
+            src: AvailIcon,
             alt: "Avail"
           },
           href: "https://www.availproject.org/"
         },
-        description: "Avail",
+        description: "Avail is a blockchain project that offers a data availability (DA) solution, allowing secure and scalable verification for other blockchains.",
         button: {
           label: "Learn more",
           href: "https://www.availproject.org/"
@@ -362,13 +370,13 @@ const stakingData = {
       {
         project: {
           img: {
-            src: JoystreamIcon,
+            src: VaraIcon,
             alt: "Vara",
           },
           href: "https://www.vara.network/",
         },
         description:
-          "Joystream is a video platform that uses blockchain technology to empower creators to earn money through NFTs and creator tokens.",
+          "Vara is a blockchain built on Gear Protocol, enabling developers to create and deploy fast and scalable dApps.",
         button: {
           label: "Learn more",
           href: "https://www.vara.network/",
@@ -392,13 +400,13 @@ const stakingData = {
       {
         project: {
           img: {
-            src: JoystreamIcon,
+            src: SoraIcon,
             alt: "Sora",
           },
           href: "https://www.sora.org/",
         },
         description:
-          "Joystream is a video platform that uses blockchain technology to empower creators to earn money through NFTs and creator tokens.",
+          "Sora is an adaptive, non-debt based monetary framework designed to enable economic monetary stability for financially vulnerable countries with a focus on DeFi.",
         button: {
           label: "Learn more",
           href: "https://www.sora.org/",
@@ -407,13 +415,13 @@ const stakingData = {
       {
         project: {
           img: {
-            src: JoystreamIcon,
+            src: ReefIcon,
             alt: "Reef",
           },
           href: "https://www.reef.io/",
         },
         description:
-          "Joystream is a video platform that uses blockchain technology to empower creators to earn money through NFTs and creator tokens.",
+          "Reef is a fast, scalable blockchain for DeFi built with EVM compatibility, allowing easy porting of existing DeFi applications.",
         button: {
           label: "Learn more",
           href: "https://www.reef.io/",
@@ -424,7 +432,7 @@ const stakingData = {
       {
         project: {
           img: {
-            src: CalamariIcon,
+            src: SwisstronikIcon,
             alt: "Swisstronik",
           },
           href: "https://swisstronik.com/",
@@ -439,13 +447,13 @@ const stakingData = {
       {
         project: {
           img: {
-            src: CalamariIcon,
+            src: NeutaroIcon,
             alt: "Neutaro"
           },
           href: "https://neutaro.com/",
         },
         description:
-          "Swisstronik is a blockchain ecosystem for building compliant and privacy-focused decentralized applications.",
+          "Neutaro aims to be a leader in ethical Web3 by crafting a comprehensive set of standards for blockchain technology.",
         button: {
           label: "Learn more",
           href: "https://neutaro.com/",
@@ -488,7 +496,7 @@ const stakingData = {
       {
         project: {
           img: {
-            src: HyperbridgeIcon,
+            src: PolkadotIcon,
             alt: "Polkadot",
           },
           href: "https://polkadot.network/",
