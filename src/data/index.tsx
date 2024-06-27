@@ -26,6 +26,10 @@ import ReefIcon from "@/assets/staking/reef.png";
 import NeutaroIcon from "@/assets/staking/neutaro.png";
 import CardanoIcon from "@/assets/staking/cardano.png";
 import LitentryIcon from "@/assets/staking/litentry.png";
+import EthereumIcon from "@/assets/staking/ethereum.png";
+import BaseIcon from "@/assets/staking/base.png";
+import ArbitrumIcon from "@/assets/staking/arbitrum.png";
+import OptimismIcon from "@/assets/staking/optimism.png";
 
 
 const heroData = {
@@ -502,7 +506,7 @@ const stakingData = {
           href: "https://polkadot.network/",
         },
         description:
-          "Polkadot and its system chains.",
+          "Polkadot and its system chains such as AssetHub, BridgeHub or Collectives.",
         button: {
           label: "Learn more",
           href: "https://polkadot.network/",
@@ -511,13 +515,13 @@ const stakingData = {
       {
         project: {
           img: {
-            src: HyperbridgeIcon,
+            src: EthereumIcon,
             alt: "Ethereum",
           },
           href: "https://ethereum.org/",
         },
         description:
-          "Polkadot and its system chains.",
+          "Ethereum is the most popular decentralized open-source blockchain platform with smart contract functionality.",
         button: {
           label: "Learn more",
           href: "https://ethereum.org/",
@@ -526,13 +530,13 @@ const stakingData = {
       {
         project: {
           img: {
-            src: HyperbridgeIcon,
+            src: ArbitrumIcon,
             alt: "Arbitrum",
           },
           href: "https://arbitrum.foundation/",
         },
         description:
-          "Polkadot and its system chains.",
+          "Arbitrum is a L2 scaling solution for Ethereum, aiming to boost transaction speed and cut costs while maintaining Ethereum's security.",
         button: {
           label: "Learn more",
           href: "https://arbitrum.foundation/",
@@ -541,13 +545,13 @@ const stakingData = {
       {
         project: {
           img: {
-            src: HyperbridgeIcon,
+            src: BaseIcon,
             alt: "Base",
           },
           href: "https://base.org/",
         },
         description:
-          "Polkadot and its system chains.",
+          "Base is an Ethereum L2 blockchain built for speed and affordability, focusing on Coinbase products and an open developer ecosystem.",
         button: {
           label: "Learn more",
           href: "https://base.org/",
@@ -556,13 +560,13 @@ const stakingData = {
       {
         project: {
           img: {
-            src: HyperbridgeIcon,
+            src: OptimismIcon,
             alt: "Optimism",
           },
           href: "https://optimism.io/",
         },
         description:
-          "Polkadot and its system chains.",
+          "Optimism is an Ethereum L2 scaling solution using optimistic rollups for faster and cheaper transactions.",
         button: {
           label: "Learn more",
           href: "https://polkadot.network/",
