@@ -17,7 +17,6 @@ import MoonbeamIcon from "@/assets/staking/moonbeam.svg";
 import PicassoIcon from "@/assets/staking/picaso.svg";
 import PolkadotIcon from "@/assets/staking/polkadot.svg";
 import ZeitgeistIcon from "@/assets/staking/zeitgeist.svg";
-<<<<<<< Updated upstream
 import EquitoIcon from "@/assets/staking/equito.png";
 import KiltIcon from "@/assets/staking/kilt.png";
 import AvailIcon from "@/assets/staking/avail.png";
@@ -31,10 +30,6 @@ import EthereumIcon from "@/assets/staking/ethereum.png";
 import BaseIcon from "@/assets/staking/base.png";
 import ArbitrumIcon from "@/assets/staking/arbitrum.png";
 import OptimismIcon from "@/assets/staking/optimism.png";
-=======
-import EquitoIcon from "@/assets/staking/polkadot.svg";
->>>>>>> Stashed changes
-
 
 const heroData = {
   title: (
@@ -493,11 +488,7 @@ const stakingData = {
           href: "https://equito.network/",
         },
         description:
-<<<<<<< Updated upstream
           "Equito is a cross-chain messaging protocol for institutions and Web3 ecosystems to interoperate approaching real-time.",
-=======
-          "equito best bridge.",
->>>>>>> Stashed changes
         button: {
           label: "Learn more",
           href: "https://equito.network/",
