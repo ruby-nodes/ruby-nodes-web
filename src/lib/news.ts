@@ -12,6 +12,7 @@ const plainArticleSchema = z.object({
 
 // Helper function to read and parse the metadata from an MDX file
 const parseMetadata = (fileContent: string) => {
+  console.log(fileContent);
   // Match the content between "export const metadata =" and the next semicolon
   const metadataMatch = fileContent.match(
     /export\s+const\s+metadata\s*=\s*({[\s\S]*?});/
@@ -95,9 +96,11 @@ const fetchArticlesSchema = z.object({
 export type Article = z.infer<typeof articleSchema>;
 export type FetchArticlesResponse = z.infer<typeof fetchArticlesSchema>;
 
-const API_URL = `${process.env.NEXT_PUBLIC_PROTOCOL ?? "https"}://${process.env.NEXT_PUBLIC_VERCEL_URL}/api`;
-
+//const API_URL = `${process.env.NEXT_PUBLIC_PROTOCOL ?? "https"}://${process.env.NEXT_PUBLIC_VERCEL_URL}/api`;
+const API_URL = "http://localhost:3000/api";
 export async function fetchArticles(params?: { limit?: number }) {
+  console.log("------------------------");
+  console.log(API_URL);
   const data = await (await fetch(`${API_URL}/article`)).json();
 
   const parsed = fetchArticlesSchema.parse(data);

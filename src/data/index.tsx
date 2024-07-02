@@ -17,6 +17,7 @@ import MoonbeamIcon from "@/assets/staking/moonbeam.svg";
 import PicassoIcon from "@/assets/staking/picaso.svg";
 import PolkadotIcon from "@/assets/staking/polkadot.svg";
 import ZeitgeistIcon from "@/assets/staking/zeitgeist.svg";
+<<<<<<< Updated upstream
 import EquitoIcon from "@/assets/staking/equito.png";
 import KiltIcon from "@/assets/staking/kilt.png";
 import AvailIcon from "@/assets/staking/avail.png";
@@ -30,6 +31,9 @@ import EthereumIcon from "@/assets/staking/ethereum.png";
 import BaseIcon from "@/assets/staking/base.png";
 import ArbitrumIcon from "@/assets/staking/arbitrum.png";
 import OptimismIcon from "@/assets/staking/optimism.png";
+=======
+import EquitoIcon from "@/assets/staking/polkadot.svg";
+>>>>>>> Stashed changes
 
 
 const heroData = {
@@ -489,7 +493,11 @@ const stakingData = {
           href: "https://equito.network/",
         },
         description:
+<<<<<<< Updated upstream
           "Equito is a cross-chain messaging protocol for institutions and Web3 ecosystems to interoperate approaching real-time.",
+=======
+          "equito best bridge.",
+>>>>>>> Stashed changes
         button: {
           label: "Learn more",
           href: "https://equito.network/",
@@ -582,7 +590,7 @@ const faqData = {
     {
       question: "What is staking?",
       answer:
-        "Staking is a process of locking your tokens (be it DOT, KSM or GLMR) and receiving rewards for doing so. At the same time, staking boost the security of the underlying network.",
+        "Staking is a process of locking your tokens (be it ADA, DOT or FTM) and receiving rewards for doing so. At the same time, staking boost the security of the underlying network.",
     },
     {
       question: "Do Ruby Nodes take any custody of user's funds?",
@@ -592,7 +600,7 @@ const faqData = {
     {
       question: "Why should you trust Ruby Nodes as a node operator?",
       answer:
-        "We started in as early as 2020 in the Polkadot ecosystem - since then we have built a huge community, became validators on almost all parachains and joined various validator DAOs. This is what we love and we are here to stay!",
+        "We started in as early as 2020 in the Polkadot ecosystem - since then we have built a huge community, became validators on almost all parachains and joined various validator DAOs. Since then, we have expanded to other ecosystems like Ethereum, Cardano or Fantom. This is what we love and we are here to stay!",
     },
     {
       question: "How do you ensure a quality of your service?",
@@ -602,19 +610,19 @@ const faqData = {
     {
       question: "What do you do with the staking rewards?",
       answer:
-        "We heavily invest into the community activities like organizing conferences, publishing educational articles or promoting the Polkadot ecosystem. Quit recently, we started to offset our carbon emissions with RM Terra.",
+        "We heavily invest into the community activities like organizing conferences, publishing educational articles or promoting the cryptocurrency world. We believe that validators are a firm part of crypto community and we should do our best to help the projects we operate on to thrive!",
     },
     {
       question: "Why should you support Ruby Nodes as a validator?",
       answer:
-        "On one hand, we bring the high-quality of service together with one of the highest APR on our validators in the ecosystem. On the other, you will also help to decentralize Polkadot and its ecocystem by supporting a community validator - which, in turn, will support the ecosystem itself. We are proud to support Polkadot from the early days and we definitely want to give something back in return.",
+        "On one hand, we bring the high-quality of service together with one of the highest APR on our validators in the ecosystem. On the other, you will also help to decentralize projects we support and their ecocystem by supporting a community validator - which, in turn, will support the ecosystem itself. We are proud to support Polkadot and other ecosystems from the early days and we definitely want to give something back in return.",
     },
   ],
 } satisfies FaqData;
 
 const successStoriesData = [
   {
-    title: "IBP success story",
+    title: "IBP RPC infrastructure",
     description: `Infrastructure Builders Programme is an initiative that aims to ultimately decentralize Polkadot network\`s infrastructure (mainly RPCs and bootnodes) by using dedicated HW owned by community members. Currently we have two bare metal machines housed in New Zealand that are serving Oceania region and hosting 34 load-balanced RPC nodes together with 17 bootnodes. 
       We run on AMD EPYC 9554 64-core machines with 512 GB of RAM 4x 3.84 NVMe SSD drives. 
       Thanks to this setup, IBP is the fastest RPC provider  (with latency 50ms at most) while being the only one which is truly global, decentralized and geo-distributed.`,
