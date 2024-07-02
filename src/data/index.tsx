@@ -30,6 +30,7 @@ import EthereumIcon from "@/assets/staking/ethereum.png";
 import BaseIcon from "@/assets/staking/base.png";
 import ArbitrumIcon from "@/assets/staking/arbitrum.png";
 import OptimismIcon from "@/assets/staking/optimism.png";
+import EnergyWebIcon from "@/assets/staking/energyweb.png";
 
 const heroData = {
   title: (
@@ -339,6 +340,21 @@ const stakingData = {
           href: "https://mangata.finance/",
         },
       },
+ {
+        project: {
+          img: {
+            src: EnergyWebIcon,
+            alt: "Energy Web X",
+          },
+          href: "https://energywebx.com/",
+        },
+        description:
+          "Energy Web, a leader in blockchain for sustainability, offers Green Proofs, Data Exchange, and a comprehensive suite of Web3 infrastructure within its software-as-a-service platform. EWX Marketplace is a secure and trusted home for hundreds of clean energy applications.",
+        button: {
+          label: "Learn more",
+          href: "https://www.energywebx.com/",
+        },
+                },
       {
         project: {
           img: {
