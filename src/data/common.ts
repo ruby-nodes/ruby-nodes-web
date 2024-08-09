@@ -2,8 +2,8 @@ import { FooterData, MenuData, SocialsData } from "./types";
 
 const socialsData = {
   links: {
-    x: "https://x.com",
-    telegram: "https://t.me",
+    x: "https://x.com/RubyNodes",
+    telegram: "https://t.me/pmensik",
     discord: "https://discord.com",
   },
 } satisfies SocialsData;
