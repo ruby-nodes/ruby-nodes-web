@@ -637,7 +637,7 @@ const successStoriesData = [
   {
     title: "Avail genesis validator and RPC provider",
     description: "Thanks to our efforts during Goldberg testnet and Clash of Nodes campaign, we became one of the partners of Avail. We helped the project with technical issues, promoted it on our media and we were also one of the RPC providers during the testnet which translated into running mainnet RPC as well due to our performance. We are proud to become one of the genesis operators and firm partners of the Avail project."
-  }
+  },
 ];
 
 const indexData = {
