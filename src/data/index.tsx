@@ -634,6 +634,10 @@ const successStoriesData = [
       We run on AMD EPYC 9554 64-core machines with 512 GB of RAM 4x 3.84 NVMe SSD drives. 
       Thanks to this setup, IBP is the fastest RPC provider  (with latency 50ms at most) while being the only one which is truly global, decentralized and geo-distributed.`,
   },
+  {
+    title: "Avail genesis validator and RPC provider",
+    description: "Thanks to our efforts during Goldberg testnet and Clash of Nodes campaign, we became one of the partners of Avail. We helped the project with technical issues, promoted it on our media and we were also one of the RPC providers during the testnet which translated into running mainnet RPC as well due to our performance. We are proud to become one of the genesis operators and firm partners of the Avail project.",
+  },
 ];
 
 const indexData = {

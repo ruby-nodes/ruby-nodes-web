@@ -12,7 +12,6 @@ const plainArticleSchema = z.object({
 
 // Helper function to read and parse the metadata from an MDX file
 const parseMetadata = (fileContent: string) => {
-  console.log(fileContent);
   // Match the content between "export const metadata =" and the next semicolon
   const metadataMatch = fileContent.match(
     /export\s+const\s+metadata\s*=\s*({[\s\S]*?});/
