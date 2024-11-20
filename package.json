@@ -19,9 +19,9 @@
     "clsx": "^2.1.0",
     "framer-motion": "^11.0.25",
     "lucide-react": "^0.365.0",
-    "next": "14.1.4",
-    "react": "^18",
-    "react-dom": "^18",
+    "next": "^15.0.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "tailwind-merge": "^2.2.2",
     "tailwindcss-animate": "^1.0.7",
     "tailwindcss-fluid-type": "^2.0.6",
@@ -43,7 +43,7 @@
     "@types/react-dom": "^18",
     "autoprefixer": "^10.0.1",
     "eslint": "^8",
-    "eslint-config-next": "14.1.4",
+    "eslint-config-next": "^15.0.3",
     "eslint-plugin-storybook": "^0.8.0",
     "fluid-tailwind": "^0.1.6",
     "postcss": "^8",
@@ -52,5 +52,9 @@
     "storybook": "^8.0.6",
     "tailwindcss": "^3.3.0",
     "typescript": "^5"
-  }
+  },
+  "main": "index.js",
+  "repository": "git@github.com:ruby-nodes/ruby-nodes-web.git",
+  "author": "Pavel Kahoun <paulkadotter@proton.me>",
+  "license": "MIT"
 }
