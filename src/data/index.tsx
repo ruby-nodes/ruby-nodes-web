@@ -1,14 +1,13 @@
 import React from "react";
 import { AboutUsData, FaqData, HeroData, StakingData } from "./types";
 import FantomIcon from "@/assets/staking/fantom.svg";
+import SonicIcon from "@/assets/staking/sonic.svg";
 import JoystreamIcon from "@/assets/staking/joystream.svg";
 import SwisstronikIcon from "@/assets/staking/swisstronik.svg";
 import HyperbridgeIcon from "@/assets/staking/hyperbridge.svg";
 import AcurastIcon from "@/assets/staking/acurast.svg";
 import BifrostIcon from "@/assets/staking/bifrost.svg";
-import CalamariIcon from "@/assets/staking/calamari.svg";
 import CentrifugeIcon from "@/assets/staking/centrifuge.svg";
-import HashedIcon from "@/assets/staking/hashed.svg";
 import HydraIcon from "@/assets/staking/hydra.svg";
 import InterlayIcon from "@/assets/staking/interlay.svg";
 import KusamaIcon from "@/assets/staking/kusama.svg";
@@ -31,6 +30,8 @@ import BaseIcon from "@/assets/staking/base.png";
 import ArbitrumIcon from "@/assets/staking/arbitrum.png";
 import OptimismIcon from "@/assets/staking/optimism.png";
 import EnergyWebIcon from "@/assets/staking/energyweb.png";
+import PeaqIcon from "@/assets/staking/peaq.svg";
+import FuelIcon from "@/assets/staking/fuel.svg";
 
 const heroData = {
   title: (
@@ -86,23 +87,23 @@ const stakingData = {
       {
         project: {
           img: {
-            src: FantomIcon,
-            alt: "Fantom",
+            src: SonicIcon,
+            alt: "Sonic",
           },
-          href: "https://fantom.foundation/",
+          href: "https://soniclabs.com/",
         },
         description:
-          "Fantom is a high-performance blockchain platform with low transaction costs. It offers DeFi, NFTs, and GameFi applications.",
+          "Sonic, previously Fantom, is a highest-performing EVM L1 blockchain platform with low transaction costs. It offers DeFi, NFTs, and GameFi applications.",
         button: {
           label: "Learn more",
-          href: "https://fantom.foundation/",
+          href: "https://soniclabs.com/",
         },
       },
       {
         project: {
           img: {
             src: MoonbeamIcon,
-            alt: "Kusama",
+            alt: "Moonbeam",
           },
           href: "https://moonbeam.network/",
         },
@@ -111,6 +112,21 @@ const stakingData = {
         button: {
           label: "Learn more",
           href: "https://moonbeam.network/",
+        },
+      },
+      {
+        project: {
+          img: {
+            src: FuelIcon,
+            alt: "Fuel",
+          },
+          href: "https://fuel.network/",
+        },
+        description:
+          "Fuel Ignition is a high-performance Ethereum layer-2 rollup, designed for maximum speed and flexible throughput via its FuelVM, enabling home verification and scalable dApps.",
+        button: {
+          label: "Learn more",
+          href: "https://fuel.network/",
         },
       },
     ],
@@ -310,22 +326,7 @@ const stakingData = {
           href: "https://litentry.com/",
         },
       },
-      {
-        project: {
-          img: {
-            src: HashedIcon,
-            alt: "Hashed",
-          },
-          href: "https://hashed.network/",
-        },
-        description:
-          "Hashed Network enables the full business lifecycle for digitally-native organizations and web3-curious businesses seeking benefits of decentralized digital economies.",
-        button: {
-          label: "Learn more",
-          href: "https://hashed.network/",
-        },
-      },
-      {
+            {
         project: {
           img: {
             src: MangataIcon,
@@ -358,16 +359,16 @@ const stakingData = {
       {
         project: {
           img: {
-            src: CalamariIcon,
-            alt: "Calamari",
+            src: PeaqIcon,
+            alt: "Peaq",
           },
-          href: "https://manta.network/",
+          href: "https://peaq.network/",
         },
         description:
-          "Calamari is a testnet version of Manta Network, designed to bring privacy-preserving transactions and swaps to Kusama's DeFi ecosystem.",
+          "Peaq Network is a layer-1 blockchain specifically built to support Decentralized Physical Infrastructure Networks (DePINs) and the broader Economy of Things (EoT).",
         button: {
           label: "Learn more",
-          href: "https://manta.network/",
+          href: "https://peaq.network/",
         },
       },
     ],
@@ -575,6 +576,21 @@ const stakingData = {
       {
         project: {
           img: {
+            src: FuelIcon,
+            alt: "Fuel",
+          },
+          href: "https://fuel.network/",
+        },
+        description:
+          "Fuel Ignition is a high-performance Ethereum layer-2 rollup, designed for maximum speed and flexible throughput via its FuelVM.",
+        button: {
+          label: "Learn more",
+          href: "https://fuel.network/",
+        },
+      },
+      {
+        project: {
+          img: {
             src: OptimismIcon,
             alt: "Optimism",
           },
@@ -630,8 +646,8 @@ const faqData = {
 const successStoriesData = [
   {
     title: "IBP RPC infrastructure",
-    description: `Infrastructure Builders Programme is an initiative that aims to ultimately decentralize Polkadot network\`s infrastructure (mainly RPCs and bootnodes) by using dedicated HW owned by community members. Currently we have two bare metal machines housed in New Zealand that are serving Oceania region and hosting 34 load-balanced RPC nodes together with 17 bootnodes. 
-      We run on AMD EPYC 9554 64-core machines with 512 GB of RAM 4x 3.84 NVMe SSD drives. 
+    description: `Infrastructure Builders Programme is an initiative that aims to ultimately decentralize Polkadot network\`s infrastructure (mainly RPCs and bootnodes) by using dedicated HW owned by community members. Currently we have two bare metal machines housed in New Zealand that are serving Oceania region and hosting 34 load-balanced RPC nodes together with 17 bootnodes.
+      We run on AMD EPYC 9554 64-core machines with 512 GB of RAM 4x 3.84 NVMe SSD drives.
       Thanks to this setup, IBP is the fastest RPC provider  (with latency 50ms at most) while being the only one which is truly global, decentralized and geo-distributed.`,
   },
   {
