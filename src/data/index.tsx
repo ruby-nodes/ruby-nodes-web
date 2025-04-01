@@ -8,7 +8,7 @@ import HyperbridgeIcon from "@/assets/staking/hyperbridge.svg";
 import AcurastIcon from "@/assets/staking/acurast.svg";
 import BifrostIcon from "@/assets/staking/bifrost.svg";
 import CentrifugeIcon from "@/assets/staking/centrifuge.svg";
-import HydraIcon from "@/assets/staking/hydra.svg";
+import HydrationIcon from "@/assets/staking/hydration.svg";
 import InterlayIcon from "@/assets/staking/interlay.svg";
 import KusamaIcon from "@/assets/staking/kusama.svg";
 import MangataIcon from "@/assets/staking/mangata.svg";
@@ -18,7 +18,7 @@ import PolkadotIcon from "@/assets/staking/polkadot.svg";
 import ZeitgeistIcon from "@/assets/staking/zeitgeist.svg";
 import EquitoIcon from "@/assets/staking/equito.png";
 import KiltIcon from "@/assets/staking/kilt.png";
-import AvailIcon from "@/assets/staking/avail.png";
+import AvailIcon from "@/assets/staking/avail.svg";
 import VaraIcon from "@/assets/staking/vara.png";
 import SoraIcon from "@/assets/staking/sora.png";
 import ReefIcon from "@/assets/staking/reef.png";
@@ -31,6 +31,7 @@ import ArbitrumIcon from "@/assets/staking/arbitrum.png";
 import OptimismIcon from "@/assets/staking/optimism.png";
 import EnergyWebIcon from "@/assets/staking/energyweb.png";
 import PeaqIcon from "@/assets/staking/peaq.svg";
+import WalrusIcon from "@/assets/staking/walrus.svg";
 import FuelIcon from "@/assets/staking/fuel.svg";
 
 const heroData = {
@@ -70,17 +71,32 @@ const stakingData = {
       {
         project: {
           img: {
-            src: CardanoIcon,
-            alt: "Cardano",
+            src: WalrusIcon,
+            alt: "Walrus",
           },
-          href: "https://cardano.org/",
+          href: "https://wal.app/",
         },
         description:
-          "Cardano is a proof-of-stake blockchain platform that utilizes the UTXO model for secure and scalable transactions, aiming to power a range of decentralized applications.",
+          "Walrus is a high-performance decentralized storage network built on Sui, designed for fast reads, instant writes, and onchain verification. It enables AI, DeFi, and gaming applications to store and access data efficiently, outperforming traditional Web2 and Web3 storage solutions.",
         button: {
           label: "Learn more",
-          href: "https://cardano.org/",
+          href: "https://wal.app/",
         },
+      },
+        {
+          project: {
+            img: {
+              src: CardanoIcon,
+              alt: "Cardano",
+            },
+            href: "https://cardano.org/",
+          },
+          description:
+            "Cardano is a proof-of-stake blockchain platform that utilizes the UTXO model for secure and scalable transactions, aiming to power a range of decentralized applications.",
+          button: {
+            label: "Learn more",
+            href: "https://cardano.org/",
+          },
       },
     ],
     EVM: [
@@ -179,13 +195,13 @@ const stakingData = {
       {
         project: {
           img: {
-            src: HydraIcon,
+            src: HydrationIcon,
             alt: "Hydration",
           },
           href: "https://hydration.net/",
         },
         description:
-          "HydraDX is a cross-chain liquidity protocol built on Substrate. It's mission is to enable frictionless liquidity for all cryptoassets by building the first of its kind multi-asset liquidity pool called the Omnipool. In the Omnipool, various assets аrе priced against each other by using the pool token H2O as a proxy for determining their relative value. With the Omnipool, HydraDX breaks with the traditional conception according to which assets are traded in pairs using isolated pools.",
+          "Hydration is a cross-chain liquidity protocol and money market built on Substrate. Hydration unites swaps, lending and the Hollar stablecoin under the roof of a scalable appchain.",
         button: {
           label: "Learn more",
           href: "https://hydration.net/",
@@ -311,22 +327,7 @@ const stakingData = {
           href: "https://zeitgeist.pm/",
         },
       },
-      {
-        project: {
-          img: {
-            src: LitentryIcon,
-            alt: "Litentry",
-          },
-          href: "https://litentry.com/",
-        },
-        description:
-          "Litentry is a blockchain-based system for managing your digital identities across different platforms, giving you control over your data.",
-        button: {
-          label: "Learn more",
-          href: "https://litentry.com/",
-        },
-      },
-            {
+                  {
         project: {
           img: {
             src: MangataIcon,
