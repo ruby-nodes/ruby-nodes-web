@@ -16,7 +16,7 @@ export default function PrivacyPolicyPage() {
         <p className="text-lg">Effective Date: 2nd of January 2025</p>
         
         <p>
-          Ruby Nodes ("Ruby Nodes", "we", "us", or "our") is a blockchain infrastructure provider based in the Czech Republic. 
+          Ruby Nodes (&quot;Ruby Nodes&quot;, &quot;we&quot;, &quot;us&quot;, or &quot;our&quot;) is a blockchain infrastructure provider based in the Czech Republic. 
           We operate validator nodes and provide public and private RPC infrastructure in support of various blockchain ecosystems. 
           We are committed to protecting your privacy and maintaining transparency in how we handle information.
         </p>
