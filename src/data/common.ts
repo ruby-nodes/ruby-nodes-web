@@ -25,6 +25,7 @@ const footerData = {
     { label: "FAQ", href: "/#faq" },
     { label: "News", href: "/news" },
     { label: "About Us", href: "/#about-us" },
+    { label: "Privacy Policy", href: "/privacy-policy" },
   ],
 } satisfies FooterData;
 
