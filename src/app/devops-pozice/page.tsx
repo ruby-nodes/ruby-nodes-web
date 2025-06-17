@@ -11,12 +11,12 @@ export default function DevOpsPozicePage() {
   return (
     <Container className="bg-c-bg min-h-screen flex flex-col items-start w-full py-20">
       <h1 className="~text-2xl-clamped/2xl font-bold text-c-text max-w-[700px] text-center leading-[1.2]">
-        🔧 DevOps inženýr pro svět kryptoměn
+        DevOps inženýr pro svět kryptoměn
       </h1>
       
       <div className="prose prose-invert max-w-none mt-8">
         <p className="text-lg font-semibold">
-          📍 Remote-first | Brno výhodou | Plný úvazek nebo spolupráce na IČO
+          Remote-first | Brno výhodou | Plný úvazek nebo spolupráce na IČO
         </p>
         
         <p>
@@ -29,7 +29,7 @@ export default function DevOpsPozicePage() {
           pojď s námi zkoumat hlubiny kryptoměnového světa.
         </p>
         
-        <h2 className="text-xl font-bold mt-8 mb-4">🧠 Co děláme v Ruby Nodes</h2>
+        <h2 className="text-xl font-bold mt-8 mb-4">Co děláme v Ruby Nodes</h2>
         <p>
           Jsme mladá firma, která se pohybuje v prostředí kryptoměn a poskytuje svou infrastrukturu 
           různým blockchainovým protokolům a aplikacím, které se nad nimi vyvíjejí. V blockchain světě 
@@ -44,9 +44,9 @@ export default function DevOpsPozicePage() {
           určitě i rádi zaškolíme - zásadní je pro nás nadšení pro práci a pro svět krypta.
         </p>
         
-        <h2 className="text-xl font-bold mt-8 mb-4">✅ Co bys měl/a umět (nebo se nebát naučit):</h2>
+        <h2 className="text-xl font-bold mt-8 mb-4">Co bys měl/a umět (nebo se nebát naučit):</h2>
         <ul className="list-disc pl-6 mt-2 mb-4">
-          <li>Dobrá znalost Linuxu (nic jiného nepoužíváme :)</li>
+          <li>Být komfortní s Linuxem (nic jiného nepoužíváme :)</li>
           <li>Praxe s používáním bashe/příkazové řádky (většinu času budeš trávit v terminálu :)</li>
           <li>Znalost systemd a Dockeru</li>
           <li>Znalost nástrojů jako je Prometheus, Grafana a další, které používáme pro monitoring a tvorbu dashboardů</li>
@@ -55,7 +55,7 @@ export default function DevOpsPozicePage() {
           <li>Zkušenost s cloudem (AWS) určitě výhodou</li>
         </ul>
         
-        <h2 className="text-xl font-bold mt-8 mb-4">🚀 Co děláme</h2>
+        <h2 className="text-xl font-bold mt-8 mb-4">Co děláme</h2>
         <ul className="list-disc pl-6 mt-2 mb-4">
           <li>Provoz několika desítek validátorů na různých blockchainech (Ethereum, Polkadot, Sui a další)</li>
           <li>Provoz RPC fullnodes pro například Polkadot či Sui</li>
@@ -64,7 +64,7 @@ export default function DevOpsPozicePage() {
           <li>A samozřejmě se stále učíme, hledáme nové příležitosti a koukáme na novinky, o které v krypto světě není nouze</li>
         </ul>
         
-        <h2 className="text-xl font-bold mt-8 mb-4">🧑‍🍳 Co pečeme dál (a čeho budeš součástí)</h2>
+        <h2 className="text-xl font-bold mt-8 mb-4">Co pečeme dál (a čeho budeš součástí)</h2>
         <ul className="list-disc pl-6 mt-2 mb-4">
           <li>Stali jsme se jedním z hlavních partnerů Mysten Labs (firma stojící za Sui) a budeme jim pomáhat s vývojem jejich platformy Seal (decentralizované správa privátních klíčů - alternativa k AWS KMS) a Hypernet, který buduje více odolný internet založený na technologii SCION</li>
           <li>Máme podepsaných několik dalších zajímavých protokolů ke spolupráci zabývajících se například kryptografií</li>
@@ -72,14 +72,14 @@ export default function DevOpsPozicePage() {
           <li>A hlavně, tvá vlastní invence je více než vítaná! Jsme malá firma, které se snaží věci dělat kvalitně a efektivně a proto budeme rádi když budeš přinášet své vlastní nápady, kterém potom společně můžeme realizovat</li>
         </ul>
         
-        <h2 className="text-xl font-bold mt-8 mb-4">🥂 Culture & vibe</h2>
+        <h2 className="text-xl font-bold mt-8 mb-4">Culture & vibe</h2>
         <ul className="list-disc pl-6 mt-2 mb-4">
           <li>Každý rok vyrážíme na světovou konferenci nebo kryptochatu. Ať už to bude Dubaj, Denver, Lisabon, aspoň jednou ročně spolu vyrazíme mimo kancelář (nebo home office) a spojíme práci s inspirací, komunitou i zábavou</li>
           <li>Práce v progresivním odvětví. Krypto není jen hype – je to prostor, kde se věci dějí rychle. Je to kombinace technologie, financí a trošku punku</li>
           <li>Rádi ti pomůžeme se v kryptu zorientovat, začít investovat a vytvořit si vlastní portfolio - samozřejmě to není podmínka</li>
         </ul>
         
-        <h2 className="text-xl font-bold mt-8 mb-4">🎁 Co nabízíme?</h2>
+        <h2 className="text-xl font-bold mt-8 mb-4">Co nabízíme?</h2>
         <ul className="list-disc pl-6 mt-2 mb-4">
           <li>Remote-first, ale Brno či Hradec Králové určitě výhodou</li>
           <li>Práci v malém a technickém týmu bez zbytečné byrokracie</li>
@@ -90,7 +90,7 @@ export default function DevOpsPozicePage() {
           <li>Zajímavé investiční příležitosti, ke kterým se čas od času dostaneme</li>
         </ul>
         
-        <h2 className="text-xl font-bold mt-8 mb-4">📩 Kontakt</h2>
+        <h2 className="text-xl font-bold mt-8 mb-4">Kontakt</h2>
         <ul className="list-disc pl-6 mt-2 mb-4">
           <li>Email: <a href="mailto:ruby-nodes@proton.me" className="text-c-ruby hover:underline">ruby-nodes@proton.me</a></li>
           <li>Telegram: <a href="https://t.me/pmensik" className="text-c-ruby hover:underline" target="_blank" rel="noopener noreferrer">@pmensik</a></li>
