@@ -16,7 +16,7 @@ export default function DevOpsPozicePage() {
       
       <div className="prose prose-invert max-w-none mt-8">
         <p className="text-lg font-semibold">
-          Remote-first | Brno výhodou | Plný úvazek nebo spolupráce na IČO
+          Remote-first | Brno výhodou | Plný úvazek nebo spolupráce na IČO | Nástup ihned
         </p>
         
         <p>
@@ -87,6 +87,7 @@ export default function DevOpsPozicePage() {
           <li>Možnost růst s námi – učit se, zkoumat a experimentovat</li>
           <li>Cestování – každý rok vyrážíme na světovou krypto konferenci</li>
           <li>Práce na IČO, nemocenská a další benefity</li>
+          <li>Volná pracovní doba</li>
           <li>Zajímavé investiční příležitosti, ke kterým se čas od času dostaneme</li>
         </ul>
         
