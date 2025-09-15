@@ -24,7 +24,7 @@ import SoraIcon from "@/assets/staking/sora.png";
 import ReefIcon from "@/assets/staking/reef.png";
 import NeutaroIcon from "@/assets/staking/neutaro.png";
 import CardanoIcon from "@/assets/staking/cardano.png";
-import LitentryIcon from "@/assets/staking/litentry.png";
+import IkaIcon from "@/assets/staking/IKA.svg";
 import EthereumIcon from "@/assets/staking/ethereum.png";
 import BaseIcon from "@/assets/staking/base.png";
 import ArbitrumIcon from "@/assets/staking/arbitrum.png";
@@ -81,6 +81,21 @@ const stakingData = {
         button: {
           label: "Learn more",
           href: "https://wal.app/",
+        },
+      },
+      {
+        project: {
+          img: {
+            src: IkaIcon,
+            alt: "IKA",
+          },
+          href: "https://ika.xyz/",
+        },
+        description:
+          "Ika is a sub-second multi-party computation network that enables secure, zero-trust cross-chain coordination on Sui. By leveraging breakthrough 2PC-MPC cryptography, Ika powers native asset control, decentralized custody, and instant interoperability across Bitcoin, Ethereum, and modern blockchains.",
+        button: {
+          label: "Learn more",
+          href: "https://ika.xyz/",
         },
       },
         {
