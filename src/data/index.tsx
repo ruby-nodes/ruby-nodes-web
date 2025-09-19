@@ -32,7 +32,9 @@ import OptimismIcon from "@/assets/staking/optimism.png";
 import EnergyWebIcon from "@/assets/staking/energyweb.png";
 import PeaqIcon from "@/assets/staking/peaq.svg";
 import WalrusIcon from "@/assets/staking/walrus.svg";
-import FuelIcon from "@/assets/staking/fuel.svg";
+import FuelIcon from "@/assets/staking/fuel.png";
+import SealIcon from "@/assets/staking/seal.svg";
+import SomniaIcon from "@/assets/staking/somnia.svg";
 
 const heroData = {
   title: (
@@ -98,6 +100,21 @@ const stakingData = {
           href: "https://ika.xyz/",
         },
       },
+      {
+        project: {
+          img: {
+            src: SealIcon,
+            alt: "Seal",
+          },
+          href: "https://seal.mystenlabs.com/",
+        },
+        description:
+          "Seal is a decentralized secrets management and privacy protocol for Sui. Using on-chain policy-enforced threshold encryption, Seal enables secure storage, flexible access control, and privacy-preserving data sharing—empowering next-gen Web3 applications with true programmable privacy.",
+        button: {
+          label: "Learn more",
+          href: "https://seal.mystenlabs.com/",
+        },
+      },
         {
           project: {
             img: {
@@ -139,7 +156,7 @@ const stakingData = {
           href: "https://moonbeam.network/",
         },
         description:
-          "Moonbeam is a new Polkadot smart contract platform that makes it easy to build natively interoperable blockchain applications.",
+          "Moonbeam is a Polkadot EVM-compatibile smart contract platform that makes it easy to build natively interoperable blockchain applications.",
         button: {
           label: "Learn more",
           href: "https://moonbeam.network/",
@@ -158,6 +175,21 @@ const stakingData = {
         button: {
           label: "Learn more",
           href: "https://fuel.network/",
+        },
+      },
+      {
+        project: {
+          img: {
+            src: SomniaIcon,
+            alt: "Somnia",
+          },
+          href: "https://somnia.network/",
+        },
+        description:
+          "Somnia is a high-performance EVM-compatibile Layer-1 blockchain designed for real-time, large-scale dApps. With 1 million TPS, sub-second finality, and ultra-low fees, Somnia unlocks mass adoption for gaming, DeFi, social, and AI applications.",
+        button: {
+          label: "Learn more",
+          href: "https://somnia.network/",
         },
       },
     ],
