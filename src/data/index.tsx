@@ -35,6 +35,8 @@ import WalrusIcon from "@/assets/staking/walrus.svg";
 import FuelIcon from "@/assets/staking/fuel.png";
 import SealIcon from "@/assets/staking/seal.svg";
 import SomniaIcon from "@/assets/staking/somnia.svg";
+import ZerogIcon from "@/assets/staking/zerog.png";
+import zkVerifyIcon from "@/assets/staking/zkVerify.svg";
 
 const heroData = {
   title: (
@@ -190,6 +192,21 @@ const stakingData = {
         button: {
           label: "Learn more",
           href: "https://somnia.network/",
+        },
+      },
+      {
+        project: {
+          img: {
+            src: ZerogIcon,
+            alt: "0g",
+          },
+          href: "https://0g.ai/",
+        },
+        description:
+          "0G, the largest AI L1 chain, is an infinitely scalable, fully composable, and purpose-built modular blockchain for decentralized AI applications, recently solidified by the launch of the Aristotle Mainnet, the world's first Decentralized AI Operating System (dAIOS).",
+        button: {
+          label: "Learn more",
+          href: "https://0g.ai/",
         },
       },
     ],
@@ -493,6 +510,21 @@ const stakingData = {
         button: {
           label: "Learn more",
           href: "https://www.reef.io/",
+        },
+      },
+      {
+        project: {
+          img: {
+            src: zkVerifyIcon,
+            alt: "zkVerify",
+          },
+          href: "https://zkverify.io/",
+        },
+        description:
+          "zkVerify is the universal and ultra-fast verification layer designed to efficiently verify any zero-knowledge proofs at scale across all ecosystems with minimal latency and dramatically reduced cost.",
+        button: {
+          label: "Learn more",
+          href: "https://zkverify.io/",
         },
       },
     ],
