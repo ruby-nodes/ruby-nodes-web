@@ -11,9 +11,7 @@ import CentrifugeIcon from "@/assets/staking/centrifuge.svg";
 import HydrationIcon from "@/assets/staking/hydration.svg";
 import InterlayIcon from "@/assets/staking/interlay.svg";
 import KusamaIcon from "@/assets/staking/kusama.svg";
-import MangataIcon from "@/assets/staking/mangata.svg";
 import MoonbeamIcon from "@/assets/staking/moonbeam.svg";
-import PicassoIcon from "@/assets/staking/picaso.svg";
 import PolkadotIcon from "@/assets/staking/polkadot.svg";
 import ZeitgeistIcon from "@/assets/staking/zeitgeist.svg";
 import EquitoIcon from "@/assets/staking/equito.png";
@@ -37,6 +35,8 @@ import SealIcon from "@/assets/staking/seal.svg";
 import SomniaIcon from "@/assets/staking/somnia.svg";
 import ZerogIcon from "@/assets/staking/zerog.png";
 import zkVerifyIcon from "@/assets/staking/zkVerify.svg";
+import BSCIcon from "@/assets/staking/BNB_chain.png";
+import RootIcon from "@/assets/staking/Root_network.svg";
 
 const heroData = {
   title: (
@@ -361,21 +361,7 @@ const stakingData = {
           href: "https://acurast.com/",
         },
       },
-      {
-        project: {
-          img: {
-            src: PicassoIcon,
-            alt: "Picasso",
-          },
-          href: "https://picasso.network/",
-        },
-        description:
-          "Picasso is a blockchain project focusing on enabling seamless communication and value transfer between different blockchain ecosystems such as Polkadot, Cosmos or Solana.",
-        button: {
-          label: "Learn more",
-          href: "https://picasso.network/",
-        },
-      },
+
       {
         project: {
           img: {
@@ -391,21 +377,6 @@ const stakingData = {
           href: "https://zeitgeist.pm/",
         },
       },
-                  {
-        project: {
-          img: {
-            src: MangataIcon,
-            alt: "Mangata",
-          },
-          href: "https://mangata.finance/",
-        },
-        description:
-          "Mangata is a DEX for experienced traders with gas-free swaps and MEV minimalization.",
-        button: {
-          label: "Learn more",
-          href: "https://mangata.finance/",
-        },
-      },
  {
         project: {
           img: {
@@ -415,7 +386,7 @@ const stakingData = {
           href: "https://energywebx.com/",
         },
         description:
-          "Energy Web, a leader in blockchain for sustainability, offers Green Proofs, Data Exchange, and a comprehensive suite of Web3 infrastructure within its software-as-a-service platform. EWX Marketplace is a secure and trusted home for hundreds of clean energy applications.",
+          "Energy Web, a leader in blockchain for sustainability, offers a software-as-a-service platform acting as a secure marketplace for hundreds of clean energy applications.",
         button: {
           label: "Learn more",
           href: "https://www.energywebx.com/",
@@ -527,6 +498,21 @@ const stakingData = {
           href: "https://zkverify.io/",
         },
       },
+      {
+project: {
+img: {
+src: RootIcon,
+alt: "Root network",
+},
+href: "https://www.therootnetwork.com/",
+},
+description:
+"Root Network is a core blockchain infrastructure designed for the open metaverse, prioritizing user-friendly onboarding and interoperability through a unified NFT runtime and an efficient multi-token economy.",
+button: {
+label: "Learn more",
+href: "https://www.therootnetwork.com/",
+},
+},
     ],
     Cosmos: [
       {
@@ -656,6 +642,21 @@ const stakingData = {
       {
         project: {
           img: {
+            src: BSCIcon,
+            alt: "BSC chain",
+          },
+          href: "https://www.bnbchain.org/",
+        },
+        description:
+          "BNB Chain is a high-performance ecosystem for dApps, DeFi, and Web3, developed by Binance for faster, lower-cost transactions.",
+        button: {
+          label: "Learn more",
+          href: "https://www.bnbchain.org/",
+        },
+      },
+      {
+        project: {
+          img: {
             src: FuelIcon,
             alt: "Fuel",
           },
@@ -680,7 +681,7 @@ const stakingData = {
           "Optimism is an Ethereum L2 scaling solution using optimistic rollups for faster and cheaper transactions.",
         button: {
           label: "Learn more",
-          href: "https://polkadot.network/",
+          href: "https://optimism.io/",
         },
       },
     ]
