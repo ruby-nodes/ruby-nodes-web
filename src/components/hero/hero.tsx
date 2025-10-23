@@ -9,6 +9,14 @@ import React from "react";
 import indexData from "@/data";
 import RubyLeft from "@/assets/rubys/02.png";
 import RubyRight from "@/assets/rubys/03.png";
+import Logo0g from "@/assets/logos/0g.svg";
+import LogoBase from "@/assets/logos/base.svg";
+import LogoBNB from "@/assets/logos/bnb-chain.svg";
+import LogoPeaq from "@/assets/logos/peaq.svg";
+import LogoSolana from "@/assets/logos/solana.svg";
+import LogoSomnia from "@/assets/logos/somnia.svg";
+import LogoSui from "@/assets/logos/sui.svg";
+import LogoWalrus from "@/assets/logos/walrus.svg";
 
 const { cta, description, title } = indexData.hero;
 
@@ -22,36 +30,35 @@ export default function Hero() {
         <Image src={RubyRight} alt="Ruby Right" className="w-full h-full" />
       </div>
       <Container className="overflow-hidden ">
-        <div className="bg-c-bg relative min-h-screen flex items-center w-full justify-center ~pb-56/40">
-          <div className="flex flex-col items-center">
-            <figure className="relative max-w-[1116px] w-full flex justify-center">
-              <Image
-                loading="eager"
-                src={Ruby}
-                width={500}
-                height={514}
-                alt="Ruby"
-                className="relative z-20"
-              />
-              <Image
-                src={BgImage}
-                alt="Hero Background"
-                className="absolute z-0 -top-[326px] min-w-[1100px]"
-                width={1116}
-                height={1116}
-              />
-            </figure>
-            <div className="z-30 flex flex-col items-center">
-              <h1 className="~text-2xl-clamped/2xl  font-bold text-c-text max-w-[700px] text-center leading-[1.2]">
+        <div className="bg-c-bg relative min-h-screen flex items-center w-full ~pb-56/40">
+          {/* two-column layout: text (left) and image (right) */}
+          <div className="w-full max-w-[1116px] mx-auto px-4 flex flex-col md:flex-row items-center md:items-start justify-between">
+            <div className="z-30 flex flex-col items-start md:w-1/2">
+              <h1 className="~text-2xl-clamped/2xl font-bold text-c-text max-w-[700px] text-left leading-[1.2]">
                 {title}
               </h1>
-              <Paragraph
-                text={description}
-                className="max-w-[500px] mt-2.5 text-center"
-              />
-              <Link href={cta.href} className="w-full md:w-auto">
-                <Button label={cta.label} className="mt-8 w-full md:w-auto" />
-              </Link>
+              <Paragraph text={description} className="max-w-[500px] mt-2.5 text-left" />
+              <div className="mt-8 w-full md:w-auto flex flex-col sm:flex-row gap-4">
+                <Link href={cta.href} className="w-full sm:w-auto">
+                  <Button label={cta.label} className="w-full sm:w-auto" />
+                </Link>
+                <Link href="/private-infrastructure" className="w-full sm:w-auto">
+                  <Button label="Private Infrastructure" variant="secondary" className="w-full sm:w-auto" />
+                </Link>
+              </div>
+
+              {/* Logos row: single line, shrink-to-fit between decorative rubies */}
+              <div className="mt-6 w-full">
+                <div className="flex items-center gap-8 w-full flex-nowrap">
+                  {[Logo0g, LogoBase, LogoBNB, LogoPeaq, LogoSolana, LogoSomnia, LogoSui, LogoWalrus].map((Src, i) => (
+                    <div key={i} className="flex-shrink-0 w-[100px] flex items-center justify-center">
+                      <Image src={Src} alt={`logo-${i}`} width={100} height={50} className="w-auto object-contain" />
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* logos removed from constrained container to render full-bleed below */}
             </div>
           </div>
         </div>
