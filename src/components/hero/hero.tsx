@@ -30,35 +30,88 @@ export default function Hero() {
         <Image src={RubyRight} alt="Ruby Right" className="w-full h-full" />
       </div>
       <Container className="overflow-hidden ">
-        <div className="bg-c-bg relative min-h-screen flex items-center w-full ~pb-56/40">
+        <div className="bg-c-bg relative min-h-screen flex flex-col items-center w-full ~pb-56/40">
           {/* two-column layout: text (left) and image (right) */}
           <div className="w-full max-w-[1116px] mx-auto px-4 flex flex-col md:flex-row items-center md:items-start justify-between">
             <div className="z-30 flex flex-col items-start md:w-1/2">
               <h1 className="~text-2xl-clamped/2xl font-bold text-c-text max-w-[700px] text-left leading-[1.2]">
-                {title}
+                <>Ruby Toughness,<br />Node Preccision</>
               </h1>
               <Paragraph text={description} className="max-w-[500px] mt-2.5 text-left" />
-              <div className="mt-8 w-full md:w-auto flex flex-col sm:flex-row gap-4">
-                <Link href={cta.href} className="w-full sm:w-auto">
-                  <Button label={cta.label} className="w-full sm:w-auto" />
+            </div>
+
+            {/* Right column: main ruby, aligned to the right of the page on md+ */}
+            <div className="hidden md:flex md:w-1/2 items-center justify-end z-20">
+              <Image src={Ruby} alt="Ruby" width={520} height={520} className="max-w-[420px] w-full h-auto" />
+            </div>
+          </div>
+
+          {/* Services table - full width below hero text */}
+          <div className="w-full max-w-[1116px] mx-auto px-4 mt-12 z-30">
+            <div className="bg-c-container rounded-md overflow-hidden border border-c-menu-border">
+              <div className="grid grid-cols-1 md:grid-cols-4 divide-y md:divide-y-0 md:divide-x divide-c-menu-border">
+                <Link 
+                  href="/validator-services" 
+                  className="p-8 hover:bg-c-container-accent transition-colors"
+                >
+                  <div className="text-c-text font-semibold text-md mb-1">Validator Services</div>
+                  <div className="text-c-text-inactive text-sm">Run & maintain validators with SLAs</div>
                 </Link>
-                <Link href="/private-infrastructure" className="w-full sm:w-auto">
-                  <Button label="Private Infrastructure" variant="secondary" className="w-full sm:w-auto" />
+                
+                <Link 
+                  href="/protocol-services" 
+                  className="p-8 hover:bg-c-container-accent transition-colors"
+                >
+                  <div className="text-c-text font-semibold text-md mb-1">Protocol Services</div>
+                  <div className="text-c-text-inactive text-sm">Integration, staking and protocol ops</div>
+                </Link>
+                
+                <Link 
+                  href="/private-infrastructure" 
+                  className="p-8 hover:bg-c-container-accent transition-colors"
+                >
+                  <div className="text-c-text font-semibold text-md mb-1">Private Infrastructure</div>
+                  <div className="text-c-text-inactive text-sm">Dedicated servers & private networks</div>
+                </Link>
+                
+                <Link 
+                  href="/apps-and-tooling" 
+                  className="p-8 hover:bg-c-container-accent transition-colors"
+                >
+                  <div className="text-c-text font-semibold text-md mb-1">Apps & Tooling</div>
+                  <div className="text-c-text-inactive text-sm">Developer tools, monitoring & SDKs</div>
                 </Link>
               </div>
+            </div>
+          </div>
 
-              {/* Logos row: single line, shrink-to-fit between decorative rubies */}
-              <div className="mt-6 w-full">
-                <div className="flex items-center gap-8 w-full flex-nowrap">
-                  {[Logo0g, LogoBase, LogoBNB, LogoPeaq, LogoSolana, LogoSomnia, LogoSui, LogoWalrus].map((Src, i) => (
-                    <div key={i} className="flex-shrink-0 w-[100px] flex items-center justify-center">
-                      <Image src={Src} alt={`logo-${i}`} width={100} height={50} className="w-auto object-contain" />
-                    </div>
-                  ))}
-                </div>
+          {/* Logos row */}
+          <div className="w-full max-w-[1116px] mx-auto px-4 mt-6 z-30">
+            <div className="flex items-center gap-8 w-full flex-nowrap -ml-16">
+              <div className="flex-shrink-0 w-[130px] flex items-center justify-center">
+                <Image src={LogoSui} alt="logo-sui" width={130} height={65} className="w-auto object-contain" />
               </div>
-
-              {/* logos removed from constrained container to render full-bleed below */}
+              <div className="flex-shrink-0 w-[130px] flex items-center justify-center">
+                <Image src={LogoWalrus} alt="logo-walrus" width={130} height={65} className="w-auto object-contain" />
+              </div>
+              <div className="flex-shrink-0 w-[130px] flex items-center justify-center">
+                <Image src={Logo0g} alt="logo-0g" width={130} height={65} className="w-auto object-contain" />
+              </div>
+              <div className="flex-shrink-0 w-[130px] flex items-center justify-center">
+                <Image src={LogoBase} alt="logo-base" width={130} height={65} className="w-auto object-contain" />
+              </div>
+              <div className="flex-shrink-0 w-[80px] flex items-center justify-center">
+                <Image src={LogoBNB} alt="logo-bnb" width={80} height={40} className="w-auto object-contain" />
+              </div>
+              <div className="flex-shrink-0 w-[130px] flex items-center justify-center">
+                <Image src={LogoPeaq} alt="logo-peaq" width={130} height={65} className="w-auto object-contain" />
+              </div>
+              <div className="flex-shrink-0 w-[130px] flex items-center justify-center">
+                <Image src={LogoSolana} alt="logo-solana" width={130} height={65} className="w-auto object-contain" />
+              </div>
+              <div className="flex-shrink-0 w-[130px] flex items-center justify-center">
+                <Image src={LogoSomnia} alt="logo-somnia" width={130} height={65} className="w-auto object-contain" />
+              </div>
             </div>
           </div>
         </div>
