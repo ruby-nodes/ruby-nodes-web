@@ -115,6 +115,11 @@ export default function Hero() {
             </div>
           </div>
 
+          {/* Header for stats section */}
+          <div className="w-full max-w-[1116px] mx-auto px-4 mt-12 z-30">
+            <h2 className="text-c-text font-bold text-xl text-center">Ruby Nodes by Numbers</h2>
+          </div>
+
           {/* Metrics table */}
           <div className="w-full max-w-[1116px] mx-auto px-4 mt-8 z-30">
             <div className="bg-c-container rounded-md overflow-hidden border border-c-menu-border">
@@ -140,7 +145,7 @@ export default function Hero() {
                 </div>
                 
                 <div className="p-6 text-center">
-                  <div className="text-c-primary font-bold text-xl mb-1">10M/mo</div>
+                  <div className="text-c-primary font-bold text-xl mb-1">50M/mo</div>
                   <div className="text-c-text-inactive text-sm">RPC Requests Served</div>
                 </div>
               </div>

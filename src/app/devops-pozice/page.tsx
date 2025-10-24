@@ -93,7 +93,7 @@ export default function DevOpsPozicePage() {
         
         <h2 className="text-xl font-bold mt-8 mb-4">Kontakt</h2>
         <ul className="list-disc pl-6 mt-2 mb-4">
-          <li>Email: <a href="mailto:ruby-nodes@proton.me" className="text-c-ruby hover:underline">ruby-nodes@proton.me</a></li>
+          <li>Email: <a href="mailto:hello@rubynodes.io" className="text-c-ruby hover:underline">hello@rubynodes.io</a></li>
           <li>Telegram: <a href="https://t.me/pmensik" className="text-c-ruby hover:underline" target="_blank" rel="noopener noreferrer">@pmensik</a></li>
         </ul>
       </div>
