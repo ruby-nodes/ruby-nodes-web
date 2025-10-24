@@ -22,6 +22,7 @@ export type FaqData = {
 export type LinkProps = {
   label: string;
   href: string;
+  dropdown?: LinkProps[];
 };
 
 export type HeroData = {

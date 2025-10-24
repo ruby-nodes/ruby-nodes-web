@@ -30,7 +30,7 @@ export default function Hero() {
         <Image src={RubyRight} alt="Ruby Right" className="w-full h-full" />
       </div>
       <Container className="overflow-hidden ">
-        <div className="bg-c-bg relative min-h-screen flex flex-col items-center w-full ~pb-56/40">
+        <div className="bg-c-bg relative min-h-screen flex flex-col items-center w-full ~pb-56/40 pt-16">
           {/* two-column layout: text (left) and image (right) */}
           <div className="w-full max-w-[1116px] mx-auto px-4 flex flex-col md:flex-row items-center md:items-start justify-between">
             <div className="z-30 flex flex-col items-start md:w-1/2">

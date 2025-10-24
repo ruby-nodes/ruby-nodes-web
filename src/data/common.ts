@@ -11,7 +11,16 @@ const socialsData = {
 const menuData = {
   navigation: [
     { label: "News", href: "/news" },
-    { label: "Ecosystems", href: "/#staking" },
+    { 
+      label: "Services", 
+      href: "#services",
+      dropdown: [
+        { label: "Validator Services", href: "/validator-services" },
+        { label: "Protocol Services", href: "/protocol-services" },
+        { label: "Private Infrastructure", href: "/private-infrastructure" },
+        { label: "Apps & Tooling", href: "/apps-and-tooling" },
+      ]
+    },
     { label: "Success Stories", href: "/#success-stories" },
     { label: "FAQ", href: "/#faq" },
     { label: "About Us", href: "/#about-us" },
