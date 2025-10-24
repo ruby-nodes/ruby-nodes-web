@@ -708,6 +708,19 @@ href: "https://www.therootnetwork.com/",
           img: {
             src: FuelIcon,
             alt: "Fuel",
+          },
+          href: "https://fuel.network/",
+        },
+        description:
+          "Fuel is a high-performance blockchain operating system designed for Ethereum rollups.",
+        button: {
+          label: "Learn more",
+          href: "https://fuel.network/",
+        },
+      },
+      {
+        project: {
+          img: {
             src: ArbitrumIcon,
             alt: "Arbitrum",
           },

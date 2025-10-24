@@ -22,7 +22,7 @@ export default function ProtocolServicesPage() {
         </p>
         
         <p className="text-c-text">
-          Operating a blockchain doesn't mean only spinning a handful of validators and RPC nodes. It also require teams
+          Operating a blockchain doesn&apos;t mean only spinning a handful of validators and RPC nodes. It also require teams
           to operate indexers, bootnodes, testnet RPCs or validators or devnet network. This is why we relieve teams
           from this infrastructure burden by offering the following.
         </p>

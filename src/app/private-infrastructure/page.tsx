@@ -24,7 +24,7 @@ export default function PrivateInfrastructurePage() {
           </p>
           
           <p className="text-c-text">
-            Besides running a public good infrastructure, there's also a need for private infra dedicated to the needs of our clients. 
+            Besides running a public good infrastructure, there&apos;s also a need for private infra dedicated to the needs of our clients. 
             Whether you are an arbitrage trader, dApp receiving heavy traffic or a data analytics project, 
             our deployment can serve any of your infrastructure needs.
           </p>

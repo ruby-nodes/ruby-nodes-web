@@ -46,7 +46,7 @@ export default function AppsAndToolingPage() {
         <h2 className="text-xl font-bold mt-8 mb-4 text-c-text">Monitoring Solutions</h2>
         <p className="text-c-text">
           Our comprehensive monitoring setup uses industry-standard tools like Prometheus and Grafana,
-          customized for blockchain infrastructure. Get real-time insights into your nodes' performance,
+          customized for blockchain infrastructure. Get real-time insights into your nodes&apos; performance,
           uptime, and potential issues before they become critical.
         </p>
 
