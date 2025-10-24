@@ -49,8 +49,8 @@ const heroData = {
   description:
     "Carved in the depths of bear market, Ruby Nodes is one of the most solid and experienced infrastructure providers that you can find in the space. We operate our own hardware on multiple continents while running over 30 various blockchains at the moment. Our skills range from running validators up to the L2 sequencers, RPCs, bootnodes or bridge relayers.",
   cta: {
-    label: "Validator Services",
-    href: "#staking",
+    label: "Status",
+    href: "https://status.rubynodes.io",
   },
 } satisfies HeroData;
 

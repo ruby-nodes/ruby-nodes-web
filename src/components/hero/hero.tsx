@@ -117,7 +117,7 @@ export default function Hero() {
 
           {/* Header for stats section */}
           <div className="w-full max-w-[1116px] mx-auto px-4 mt-12 z-30">
-            <h2 className="text-c-text font-bold text-xl text-center">Ruby Nodes by Numbers</h2>
+            <h2 className="text-c-text font-bold text-xl text-center">Ruby Nodes by numbers</h2>
           </div>
 
           {/* Metrics table */}
