@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 export default function ValidatorServicesPage() {
   return (
     <div className="bg-c-bg">
-      <Container className="min-h-screen flex flex-col items-start w-full py-20">
+      <Container className="flex flex-col items-start w-full pt-20">
         <h1 className="~text-2xl-clamped/2xl font-bold text-c-text max-w-[700px] text-center leading-[1.2]">
           Validator Services
         </h1>
@@ -30,7 +30,7 @@ export default function ValidatorServicesPage() {
             decentralization and resilience of blockchain networks.
           </p>
 
-          <div className="flex items-start gap-0 mt-8">
+          <div className="flex items-start gap-0 mt-8 mb-8">
             <div className="flex-1">
               <h2 className="text-xl font-bold mb-4 text-c-text">What We Offer</h2>
               <ul className="list-disc pl-6 mt-2 mb-4 text-c-text">

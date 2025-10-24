@@ -7,8 +7,8 @@ import indexData from "@/data";
 import Button from "../common/Button";
 
 // Custom type for validator services page
-type ValidatorChain = "EVM" | "Sui" | "Substrate" | "RPCs";
-const validatorChains: ValidatorChain[] = ["EVM", "Sui", "Substrate", "RPCs"];
+type ValidatorChain = "EVM" | "Sui" | "Substrate";
+const validatorChains: ValidatorChain[] = ["EVM", "Sui", "Substrate"];
 
 // Filter the staking data for validator services
 const getFilteredItems = () => {
@@ -42,11 +42,7 @@ const getFilteredItems = () => {
       ...allItems.Substrate.filter(item => 
         ["zkVerify", "Avail"].includes(item.project.img.alt)
       )
-    ],
-    // RPCs: Ethereum, Solana, BNB Chain, Hyperliquid, Base, Arbitrum, Optimism, Polkadot
-    RPCs: allItems.RPCs.filter(item => 
-      ["Ethereum", "Solana", "BNB Chain", "Hyperliquid", "Base", "Arbitrum", "Optimism", "Polkadot"].includes(item.project.img.alt)
-    )
+    ]
   };
 };
 
@@ -56,8 +52,11 @@ export default function ValidatorStaking() {
   const [selected, setSelected] = useState<ValidatorChain>("EVM");
   
   return (
-    <div className="bg-c-bg ~pb-16/20 relative">
+    <div className="bg-c-bg relative">
       <Container className="flex flex-col gap-[3.8rem]">
+        <h2 className="text-c-text font-bold text-xl">
+          Ecosystems we support
+        </h2>
         <div className="bg-c-container text-c-text rounded-md ~py-3.5/4 font-inter w-full ~px-3.5/8">
           <div className="flex gap-5 flex-wrap">
             {validatorChains.map((chain) => (
