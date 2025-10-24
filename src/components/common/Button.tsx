@@ -2,7 +2,7 @@ import React from "react";
 import { twMerge } from "tailwind-merge";
 
 type ButtonProps = {
-  label: string;
+  label: string | React.ReactNode;
   size?: "small" | "large";
   variant?: "primary" | "secondary";
   active?: boolean;

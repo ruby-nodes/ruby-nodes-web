@@ -1,5 +1,4 @@
 import Link from "next/link";
-import DiscordIcon from "../../assets/socials/discord.svg";
 import TelegramIcon from "../../assets/socials/telegram.svg";
 import XIcon from "../../assets/socials/x.svg";
 import Image from "next/image";
@@ -7,18 +6,16 @@ import Image from "next/image";
 type SocialsProps = {
   links: {
     x: string;
-    discord: string;
     telegram: string;
   };
 };
 
 export default function Socials({
-  links: { x, discord, telegram },
+  links: { x, telegram },
 }: SocialsProps) {
   return (
     <div className="flex gap-5">
       <SocialsItem icon={XIcon} href={x} />
-      <SocialsItem icon={DiscordIcon} href={discord} />
       <SocialsItem icon={TelegramIcon} href={telegram} />
     </div>
   );

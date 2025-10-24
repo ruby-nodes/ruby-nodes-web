@@ -45,7 +45,6 @@ export type MenuData = {
 export type SocialsData = {
   links: {
     x: string;
-    discord: string;
     telegram: string;
   };
 };

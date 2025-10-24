@@ -4,7 +4,6 @@ const socialsData = {
   links: {
     x: "https://x.com/RubyNodes",
     telegram: "https://t.me/pmensik",
-    discord: "https://discord.com",
   },
 } satisfies SocialsData;
 
@@ -25,7 +24,7 @@ const menuData = {
     { label: "FAQ", href: "/#faq" },
     { label: "About Us", href: "/#about-us" },
   ],
-  cta: { label: "Stake with us", href: "/#staking" },
+  cta: { label: "Node status", href: "https://status.rubynodes.io" },
 } satisfies MenuData;
 
 const footerData = {
