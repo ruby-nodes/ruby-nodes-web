@@ -114,6 +114,38 @@ export default function Hero() {
               </div>
             </div>
           </div>
+
+          {/* Metrics table */}
+          <div className="w-full max-w-[1116px] mx-auto px-4 mt-8 z-30">
+            <div className="bg-c-container rounded-md overflow-hidden border border-c-menu-border">
+              <div className="grid grid-cols-2 md:grid-cols-5 divide-y md:divide-y-0 md:divide-x divide-c-menu-border">
+                <div className="p-6 text-center">
+                  <div className="text-c-primary font-bold text-xl mb-1">99.99%</div>
+                  <div className="text-c-text-inactive text-sm">Uptime</div>
+                </div>
+                
+                <div className="p-6 text-center">
+                  <div className="text-c-primary font-bold text-xl mb-1">$100M</div>
+                  <div className="text-c-text-inactive text-sm">Secured Value</div>
+                </div>
+                
+                <div className="p-6 text-center">
+                  <div className="text-c-primary font-bold text-xl mb-1">25+</div>
+                  <div className="text-c-text-inactive text-sm">Active Validators</div>
+                </div>
+                
+                <div className="p-6 text-center">
+                  <div className="text-c-primary font-bold text-xl mb-1">60 TB</div>
+                  <div className="text-c-text-inactive text-sm">Data Served</div>
+                </div>
+                
+                <div className="p-6 text-center">
+                  <div className="text-c-primary font-bold text-xl mb-1">10M/mo</div>
+                  <div className="text-c-text-inactive text-sm">RPC Requests Served</div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </Container>
     </section>
