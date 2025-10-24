@@ -37,6 +37,10 @@ import ZerogIcon from "@/assets/staking/zerog.png";
 import zkVerifyIcon from "@/assets/staking/zkVerify.svg";
 import BSCIcon from "@/assets/staking/BNB_chain.png";
 import RootIcon from "@/assets/staking/Root_network.svg";
+import HyperliquidIcon from "@/assets/staking/hyperliquid.svg";
+import SolanaIcon from "@/assets/logos/solana.svg";
+import BNBIcon from "@/assets/logos/bnb-chain.svg";
+import SuiIcon from "@/assets/logos/sui.svg";
 
 const heroData = {
   title: (
@@ -72,6 +76,21 @@ const stakingData = {
   },
   items: {
     "Non-EVM": [
+      {
+        project: {
+          img: {
+            src: SuiIcon,
+            alt: "Sui",
+          },
+          href: "https://sui.io/",
+        },
+        description:
+          "Sui is a next-generation smart contract platform with high throughput, low latency, and an asset-oriented programming model powered by Move. It offers horizontal scaling and sub-second finality, making it ideal for on-chain use cases like DeFi, gaming, and real-world asset tokenization.",
+        button: {
+          label: "Learn more",
+          href: "https://sui.io/",
+        },
+      },
       {
         project: {
           img: {
@@ -134,6 +153,21 @@ const stakingData = {
       },
     ],
     EVM: [
+      {
+        project: {
+          img: {
+            src: EthereumIcon,
+            alt: "Ethereum",
+          },
+          href: "https://ethereum.org/",
+        },
+        description:
+          "Ethereum is the most popular decentralized open-source blockchain platform with smart contract functionality.",
+        button: {
+          label: "Learn more",
+          href: "https://ethereum.org/",
+        },
+      },
       {
         project: {
           img: {
@@ -582,21 +616,6 @@ href: "https://www.therootnetwork.com/",
       {
         project: {
           img: {
-            src: PolkadotIcon,
-            alt: "Polkadot",
-          },
-          href: "https://polkadot.network/",
-        },
-        description:
-          "Polkadot and its system chains such as AssetHub, BridgeHub or Collectives.",
-        button: {
-          label: "Learn more",
-          href: "https://polkadot.network/",
-        },
-      },
-      {
-        project: {
-          img: {
             src: EthereumIcon,
             alt: "Ethereum",
           },
@@ -612,16 +631,46 @@ href: "https://www.therootnetwork.com/",
       {
         project: {
           img: {
-            src: ArbitrumIcon,
-            alt: "Arbitrum",
+            src: SolanaIcon,
+            alt: "Solana",
           },
-          href: "https://arbitrum.foundation/",
+          href: "https://solana.com/",
         },
         description:
-          "Arbitrum is a L2 scaling solution for Ethereum, aiming to boost transaction speed and cut costs while maintaining Ethereum's security.",
+          "Solana is a high-performance blockchain supporting builders around the world creating crypto apps that scale.",
         button: {
           label: "Learn more",
-          href: "https://arbitrum.foundation/",
+          href: "https://solana.com/",
+        },
+      },
+      {
+        project: {
+          img: {
+            src: BNBIcon,
+            alt: "BNB Chain",
+          },
+          href: "https://www.bnbchain.org/",
+        },
+        description:
+          "BNB Chain is a blockchain platform for building decentralized applications with high throughput and low transaction costs.",
+        button: {
+          label: "Learn more",
+          href: "https://www.bnbchain.org/",
+        },
+      },
+      {
+        project: {
+          img: {
+            src: HyperliquidIcon,
+            alt: "Hyperliquid",
+          },
+          href: "https://hyperliquid.xyz/",
+        },
+        description:
+          "Hyperliquid is a high-performance L1 blockchain built from the ground up, designed for decentralized perpetual trading with an on-chain order book and native matching engine.",
+        button: {
+          label: "Learn more",
+          href: "https://hyperliquid.xyz/",
         },
       },
       {
@@ -659,14 +708,16 @@ href: "https://www.therootnetwork.com/",
           img: {
             src: FuelIcon,
             alt: "Fuel",
+            src: ArbitrumIcon,
+            alt: "Arbitrum",
           },
-          href: "https://fuel.network/",
+          href: "https://arbitrum.foundation/",
         },
         description:
-          "Fuel Ignition is a high-performance Ethereum layer-2 rollup, designed for maximum speed and flexible throughput via its FuelVM.",
+          "Arbitrum is a L2 scaling solution for Ethereum, aiming to boost transaction speed and cut costs while maintaining Ethereum's security.",
         button: {
           label: "Learn more",
-          href: "https://fuel.network/",
+          href: "https://arbitrum.foundation/",
         },
       },
       {
@@ -682,6 +733,21 @@ href: "https://www.therootnetwork.com/",
         button: {
           label: "Learn more",
           href: "https://optimism.io/",
+        },
+      },
+      {
+        project: {
+          img: {
+            src: PolkadotIcon,
+            alt: "Polkadot",
+          },
+          href: "https://polkadot.network/",
+        },
+        description:
+          "Polkadot and its system chains such as AssetHub, BridgeHub or Collectives.",
+        button: {
+          label: "Learn more",
+          href: "https://polkadot.network/",
         },
       },
     ]
