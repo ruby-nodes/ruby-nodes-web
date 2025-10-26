@@ -14,7 +14,7 @@ export default function PrivateInfrastructurePage() {
   return (
     <div className="bg-c-bg">
       <Container className="flex flex-col items-start w-full pt-20">
-        <h1 className="~text-2xl-clamped/2xl font-bold text-c-text max-w-[700px] text-center leading-[1.2]">
+        <h1 className="~text-2xl-clamped/2xl font-bold text-c-text max-w-[700px] leading-[1.2]">
           Private Infrastructure
         </h1>
         
