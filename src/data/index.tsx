@@ -646,7 +646,7 @@ href: "https://www.therootnetwork.com/",
       {
         project: {
           img: {
-            src: BNBIcon,
+            src: BSCIcon,
             alt: "BNB Chain",
           },
           href: "https://www.bnbchain.org/",

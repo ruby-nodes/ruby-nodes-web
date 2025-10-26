@@ -101,7 +101,7 @@ export default function Hero() {
                 <Image src={LogoBase} alt="logo-base" width={130} height={65} className="w-auto object-contain" />
               </div>
               <div className="flex-shrink-0 w-[80px] flex items-center justify-center">
-                <Image src={LogoBNB} alt="logo-bnb" width={80} height={40} className="w-auto object-contain" />
+                <Image src={LogoBNB} alt="logo-bnb" width={50} height={25} className="w-auto object-contain" />
               </div>
               <div className="flex-shrink-0 w-[130px] flex items-center justify-center">
                 <Image src={LogoPeaq} alt="logo-peaq" width={130} height={65} className="w-auto object-contain" />
