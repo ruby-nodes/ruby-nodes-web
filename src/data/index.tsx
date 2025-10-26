@@ -805,6 +805,14 @@ const faqData = {
 
 const successStoriesData = [
   {
+    title: "Infrastructure partners of Mysten Labs",
+    description: "Ruby Nodes became a trusted infrastructure partner of the team behind the Sui blockchain. We were launch partners for Walrus decentralized storage network and we were in the first cohort of Seal (decentralized secrets management network on top of Sui and Walrus). Currently we are helping to build and support Sui Hypernet - a next generation networking protocol that will make blockchain systems more performant and resilient.",
+  },
+  {
+    title: "Launch partners of 0G",
+    description: "Thanks to our work with the 0G team and dedication during their testnet, we were onboarded one of the fist operators to the mainnet. Besides that, we provide additional services to the network like running storage nodes and public RPC for the 0G community.",
+  },
+  {
     title: "IBP RPC infrastructure",
     description: `Infrastructure Builders Programme is an initiative that aims to ultimately decentralize Polkadot network\`s infrastructure (mainly RPCs and bootnodes) by using dedicated HW owned by community members. Currently we have two bare metal machines housed in New Zealand that are serving Oceania region and hosting 34 load-balanced RPC nodes together with 17 bootnodes.
       We run on AMD EPYC 9554 64-core machines with 512 GB of RAM 4x 3.84 NVMe SSD drives.
