@@ -30,12 +30,12 @@ export default function StakingCard({
   return (
     <article
       className={twMerge(
-        "bg-c-container rounded-md text-sm ~p-[0.94rem]/[1.88rem] ",
+        "bg-c-container rounded-md text-sm ~p-[0.94rem]/[1.88rem] h-full",
         className
       )}
     >
-      <div className="flex flex-col gap-9">
-        <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-9 h-full">
+        <div className="flex flex-col gap-4 flex-grow">
           <Link href={href}>
             <Image height={29} src={img.src} alt={img.alt} />
           </Link>
