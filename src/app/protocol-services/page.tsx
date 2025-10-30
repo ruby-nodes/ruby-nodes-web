@@ -47,6 +47,31 @@ export default function ProtocolServicesPage() {
           </div>
         </div>
 
+        <h2 className="text-xl font-bold mt-8 mb-4 text-c-text">Our Tooling</h2>
+        <p className="text-c-text mb-6">
+          As part of our comprehensive infrastructure services, we provide advanced node monitoring solutions. 
+          Our monitoring platform offers real-time insights into validator performance, uptime tracking, and health status 
+          across all blockchain networks we support.
+        </p>
+        <div className="flex flex-col sm:flex-row gap-4 mb-8">
+          <a 
+            href="https://monitoring.rubynodes.io/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="inline-block px-6 py-3 bg-c-primary text-c-text font-semibold rounded-md hover:bg-opacity-90 transition-colors text-center"
+          >
+            View Monitoring Dashboard
+          </a>
+          <a 
+            href="https://status.rubynodes.io/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="inline-block px-6 py-3 bg-c-container text-c-text font-semibold rounded-md border border-c-menu-border hover:bg-c-container-accent transition-colors text-center"
+          >
+            Check Node Status
+          </a>
+        </div>
+
         <h2 className="text-xl font-bold mt-8 mb-4 text-c-text">Our Experience</h2>
         <p className="text-c-text">
           There are several examples of protocols we are supporting behind the scenes, including some of the big names
