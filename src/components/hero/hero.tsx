@@ -9,15 +9,15 @@ import React from "react";
 import indexData from "@/data";
 import RubyLeft from "@/assets/rubys/02.png";
 import RubyRight from "@/assets/rubys/03.png";
-import Logo0g from "@/assets/logos/0g.svg";
-import LogoBase from "@/assets/logos/base.svg";
-import LogoBNB from "@/assets/logos/bnb-chain.svg";
-import LogoPeaq from "@/assets/logos/peaq.svg";
-import LogoSolana from "@/assets/logos/solana.svg";
-import LogoSomnia from "@/assets/logos/somnia.svg";
-import LogoSui from "@/assets/logos/sui.svg";
-import LogoWalrus from "@/assets/logos/walrus.svg";
-import LogoZkVerify from "@/assets/logos/zkverify.svg";
+import Logo0g from "@/assets/logos/bw/0g.svg";
+import LogoBase from "@/assets/logos/bw/base.svg";
+import LogoBNB from "@/assets/logos/bw/bnb-chain.svg";
+import LogoPeaq from "@/assets/logos/bw/peaq.svg";
+import LogoSolana from "@/assets/logos/bw/solana.svg";
+import LogoSomnia from "@/assets/logos/bw/somnia.svg";
+import LogoSui from "@/assets/logos/bw/sui.svg";
+import LogoWalrus from "@/assets/logos/bw/walrus.svg";
+import LogoZkVerify from "@/assets/logos/bw/zkverify.svg";
 
 const { cta, description, title } = indexData.hero;
 
