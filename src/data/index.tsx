@@ -763,6 +763,36 @@ href: "https://www.therootnetwork.com/",
           href: "https://polkadot.network/",
         },
       },
+      {
+        project: {
+          img: {
+            src: PeaqIcon,
+            alt: "Peaq",
+          },
+          href: "https://peaq.network/",
+        },
+        description:
+          "Peaq Network is a layer-1 blockchain specifically built to support Decentralized Physical Infrastructure Networks (DePINs) and the broader Economy of Things (EoT).",
+        button: {
+          label: "Learn more",
+          href: "/peaq-rpc",
+        },
+      },
+      {
+        project: {
+          img: {
+            src: ZerogIcon,
+            alt: "0g",
+          },
+          href: "https://0g.ai/",
+        },
+        description:
+          "0G, the largest AI L1 chain, is an infinitely scalable, fully composable, and purpose-built modular blockchain for decentralized AI applications.",
+        button: {
+          label: "Learn more",
+          href: "/0g-rpc",
+        },
+      },
     ]
   },
 } satisfies StakingData;

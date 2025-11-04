@@ -42,7 +42,11 @@ export default function StakingCard({
           <hr className="border-c-primary border" />
           <Paragraph text={description} />
         </div>
-        <Link href={button.href} target="_blank">
+        <Link 
+          href={button.href} 
+          target={button.href.startsWith('/') ? undefined : "_blank"}
+          rel={button.href.startsWith('/') ? undefined : "noopener noreferrer"}
+        >
           <Button label={button.label} variant="secondary" className="w-full" />
         </Link>
       </div>
