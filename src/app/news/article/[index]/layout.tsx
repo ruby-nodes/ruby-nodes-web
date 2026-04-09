@@ -5,12 +5,59 @@ import { FetchArticlesResponse, fetchArticles } from "@/lib/news";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { Metadata } from "next";
 
 function findArticles(articles: FetchArticlesResponse, index: number) {
   return {
     current: articles.data.find((article) => article.index === index),
     previous: articles.data.find((article) => article.index === index - 1),
     next: articles.data.find((article) => article.index === index + 1),
+  };
+}
+
+export async function generateMetadata({
+  params,
+}: Readonly<{
+  params: Promise<{ index: string }>;
+}>): Promise<Metadata> {
+  const { index } = await params;
+  const articles = await fetchArticles();
+  
+  const current = articles.data.find((article) => article.index === parseInt(index, 10));
+  
+  if (!current) {
+    return {
+      title: "Article Not Found",
+    };
+  }
+
+  const baseUrl = process.env.NEXT_PUBLIC_VERCEL_URL 
+    ? `https://${process.env.NEXT_PUBLIC_VERCEL_URL}`
+    : "http://localhost:3000";
+
+  return {
+    title: current.title,
+    description: current.description,
+    openGraph: {
+      title: current.title,
+      description: current.description,
+      images: [
+        {
+          url: `${baseUrl}${current.imgSrc}`,
+          width: 1200,
+          height: 630,
+          alt: current.title,
+        },
+      ],
+      type: "article",
+      url: `${baseUrl}${current.href}`,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: current.title,
+      description: current.description,
+      images: [`${baseUrl}${current.imgSrc}`],
+    },
   };
 }
 
