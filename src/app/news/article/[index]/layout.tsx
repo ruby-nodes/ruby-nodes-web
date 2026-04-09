@@ -16,11 +16,12 @@ function findArticles(articles: FetchArticlesResponse, index: number) {
 
 export default async function NewsLayout({
   children,
-  params: { index },
+  params,
 }: Readonly<{
   children: React.ReactNode;
-  params: { index: string };
+  params: Promise<{ index: string }>;
 }>) {
+  const { index } = await params;
   const articles = await fetchArticles();
 
   const { current, previous, next } = findArticles(

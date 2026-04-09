@@ -7,7 +7,7 @@ const plainArticleSchema = z.object({
   description: z.string(),
   date: z.date(),
   imgSrc: z.string(),
-  slug: z.string(),
+  slug: z.string().optional(),
 });
 
 // Helper function to read and parse the metadata from an MDX file
@@ -49,7 +49,7 @@ export function getArticles(opts?: { limit?: number }) {
     const metadata = parseMetadata(fileContent);
     return {
       ...metadata,
-      slug: dirent.name,
+      slug: metadata.slug || dirent.name,
     };
   });
 

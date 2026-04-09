@@ -6,9 +6,9 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 type NewsPageProps = {
-  searchParams: {
+  searchParams: Promise<{
     [key: string]: string;
-  };
+  }>;
 };
 
 export const metadata: Metadata = {
@@ -18,7 +18,8 @@ export const metadata: Metadata = {
 };
 
 export default async function NewsPage({ searchParams }: NewsPageProps) {
-  const limit = parseInt(searchParams["limit"] || "9", 10);
+  const resolvedSearchParams = await searchParams;
+  const limit = parseInt(resolvedSearchParams["limit"] || "9", 10);
   const { data, total } = await fetchArticles({ limit });
 
   return (
