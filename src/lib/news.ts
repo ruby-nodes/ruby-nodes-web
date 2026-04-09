@@ -95,8 +95,9 @@ const fetchArticlesSchema = z.object({
 export type Article = z.infer<typeof articleSchema>;
 export type FetchArticlesResponse = z.infer<typeof fetchArticlesSchema>;
 
-// const API_URL = `${process.env.NEXT_PUBLIC_PROTOCOL ?? "https"}://${process.env.NEXT_PUBLIC_VERCEL_URL}/api`;
-const API_URL = "http://localhost:3000/api";
+const API_URL = process.env.NODE_ENV === 'development' 
+  ? "http://localhost:3000/api" 
+  : `${process.env.NEXT_PUBLIC_PROTOCOL ?? "https"}://${process.env.NEXT_PUBLIC_VERCEL_URL}/api`;
 export async function fetchArticles(params?: { limit?: number }) {
   const data = await (await fetch(`${API_URL}/article`)).json();
 
