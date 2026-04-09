@@ -4,11 +4,14 @@ import Container from "../common/Container";
 import ScrollAnchor from "../common/ScrollAnchor";
 import StakingCard from "./StakingCard";
 import SuiLogo from "@/assets/logos/sui.svg";
-import PharosIcon from "@/assets/logos/pharos.png";
 import CantonIcon from "@/assets/logos/canton.svg";
-import ZerogIcon from "@/assets/staking/zerog.png";
+import SonicIcon from "@/assets/staking/sonic.svg";
+import EspressoIcon from "@/assets/logos/espresso.png";
+import PharosIcon from "@/assets/logos/pharos.png";
 import PeaqIcon from "@/assets/staking/peaq.svg";
+import ZerogIcon from "@/assets/staking/zerog.png";
 import PolkadotIcon from "@/assets/logos/polkadot.png";
+import EnergyWebIcon from "@/assets/logos/energy-web.png";
 
 const ecosystems = [
   {
@@ -29,20 +32,6 @@ const ecosystems = [
   {
     project: {
       img: {
-        src: PharosIcon,
-        alt: "Pharos",
-      },
-      href: "https://pharos.network/",
-    },
-    description: "Pharos is the fastest EVM-compatible L1 optimized for real-world assets (RWAs) and cross-chain liquidity, unifying Web2 and Web3 at scale.",
-    button: {
-      label: "Learn more",
-      href: "https://pharos.network/",
-    },
-  },
-  {
-    project: {
-      img: {
         src: CantonIcon,
         alt: "Canton Network",
       },
@@ -57,16 +46,44 @@ const ecosystems = [
   {
     project: {
       img: {
-        src: ZerogIcon,
-        alt: "0G",
+        src: SonicIcon,
+        alt: "Sonic",
       },
-      href: "https://0g.ai/",
+      href: "https://soniclabs.com/",
     },
     description:
-      "0G, the largest AI L1 chain, is an infinitely scalable, fully composable, and purpose-built modular blockchain for decentralized AI applications.",
+      "Sonic, previously Fantom, is a highest-performing EVM L1 blockchain platform with low transaction costs. It offers DeFi, NFTs, and GameFi applications.",
     button: {
       label: "Learn more",
-      href: "https://0g.ai/",
+      href: "https://soniclabs.com/",
+    },
+  },
+  {
+    project: {
+      img: {
+        src: EspressoIcon,
+        alt: "Espresso",
+      },
+      href: "https://www.espressosys.com/",
+    },
+    description: "Espresso builds shared sequencing infrastructure to enable cross-chain composability and seamless multi-chain experiences.",
+    button: {
+      label: "Learn more",
+      href: "https://www.espressosys.com/",
+    },
+  },
+  {
+    project: {
+      img: {
+        src: PharosIcon,
+        alt: "Pharos",
+      },
+      href: "https://pharos.network/",
+    },
+    description: "Pharos is the fastest EVM-compatible L1 optimized for real-world assets (RWAs) and cross-chain liquidity, unifying Web2 and Web3 at scale.",
+    button: {
+      label: "Learn more",
+      href: "https://pharos.network/",
     },
   },
   {
@@ -87,6 +104,21 @@ const ecosystems = [
   {
     project: {
       img: {
+        src: ZerogIcon,
+        alt: "0G",
+      },
+      href: "https://0g.ai/",
+    },
+    description:
+      "0G, the largest AI L1 chain, is an infinitely scalable, fully composable, and purpose-built modular blockchain for decentralized AI applications.",
+    button: {
+      label: "Learn more",
+      href: "https://0g.ai/",
+    },
+  },
+  {
+    project: {
+      img: {
         src: PolkadotIcon,
         alt: "Polkadot",
       },
@@ -97,6 +129,20 @@ const ecosystems = [
     button: {
       label: "Learn more",
       href: "https://polkadot.com/",
+    },
+  },
+  {
+    project: {
+      img: {
+        src: EnergyWebIcon,
+        alt: "Energy Web",
+      },
+      href: "https://energyweb.org/",
+    },
+    description: "Energy Web builds the decentralised digital trust layer for the energy transition. This enables enterprise-grade solutions for energy and sustainability markets.",
+    button: {
+      label: "Learn more",
+      href: "https://energyweb.org/",
     },
   },
 ];

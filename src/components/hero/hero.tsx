@@ -9,15 +9,15 @@ import React from "react";
 import indexData from "@/data";
 import RubyLeft from "@/assets/rubys/02.png";
 import RubyRight from "@/assets/rubys/03.png";
-import Logo0g from "@/assets/logos/bw/0g.svg";
-import LogoBase from "@/assets/logos/bw/base.svg";
-import LogoBNB from "@/assets/logos/bw/bnb-chain.svg";
-import LogoPeaq from "@/assets/logos/bw/peaq.svg";
-import LogoSolana from "@/assets/logos/bw/solana.svg";
-import LogoSomnia from "@/assets/logos/bw/somnia.svg";
 import LogoSui from "@/assets/logos/bw/sui.svg";
 import LogoWalrus from "@/assets/logos/bw/walrus.svg";
-import LogoZkVerify from "@/assets/logos/bw/zkverify.svg";
+import Logo0g from "@/assets/logos/bw/0g.svg";
+import LogoBase from "@/assets/logos/bw/base.svg";
+import LogoPeaq from "@/assets/logos/bw/peaq.svg";
+import LogoSolana from "@/assets/logos/bw/solana.svg";
+import LogoPharos from "@/assets/logos/pharos.png";
+import LogoCanton from "@/assets/logos/canton.svg";
+import LogoEspresso from "@/assets/logos/espresso.png";
 
 const { cta, description, title } = indexData.hero;
 
@@ -87,34 +87,34 @@ export default function Hero() {
           </div>
 
           {/* Logos row */}
-          <div className="w-full max-w-[1116px] mx-auto px-4 mt-6 z-30 overflow-x-auto">
-            <div className="flex items-center gap-6 flex-nowrap justify-start min-w-max">
-              <div className="flex-shrink-0 w-[100px] flex items-center justify-center">
-                <Image src={LogoSui} alt="logo-sui" width={100} height={50} className="w-auto object-contain" />
+          <div className="w-full max-w-[1116px] mx-auto px-4 mt-6 z-30">
+            <div className="flex items-center justify-center gap-3 flex-wrap">
+              <div className="flex-shrink-0 w-[80px] flex items-center justify-center">
+                <Image src={LogoSui} alt="logo-sui" width={80} height={40} className="w-auto object-contain" />
               </div>
-              <div className="flex-shrink-0 w-[100px] flex items-center justify-center">
-                <Image src={LogoWalrus} alt="logo-walrus" width={100} height={50} className="w-auto object-contain" />
+              <div className="flex-shrink-0 w-[80px] flex items-center justify-center">
+                <Image src={LogoWalrus} alt="logo-walrus" width={80} height={40} className="w-auto object-contain" />
               </div>
-              <div className="flex-shrink-0 w-[100px] flex items-center justify-center">
-                <Image src={Logo0g} alt="logo-0g" width={100} height={50} className="w-auto object-contain" />
+              <div className="flex-shrink-0 w-[80px] flex items-center justify-center">
+                <Image src={Logo0g} alt="logo-0g" width={80} height={40} className="w-auto object-contain" />
               </div>
-              <div className="flex-shrink-0 w-[100px] flex items-center justify-center">
-                <Image src={LogoBase} alt="logo-base" width={100} height={50} className="w-auto object-contain" />
+              <div className="flex-shrink-0 w-[80px] flex items-center justify-center">
+                <Image src={LogoBase} alt="logo-base" width={80} height={40} className="w-auto object-contain" />
               </div>
-              <div className="flex-shrink-0 w-[70px] flex items-center justify-center">
-                <Image src={LogoBNB} alt="logo-bnb" width={40} height={20} className="w-auto object-contain" />
+              <div className="flex-shrink-0 w-[80px] flex items-center justify-center">
+                <Image src={LogoPeaq} alt="logo-peaq" width={80} height={40} className="w-auto object-contain" />
               </div>
-              <div className="flex-shrink-0 w-[100px] flex items-center justify-center">
-                <Image src={LogoPeaq} alt="logo-peaq" width={100} height={50} className="w-auto object-contain" />
+              <div className="flex-shrink-0 w-[80px] flex items-center justify-center">
+                <Image src={LogoSolana} alt="logo-solana" width={80} height={40} className="w-auto object-contain" />
               </div>
-              <div className="flex-shrink-0 w-[100px] flex items-center justify-center">
-                <Image src={LogoSolana} alt="logo-solana" width={100} height={50} className="w-auto object-contain" />
+              <div className="flex-shrink-0 w-[80px] flex items-center justify-center">
+                <Image src={LogoPharos} alt="logo-pharos" width={80} height={40} className="w-auto object-contain" />
               </div>
-              <div className="flex-shrink-0 w-[100px] flex items-center justify-center">
-                <Image src={LogoSomnia} alt="logo-somnia" width={100} height={50} className="w-auto object-contain" />
+              <div className="flex-shrink-0 w-[80px] flex items-center justify-center">
+                <Image src={LogoCanton} alt="logo-canton" width={80} height={40} className="w-auto object-contain" />
               </div>
-              <div className="flex-shrink-0 w-[100px] flex items-center justify-center">
-                <Image src={LogoZkVerify} alt="logo-zkverify" width={100} height={50} className="w-auto object-contain" />
+              <div className="flex-shrink-0 w-[80px] flex items-center justify-center">
+                <Image src={LogoEspresso} alt="logo-espresso" width={80} height={40} className="w-auto object-contain" />
               </div>
             </div>
           </div>

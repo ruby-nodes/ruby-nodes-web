@@ -174,20 +174,6 @@ const stakingData = {
       {
         project: {
           img: {
-            src: PharosIcon,
-            alt: "Pharos",
-          },
-          href: "https://pharos.network/",
-        },
-        description: "Pharos is the fastest EVM-compatible L1 optimized for real-world assets (RWAs) and cross-chain liquidity, unifying Web2 and Web3 at scale.",
-        button: {
-          label: "Learn more",
-          href: "https://pharos.network/",
-        },
-      },
-      {
-        project: {
-          img: {
             src: SonicIcon,
             alt: "Sonic",
           },
@@ -233,6 +219,23 @@ const stakingData = {
       {
         project: {
           img: {
+            src: SuiIcon,
+            alt: "Sui",
+          },
+          href: "https://sui.io/",
+        },
+        description:
+          "Sui is a next-generation smart contract platform with high throughput, low latency, and an asset-oriented programming model powered by Move. It offers horizontal scaling and sub-second finality, making it ideal for on-chain use cases like DeFi, gaming, and real-world asset tokenization.",
+        button: {
+          label: "Learn more",
+          href: "https://sui.io/",
+        },
+      },
+      ],
+    Others: [
+      {
+        project: {
+          img: {
             src: CantonIcon,
             alt: "Canton Network",
           },
@@ -258,21 +261,7 @@ const stakingData = {
           href: "https://www.espressosys.com/",
         },
       },
-      {
-        project: {
-          img: {
-            src: AcurastIcon,
-            alt: "Acurast",
-          },
-          href: "https://acurast.com/",
-        },
-        description: "Acurast is the real Decentralised Compute Network, being scalable, secure and powered by smartphones, so there is no reliance on centralised servers.",
-        button: {
-          label: "Learn more",
-          href: "https://acurast.com/",
-        },
-      },
-      ],
+    ],
     Polkadot: [
       {
         project: {
