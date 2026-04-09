@@ -4,11 +4,11 @@ import Container from "../common/Container";
 import ScrollAnchor from "../common/ScrollAnchor";
 import StakingCard from "./StakingCard";
 import SuiLogo from "@/assets/logos/sui.svg";
-import SonicIcon from "@/assets/staking/sonic.svg";
-import PolkadotIcon from "@/assets/staking/polkadot.svg";
+import PharosIcon from "@/assets/logos/pharos.png";
+import CantonIcon from "@/assets/logos/canton.svg";
 import ZerogIcon from "@/assets/staking/zerog.png";
-import WalrusIcon from "@/assets/staking/walrus.svg";
 import PeaqIcon from "@/assets/staking/peaq.svg";
+import PolkadotIcon from "@/assets/logos/polkadot.png";
 
 const ecosystems = [
   {
@@ -29,31 +29,29 @@ const ecosystems = [
   {
     project: {
       img: {
-        src: SonicIcon,
-        alt: "Sonic",
+        src: PharosIcon,
+        alt: "Pharos",
       },
-      href: "https://soniclabs.com/",
+      href: "https://pharos.network/",
     },
-    description:
-      "Sonic, previously Fantom, is a highest-performing EVM L1 blockchain platform with low transaction costs. It offers DeFi, NFTs, and GameFi applications.",
+    description: "Pharos is the fastest EVM-compatible L1 optimized for real-world assets (RWAs) and cross-chain liquidity, unifying Web2 and Web3 at scale.",
     button: {
       label: "Learn more",
-      href: "https://soniclabs.com/",
+      href: "https://pharos.network/",
     },
   },
   {
     project: {
       img: {
-        src: PolkadotIcon,
-        alt: "Polkadot",
+        src: CantonIcon,
+        alt: "Canton Network",
       },
-      href: "https://polkadot.com/",
+      href: "https://canton.network/",
     },
-    description:
-      "Polkadot is the first layer-0 (L0) blockchain that provides shared security and secure interoperability to layer-1 (L1) blockchains.",
+    description: "Canton Network is the first privacy-enabled open blockchain network for secure, limitless cross-chain connections that preserve data privacy.",
     button: {
       label: "Learn more",
-      href: "https://polkadot.com/",
+      href: "https://canton.network/",
     },
   },
   {
@@ -74,21 +72,6 @@ const ecosystems = [
   {
     project: {
       img: {
-        src: WalrusIcon,
-        alt: "Walrus",
-      },
-      href: "https://wal.app/",
-    },
-    description:
-      "Walrus is a high-performance decentralized storage network built on Sui, designed for fast reads, instant writes, and onchain verification.",
-    button: {
-      label: "Learn more",
-      href: "https://wal.app/",
-    },
-  },
-  {
-    project: {
-      img: {
         src: PeaqIcon,
         alt: "Peaq",
       },
@@ -99,6 +82,21 @@ const ecosystems = [
     button: {
       label: "Learn more",
       href: "https://peaq.network/",
+    },
+  },
+  {
+    project: {
+      img: {
+        src: PolkadotIcon,
+        alt: "Polkadot",
+      },
+      href: "https://polkadot.com/",
+    },
+    description:
+      "Polkadot is the first layer-0 (L0) blockchain that provides shared security and secure interoperability to layer-1 (L1) blockchains.",
+    button: {
+      label: "Learn more",
+      href: "https://polkadot.com/",
     },
   },
 ];

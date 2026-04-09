@@ -12,7 +12,7 @@ import HydrationIcon from "@/assets/staking/hydration.svg";
 import InterlayIcon from "@/assets/staking/interlay.svg";
 import KusamaIcon from "@/assets/staking/kusama.svg";
 import MoonbeamIcon from "@/assets/staking/moonbeam.svg";
-import PolkadotIcon from "@/assets/staking/polkadot.svg";
+import PolkadotIcon from "@/assets/logos/polkadot.png";
 import ZeitgeistIcon from "@/assets/staking/zeitgeist.svg";
 import EquitoIcon from "@/assets/staking/equito.png";
 import KiltIcon from "@/assets/staking/kilt.png";
@@ -27,7 +27,7 @@ import EthereumIcon from "@/assets/staking/ethereum.png";
 import BaseIcon from "@/assets/staking/base.png";
 import ArbitrumIcon from "@/assets/staking/arbitrum.png";
 import OptimismIcon from "@/assets/staking/optimism.png";
-import EnergyWebIcon from "@/assets/staking/energyweb.png";
+import EnergyWebIcon from "@/assets/logos/energy-web.png";
 import PeaqIcon from "@/assets/staking/peaq.svg";
 import WalrusIcon from "@/assets/staking/walrus.svg";
 import FuelIcon from "@/assets/staking/fuel.png";
@@ -41,6 +41,9 @@ import HyperliquidIcon from "@/assets/staking/hyperliquid.svg";
 import SolanaIcon from "@/assets/logos/solana.svg";
 import BNBIcon from "@/assets/logos/bnb-chain.svg";
 import SuiIcon from "@/assets/logos/sui.svg";
+import CantonIcon from "@/assets/logos/canton.svg";
+import EspressoIcon from "@/assets/logos/espresso.png";
+import PharosIcon from "@/assets/logos/pharos.png";
 
 const heroData = {
   title: (
@@ -171,6 +174,20 @@ const stakingData = {
       {
         project: {
           img: {
+            src: PharosIcon,
+            alt: "Pharos",
+          },
+          href: "https://pharos.network/",
+        },
+        description: "Pharos is the fastest EVM-compatible L1 optimized for real-world assets (RWAs) and cross-chain liquidity, unifying Web2 and Web3 at scale.",
+        button: {
+          label: "Learn more",
+          href: "https://pharos.network/",
+        },
+      },
+      {
+        project: {
+          img: {
             src: SonicIcon,
             alt: "Sonic",
           },
@@ -183,22 +200,7 @@ const stakingData = {
           href: "https://soniclabs.com/",
         },
       },
-      {
-        project: {
-          img: {
-            src: MoonbeamIcon,
-            alt: "Moonbeam",
-          },
-          href: "https://moonbeam.network/",
-        },
-        description:
-          "Moonbeam is a Polkadot EVM-compatibile smart contract platform that makes it easy to build natively interoperable blockchain applications.",
-        button: {
-          label: "Learn more",
-          href: "https://moonbeam.network/",
-        },
-      },
-      {
+            {
         project: {
           img: {
             src: FuelIcon,
@@ -213,22 +215,7 @@ const stakingData = {
           href: "https://fuel.network/",
         },
       },
-      {
-        project: {
-          img: {
-            src: SomniaIcon,
-            alt: "Somnia",
-          },
-          href: "https://somnia.network/",
-        },
-        description:
-          "Somnia is a high-performance EVM-compatibile Layer-1 blockchain designed for real-time, large-scale dApps. With 1 million TPS, sub-second finality, and ultra-low fees, Somnia unlocks mass adoption for gaming, DeFi, social, and AI applications.",
-        button: {
-          label: "Learn more",
-          href: "https://somnia.network/",
-        },
-      },
-      {
+            {
         project: {
           img: {
             src: ZerogIcon,
@@ -243,7 +230,49 @@ const stakingData = {
           href: "https://0g.ai/",
         },
       },
-    ],
+      {
+        project: {
+          img: {
+            src: CantonIcon,
+            alt: "Canton Network",
+          },
+          href: "https://canton.network/",
+        },
+        description: "Canton Network is the first privacy-enabled open blockchain network for secure, limitless cross-chain connections that preserve data privacy.",
+        button: {
+          label: "Learn more",
+          href: "https://canton.network/",
+        },
+      },
+      {
+        project: {
+          img: {
+            src: EspressoIcon,
+            alt: "Espresso",
+          },
+          href: "https://www.espressosys.com/",
+        },
+        description: "Espresso builds shared sequencing infrastructure to enable cross-chain composability and seamless multi-chain experiences.",
+        button: {
+          label: "Learn more",
+          href: "https://www.espressosys.com/",
+        },
+      },
+      {
+        project: {
+          img: {
+            src: AcurastIcon,
+            alt: "Acurast",
+          },
+          href: "https://acurast.com/",
+        },
+        description: "Acurast is the real Decentralised Compute Network, being scalable, secure and powered by smartphones, so there is no reliance on centralised servers.",
+        button: {
+          label: "Learn more",
+          href: "https://acurast.com/",
+        },
+      },
+      ],
     Polkadot: [
       {
         project: {
@@ -275,22 +304,7 @@ const stakingData = {
           href: "https://kusama.network/",
         },
       },
-      {
-        project: {
-          img: {
-            src: CentrifugeIcon,
-            alt: "Centrifuge",
-          },
-          href: "https://centrifuge.io/",
-        },
-        description:
-          "Centrifuge is the infrastructure that facilitates the decentralized financing of real-world assets natively on-chain, creating a fully transparent market which allows borrowers and lenders to transact without unnecessary intermediaries.",
-        button: {
-          label: "Learn more",
-          href: "https://centrifuge.io/",
-        },
-      },
-      {
+            {
         project: {
           img: {
             src: HydrationIcon,
@@ -415,17 +429,16 @@ const stakingData = {
         project: {
           img: {
             src: EnergyWebIcon,
-            alt: "Energy Web X",
+            alt: "Energy Web",
           },
-          href: "https://energywebx.com/",
+          href: "https://energyweb.org/",
         },
-        description:
-          "Energy Web, a leader in blockchain for sustainability, offers a software-as-a-service platform acting as a secure marketplace for hundreds of clean energy applications.",
+        description: "Energy Web builds the decentralised digital trust layer for the energy transition. This enables enterprise-grade solutions for energy and sustainability markets.",
         button: {
           label: "Learn more",
-          href: "https://www.energywebx.com/",
+          href: "https://energyweb.org/",
         },
-                },
+      },
       {
         project: {
           img: {

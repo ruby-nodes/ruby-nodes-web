@@ -15,29 +15,28 @@ const getFilteredItems = () => {
   const allItems = indexData.staking.items;
   
   return {
-    // EVM: Ethereum, Sonic, 0G, Centrifuge, Somnia, Moonbeam
-    EVM: allItems.EVM.filter(item => 
-      ["Ethereum", "Sonic", "0g", "Somnia", "Moonbeam"].includes(item.project.img.alt)
-    ).concat(
-      allItems.Polkadot.filter(item => 
-        ["Centrifuge"].includes(item.project.img.alt)
+    // EVM: Ethereum, Pharos, Sonic, 0G, Canton Network, Espresso, Acurast
+    EVM: [
+      ...allItems.EVM.filter(item => 
+        ["Ethereum", "Sonic", "0g"].includes(item.project.img.alt)
+      )
+    ].concat(
+      allItems.EVM.filter(item => 
+        ["Pharos", "Canton Network", "Espresso", "Acurast"].includes(item.project.img.alt)
       )
     ).sort((a, b) => {
-      // Sort to put Ethereum first
-      const order = ["Ethereum", "Sonic", "0g", "Centrifuge", "Somnia", "Moonbeam"];
+      // Sort to put Ethereum first, then Pharos second, then the rest
+      const order = ["Ethereum", "Pharos", "Sonic", "0g", "Canton Network", "Espresso", "Acurast"];
       return order.indexOf(a.project.img.alt) - order.indexOf(b.project.img.alt);
     }),
     // Sui: Sui, Seal, Walrus, IKA
     Sui: allItems["Non-EVM"].filter(item => 
       ["Sui", "Seal", "Walrus", "IKA"].includes(item.project.img.alt)
     ),
-    // Substrate: Polkadot, Peaq, Hydration, Energy Web X, Acurast, zkVerify, Avail
+    // Substrate: Polkadot, Peaq, Hydration, Energy Web, Acurast, zkVerify, Avail
     Substrate: [
       ...allItems.Polkadot.filter(item => 
-        ["Polkadot", "Hydration", "Acurast", "Peaq"].includes(item.project.img.alt)
-      ),
-      ...allItems.EVM.filter(item => 
-        ["Energy Web X"].includes(item.project.img.alt)
+        ["Polkadot", "Hydration", "Acurast", "Peaq", "Energy Web"].includes(item.project.img.alt)
       ),
       ...allItems.Substrate.filter(item => 
         ["zkVerify", "Avail"].includes(item.project.img.alt)
