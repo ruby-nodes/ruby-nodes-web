@@ -15,9 +15,9 @@ const getFilteredItems = () => {
   const allItems = indexData.staking.items;
   
   return {
-    // EVM: Ethereum, Pharos, Sonic, 0G
+    // EVM: Ethereum, Pharos, Monad, Sonic, 0G
     EVM: allItems.EVM.filter(item => 
-      ["Ethereum", "Pharos", "Sonic", "0g"].includes(item.project.img.alt)
+      ["Ethereum", "Pharos", "Monad", "Sonic", "0g"].includes(item.project.img.alt)
     ),
     // Sui: Sui, Walrus, Ika, Seal
     Sui: allItems["Non-EVM"].filter(item => 

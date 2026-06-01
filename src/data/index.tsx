@@ -44,6 +44,7 @@ import SuiIcon from "@/assets/logos/sui.svg";
 import CantonIcon from "@/assets/logos/canton.svg";
 import EspressoIcon from "@/assets/logos/espresso.png";
 import PharosIcon from "@/assets/logos/pharos.png";
+import MonadIcon from "@/assets/logos/monad.svg";
 
 const heroData = {
   title: (
@@ -174,6 +175,36 @@ const stakingData = {
       {
         project: {
           img: {
+            src: PharosIcon,
+            alt: "Pharos",
+          },
+          href: "https://www.pharos.xyz/",
+        },
+        description:
+          "Pharos is the fastest EVM-compatible L1 optimized for real-world assets (RWAs) and cross-chain liquidity, unifying Web2 and Web3 at scale.",
+        button: {
+          label: "Learn more",
+          href: "https://www.pharos.xyz/",
+        },
+      },
+      {
+        project: {
+          img: {
+            src: MonadIcon,
+            alt: "Monad",
+          },
+          href: "https://monad.xyz/",
+        },
+        description:
+          "Monad is a high-performance Layer-1 blockchain that is fully EVM-compatible, delivering 10,000 TPS with 1-second block times through parallel execution and deferred execution techniques.",
+        button: {
+          label: "Learn more",
+          href: "https://monad.xyz/",
+        },
+      },
+      {
+        project: {
+          img: {
             src: SonicIcon,
             alt: "Sonic",
           },
@@ -243,8 +274,8 @@ const stakingData = {
         },
         description: "Canton Network is the first privacy-enabled open blockchain network for secure, limitless cross-chain connections that preserve data privacy.",
         button: {
-          label: "Learn more",
-          href: "https://canton.network/",
+          label: "Our offering",
+          href: "/canton-validator",
         },
       },
       {
