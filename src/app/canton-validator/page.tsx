@@ -41,15 +41,35 @@ export default function CantonValidatorPage() {
         </p>
 
         <p className="text-c-text">
-          Every Canton application needs participant nodes to interact with the network.
-          Ruby Nodes runs a production-ready Canton participant and validator node, and we are
-          available to be onboarded into your application today.
+          Every Canton application depends on its participant set — and the strength of that set
+          directly determines your application&apos;s liveness, resilience, and credibility.
+          A participant set concentrated in one or two operators is a single point of failure
+          and a counterparty risk that institutions will notice. Ruby Nodes runs a
+          production-ready Canton participant and validator node, and we are ready to be
+          onboarded into your application today.
         </p>
 
         <div className="flex items-start gap-0 mt-10">
           <div className="flex-1">
             <h2 className="text-xl font-bold mb-4 text-c-text">Why Include Ruby Nodes</h2>
             <ul className="list-disc pl-6 mt-2 mb-4 text-c-text">
+              <li>
+                <strong className="text-c-text">Improve your application&apos;s liveness</strong> — each
+                independent participant you add reduces the risk of your application becoming
+                unavailable due to a single operator outage. We run on separate infrastructure,
+                separate data centers, and are operated by an independent team
+              </li>
+              <li>
+                <strong className="text-c-text">Reduce counterparty concentration risk</strong> — institutions
+                evaluating your Canton application will scrutinize your participant set. A diverse,
+                multi-operator set signals operational maturity and removes any single actor&apos;s
+                ability to affect your network
+              </li>
+              <li>
+                <strong className="text-c-text">Genuine geographic decentralization</strong> — our
+                infrastructure spans multiple continents and jurisdictions, adding real geodiversity
+                and resilience against regional outages or regulatory events
+              </li>
               <li>
                 <strong className="text-c-text">Battle-tested operator</strong> — running validators
                 across 30+ blockchain networks since 2020, from genesis validators to mainnet
@@ -59,14 +79,6 @@ export default function CantonValidatorPage() {
                 <strong className="text-c-text">Bare metal, not cloud</strong> — our nodes run on
                 dedicated hardware with no shared tenancy, giving you the reliability and
                 performance that institutional workloads demand
-              </li>
-              <li>
-                <strong className="text-c-text">99.99% uptime SLA</strong> — 24/7 monitoring,
-                automated alerting, and incident response across multiple time zones
-              </li>
-              <li>
-                <strong className="text-c-text">Global footprint</strong> — infrastructure deployed
-                across multiple continents for low-latency, geo-redundant access
               </li>
               <li>
                 <strong className="text-c-text">Canton Echo</strong> — we run{" "}
