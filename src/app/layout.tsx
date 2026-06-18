@@ -7,7 +7,13 @@ import { Metadata } from "next";
 
 const rubik = Rubik({ subsets: ["latin"] });
 
+const protocol = process.env.NEXT_PUBLIC_PROTOCOL ?? "https";
+const baseUrl = process.env.NEXT_PUBLIC_VERCEL_URL 
+  ? `${protocol}://${process.env.NEXT_PUBLIC_VERCEL_URL}`
+  : "http://localhost:3000";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(baseUrl),
   icons: [],
 };
 

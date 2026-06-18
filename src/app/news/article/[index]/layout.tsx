@@ -31,32 +31,45 @@ export async function generateMetadata({
     };
   }
 
+  const protocol = process.env.NEXT_PUBLIC_PROTOCOL ?? "https";
   const baseUrl = process.env.NEXT_PUBLIC_VERCEL_URL 
-    ? `https://${process.env.NEXT_PUBLIC_VERCEL_URL}`
+    ? `${protocol}://${process.env.NEXT_PUBLIC_VERCEL_URL}`
     : "http://localhost:3000";
+
+  const imageUrl = current.imgSrc.startsWith('http') 
+    ? current.imgSrc 
+    : `${baseUrl}${current.imgSrc}`;
+  
+  const articleUrl = `${baseUrl}${current.href}`;
 
   return {
     title: current.title,
     description: current.description,
+    metadataBase: new URL(baseUrl),
     openGraph: {
       title: current.title,
       description: current.description,
+      url: articleUrl,
+      siteName: "Ruby Nodes",
+      locale: "en_US",
+      type: "article",
+      publishedTime: current.date.toISOString(),
       images: [
         {
-          url: `${baseUrl}${current.imgSrc}`,
+          url: imageUrl,
           width: 1200,
           height: 630,
           alt: current.title,
         },
       ],
-      type: "article",
-      url: `${baseUrl}${current.href}`,
     },
     twitter: {
       card: "summary_large_image",
+      site: "@RubyNodes",
+      creator: "@RubyNodes",
       title: current.title,
       description: current.description,
-      images: [`${baseUrl}${current.imgSrc}`],
+      images: [imageUrl],
     },
   };
 }

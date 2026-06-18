@@ -1,0 +1,92 @@
+import { MdxImage } from "@/components/mdx/image";
+
+export const metadata = {
+  title: "Ruby Nodes Joins the Genesis Seal MPC Committee on Sui Mainnet",
+  description: "We're happy to become one of the Seal MPC Committee members for launch on Sui Mainnet.",
+  date: new Date("2026-06-18"),
+  imgSrc: "/Seal_MPC_2.png",
+  slug: "seal-mpc-mainnet",
+};
+
+Ruby Nodes is proud to join the genesis committee of Seal **MPC**, the new decentralized secrets management layer on Sui Mainnet, developed by Mysten Labs.
+
+As one of eight operators in the inaugural 5-of-8 threshold committee, we are helping secure the cryptographic backbone for the next generation of onchain privacy. After two years of deep involvement in the Sui ecosystem, from early testnet validators to our Walrus launch partnership and an active Mainnet validator slot, this milestone represents the natural next step in our infrastructure journey.
+
+### What Is Seal **MPC**?
+
+For years, Web3 developers faced a fundamental trade-off when handling sensitive data such as **API** keys, private credentials, or user metadata.
+
+Traditional centralized Key Management Services (**KMS**) contradict the trustless nature of Web3, while building custom decentralized secrets management from scratch is highly complex and error-prone.
+
+Mysten Labs solved this with Seal, a decentralized secrets management (**DSM**) service that pairs onchain access policies on Sui with offchain key servers. Today, Seal enters a new era of security with the launch of Seal **MPC** on Mainnet.
+
+### Enter Seal **MPC**: Decentralizing the Key Server
+
+Previously, developers composed trust by utilizing independent key servers and defining access thresholds. While effective, this approach required managing multiple independent endpoints.
+Seal **MPC** (Multi-Party Computation) simplifies this architecture by introducing a decentralized committee of robust operators that jointly protect a single, shared master key.
+
+#### Key properties:
+
+    • Threshold Cryptography: No single operator ever holds the full key.
+
+    • Single Aggregator Endpoint: Builders interact with one endpoint, reducing integration complexity while maintaining high security.
+
+    • Stable Onchain Policies: Key rotations can happen offchain without requiring developers to re-encrypt existing data or update smart contracts.
+
+#### The 5-of-8 Threshold Committee
+
+The Mainnet committee launches with a robust 5-of-8 threshold configuration. Any decryption request requires cryptographic shares from at least 5 of the 8 independent operators:
+
+    • Mysten Labs
+
+    • Ruby Nodes
+
+    • Unconfirmed Labs
+
+    • H2O Nodes
+
+    • Natsai
+
+    • Triton One
+
+    • NodeInfra
+
+    • Overclock
+
+This geo-distributed setup ensures that even if individual nodes experience temporary downtime or network issues, the secrets layer remains fully operational with zero single points of failure.
+
+
+### Why Developers Care
+
+    • Same Developer Experience: Integrates seamlessly using the same Seal **SDK** (v1.1.0+).
+
+    • Zero Policy Changes: Use the same Sui Move policies and encryption flows as before.
+
+    • Hybrid Models: Combine independent key servers with **MPC** committees depending on your application's trust requirements.
+
+
+#### Ruby Nodes' Bare-Metal Commitment
+
+
+At Ruby Nodes, we don't believe in outsourcing infrastructure. Our Seal **MPC** node and **API** gateways run on our own bare-metal hardware. By avoiding public cloud monopolies, we provide:
+
+    • Deterministic latency and execution.
+
+    • Protection against **BGP** hijacking and routing attacks through high-performance networking.
+
+    • Guaranteed 99.99% uptime for critical decryption requests.
+
+
+#### Build the Future of Onchain Privacy
+
+
+From encrypted storage on Walrus to secure enclaves, programmable wallets, and agentic commerce — Seal **MPC** provides the foundation for true onchain data autonomy.
+
+
+### Ready to integrate?
+
+    • Explore the official Seal Documentation.
+
+    • Connect directly via the Ruby Nodes Seal **API** Gateway.
+
+    • For custom private infrastructure, reach out: [hello@rubynodes.io](mailto:hello@rubynodes.io)
