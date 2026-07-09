@@ -31,7 +31,7 @@ export default function PrivateInfrastructurePage() {
 
           <div className="flex items-start gap-0 mt-8 mb-8">
             <div className="flex-1">
-              <h2 className="text-xl font-bold mb-4 text-c-text">Our solutions</h2>
+              <h2 className="text-xl font-bold mb-4 text-c-text">Examples</h2>
               <ul className="list-disc pl-6 mt-2 mb-4 text-c-text">
                 <li>High-performance RPCs for traders</li>
                 <li>Latency in tens of milliseconds</li>

@@ -1,0 +1,47 @@
+import { MdxImage } from "@/components/mdx/image";
+
+export const metadata = {
+  title: "Introducing SuiScope: The Developer's Guide to Sui Infrastructure Performance",
+  description: "We're thrilled to announce that our Sui mainnet validator is now live after two years of deep involvement in the Sui ecosystem.",
+  date: new Date("2026-07-08"),
+  imgSrc: "/SuiScope_web.png",
+  slug: "sui-scope",
+};
+
+The Sui ecosystem is evolving rapidly. As the network scales, the way decentralized applications (dApps) query data is fundamentally changing. Legacy JSON-RPC is being phased out in favor of more efficient, specialized data-serving architectures: **GraphQL, gRPC, and Archival nodes.**
+
+For developers, this transition raises a critical question: *Which infrastructure provider should I route my traffic to for the best performance?*
+
+Today, Ruby Nodes is thrilled to announce the launch of **[SuiScope](https://scope.rubynodes.io/)** — a continuous, neutral, and public-good benchmarking platform built specifically for Sui developers.
+
+## Why We Built SuiScope
+
+When building highly responsive dApps, every millisecond counts. Developers need unbiased, real-world data to evaluate how different endpoints perform under actual network conditions.
+
+SuiScope does not simulate internal server behavior. Instead, it measures the **actual client experience** using stateless probe agents deployed across multiple geographic regions.
+
+<MdxImage
+  src="/SuiScope_web_2.png"
+  alt="SuiScopeDashboard"
+  width={800}
+  height={450}
+/>
+
+## Key Features for Developers
+
+* **Real-World Metrics:** We track cold-connection latency, time-to-first-byte (TTFB), uptime, and error rates. Our methodology strictly prohibits connection pooling or caching, ensuring the data reflects true network requests.
+* **State Freshness:** We benchmark providers directly against a trusted Mysten Labs reference endpoint to ensure the data you receive is perfectly in sync with the chain head.
+* **Compare Providers:** A visual dashboard allowing you to compare up to 4 providers side-by-side over 24-hour or 7-day windows.
+* **Free Public API:** Need to build custom alerting or implement smart provider routing directly into your dApp? All our pre-aggregated data is available via a free REST API with no authentication required.
+
+## Built for the Community
+
+At Ruby Nodes, we believe that transparency drives innovation. SuiScope is our contribution to a more robust and competitive Sui ecosystem.
+
+Ready to optimize your dApp's infrastructure?
+
+**👉 [Explore the SuiScope Dashboard](https://scope.rubynodes.io/)**
+**👉 [Read the Full Technical Methodology](https://rubynodes.medium.com/introducing-suiscope-the-transparent-benchmarking-standard-for-sui-infrastructure-57348cb94b18)**
+
+---
+*Ruby Nodes is a professional blockchain infrastructure provider focused on high availability and ecosystem growth. Support our tools by delegating your stake to the Ruby Nodes validator.*

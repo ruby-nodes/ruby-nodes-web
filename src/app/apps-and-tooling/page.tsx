@@ -1,7 +1,6 @@
 import Container from "@/components/common/Container";
 import { Metadata } from "next";
-import Image from "next/image";
-import Ruby from "@/assets/rubys/01.png";
+import ShowcaseCards from "@/components/appsAndTooling/ShowcaseCards";
 
 export const metadata: Metadata = {
   title: "Apps & Tooling | Ruby Nodes",
@@ -26,23 +25,12 @@ export default function AppsAndToolingPage() {
           a part of collaboration with partners.
         </p>
 
-        <div className="flex items-start gap-0 mt-8">
-          <div className="flex-1">
-            <h2 className="text-xl font-bold mb-4 text-c-text">Our solutions</h2>
-            <ul className="list-disc pl-6 mt-2 mb-4 text-c-text">
-              <li>Monitoring and alerting dashboards</li>
-              <li>Performance analytics tools</li>
-              <li>Node health monitoring scripts</li>
-              <li>Automation and deployment tools</li>
-              <li>Staking calculators and analytics</li>
-            </ul>
-          </div>
-          
-          <div className="flex-shrink-0 hidden md:block -ml-8">
-            <Image src={Ruby} alt="Ruby" width={300} height={300} className="w-72 h-auto" />
-          </div>
-        </div>
+        <h2 className="text-xl font-bold mb-4 text-c-text mt-8">Examples</h2>
+      </div>
 
+      <ShowcaseCards />
+
+      <div className="prose prose-invert max-w-none mt-8">
         <h2 className="text-xl font-bold mt-8 mb-4 text-c-text">Monitoring Solutions</h2>
         <p className="text-c-text">
           Our comprehensive monitoring setup uses industry-standard tools like Prometheus and Grafana,
@@ -51,6 +39,7 @@ export default function AppsAndToolingPage() {
         </p>
 
         <h2 className="text-xl font-bold mt-8 mb-4 text-c-text">Custom Development</h2>
+
         <p className="text-c-text">
           Need a specific tool or integration? We provide custom development services for blockchain applications,
           scripts, and automation tools tailored to your exact requirements.
