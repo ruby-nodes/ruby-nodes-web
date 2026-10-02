@@ -7,7 +7,7 @@ import CantonLogo from "@/assets/logos/canton.svg";
 export const metadata: Metadata = {
   title: "Canton Network Participant | Ruby Nodes",
   description:
-    "Ruby Nodes operates a production-grade Canton Network participant node. Include us in your Canton application — backed by bare metal infrastructure, 99.99% uptime, and Canton Echo community coverage.",
+    "Ruby Nodes operates dedicated Canton Network participant infrastructure with defined operational scope, monitoring and security controls.",
 };
 
 export default function CantonValidatorPage() {
@@ -32,21 +32,16 @@ export default function CantonValidatorPage() {
         </p>
 
         <p className="text-c-text">
-          Canton Network is where institutional finance meets blockchain — a privacy-first,
-          open network where Goldman Sachs, Broadridge, BNP Paribas, DTCC, and hundreds of
-          other institutions tokenize, settle, and move real assets at scale. Over $8 trillion
-          in tokenized securities, repos, and funds have been issued or processed on the platform.
-          Unlike public chains, Canton participants only see the data they are party to —
-          privacy is built into the protocol, not bolted on.
+          Canton Network is an open, privacy-enabled network designed for synchronized financial
+          markets. Its privacy model allows participants to share transaction data with the parties
+          involved while connecting applications across the network.
         </p>
 
         <p className="text-c-text">
-          Every Canton application depends on its participant set — and the strength of that set
-          directly determines your application&apos;s liveness, resilience, and credibility.
-          A participant set concentrated in one or two operators is a single point of failure
-          and a counterparty risk that institutions will notice. Ruby Nodes runs a
-          production-ready Canton participant and validator node, and we are ready to be
-          onboarded into your application today.
+          Ruby Nodes operates Canton participant infrastructure for application teams that want an
+          independent infrastructure operator. The role, topology, resilience contribution and
+          responsibility boundaries are agreed during onboarding so that each party knows what it
+          owns before the service enters production.
         </p>
 
         <div className="flex items-start gap-0 mt-10">
@@ -54,31 +49,27 @@ export default function CantonValidatorPage() {
             <h2 className="text-xl font-bold mb-4 text-c-text">Why Include Ruby Nodes</h2>
             <ul className="list-disc pl-6 mt-2 mb-4 text-c-text">
               <li>
-                <strong className="text-c-text">Improve your application&apos;s liveness</strong> — each
-                independent participant you add reduces the risk of your application becoming
-                unavailable due to a single operator outage. We run on separate infrastructure,
-                separate data centers, and are operated by an independent team
+                <strong className="text-c-text">Independent operator capacity</strong> — add
+                infrastructure operated by a separate team, with deployment topology and recovery
+                responsibilities documented during onboarding
               </li>
               <li>
-                <strong className="text-c-text">Reduce counterparty concentration risk</strong> — institutions
-                evaluating your Canton application will scrutinize your participant set. A diverse,
-                multi-operator set signals operational maturity and removes any single actor&apos;s
-                ability to affect your network
+                <strong className="text-c-text">Clear operating boundaries</strong> — define who
+                owns application administration, participant operation, access, incident response
+                and change approval before production
               </li>
               <li>
-                <strong className="text-c-text">Genuine geographic decentralization</strong> — our
-                infrastructure spans multiple continents and jurisdictions, adding real geodiversity
-                and resilience against regional outages or regulatory events
+                <strong className="text-c-text">Deployment flexibility</strong> — select agreed
+                locations and resilience options based on application, data and operational requirements
               </li>
               <li>
-                <strong className="text-c-text">Battle-tested operator</strong> — running validators
-                across 30+ blockchain networks since 2020, from genesis validators to mainnet
-                infrastructure partners for Sui, 0G, Avail, and others
+                <strong className="text-c-text">Production experience</strong> — operating blockchain
+                infrastructure since 2020, including more than 15 production validators and work with
+                ecosystems such as Sui, 0G and Avail
               </li>
               <li>
-                <strong className="text-c-text">Bare metal, not cloud</strong> — our nodes run on
-                dedicated hardware with no shared tenancy, giving you the reliability and
-                performance that institutional workloads demand
+                <strong className="text-c-text">Dedicated bare metal</strong> — participant nodes run
+                on dedicated hardware, with the system profile sized for the agreed workload
               </li>
               <li>
                 <strong className="text-c-text">Canton Echo</strong> — we run{" "}
@@ -106,16 +97,16 @@ export default function CantonValidatorPage() {
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 not-prose mt-4 mb-8">
           {[
             {
-              title: "Reliable Participant Node",
-              body: "A fully operated Canton participant node, ready to be onboarded into your application's permissioned network. We handle deployment, upgrades, and day-to-day operations — you focus on your application.",
+              title: "Managed Participant Node",
+              body: "A dedicated Canton participant node with deployment, monitoring, upgrades and day-to-day operations handled within the agreed service scope.",
             },
             {
               title: "Canton Echo Coverage",
               body: "Your application gets featured through our Canton Echo community channel. We publish guides, announcements, and ecosystem content that puts your project in front of institutional Canton builders and users.",
             },
             {
-              title: "The Ruby Nodes Brand",
-              body: "Six years of trust-building across 30+ networks. Being listed alongside Ruby Nodes signals operational seriousness to other institutions evaluating your application's participant set.",
+              title: "Documented Operating Scope",
+              body: "A defined deployment profile, responsibility matrix, maintenance process and escalation path for the production service.",
             },
           ].map(({ title, body }) => (
             <div
@@ -131,16 +122,16 @@ export default function CantonValidatorPage() {
         <h2 className="text-xl font-bold mt-10 mb-4 text-c-text">Technical Infrastructure</h2>
         <ul className="list-disc pl-6 mt-2 mb-4 text-c-text">
           <li>Dedicated bare metal servers — high-end CPUs, NVMe SSD storage, no cloud overhead</li>
-          <li>Redundant networking with DDoS mitigation</li>
-          <li>Automated failover and regular backup procedures</li>
-          <li>Full observability stack: Prometheus, Grafana, PagerDuty alerting</li>
-          <li>Security-hardened environment with strict access controls</li>
+          <li>Automated provisioning with a repeatable security baseline</li>
+          <li>Host firewall rules and hardened SSH configuration</li>
+          <li>Continuous monitoring and operational alerting</li>
+          <li>Backups, recovery procedures and resilience options defined for the deployment</li>
         </ul>
 
         <h2 className="text-xl font-bold mt-10 mb-4 text-c-text">Get In Touch</h2>
         <p className="text-c-text">
           Building a Canton application and looking for a reliable participant to include?
-          Reach out — onboarding is straightforward and we are ready to move fast.
+          Contact us to review the application topology, deployment requirements and operating model.
         </p>
         <p className="text-c-text">
           Email:{" "}

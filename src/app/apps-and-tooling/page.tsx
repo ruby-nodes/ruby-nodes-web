@@ -21,8 +21,7 @@ export default function AppsAndToolingPage() {
         </p>
         
         <p className="text-c-text">
-          Besides providing top-tier infrastructure services, we have also developed and maintaned variety of tools as
-          a part of collaboration with partners.
+          Alongside infrastructure services, we develop and maintain tools used in our work with protocol partners.
         </p>
 
         <h2 className="text-xl font-bold mb-4 text-c-text mt-8">Examples</h2>

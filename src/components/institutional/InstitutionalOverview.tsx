@@ -2,7 +2,7 @@ import Link from "next/link";
 import Container from "../common/Container";
 
 const audiences = [
-  ["Financial institutions", "Dedicated, non-custodial infrastructure designed around governance, resilience and reporting requirements."],
+  ["Financial institutions", "Dedicated infrastructure designed around governance, resilience and reporting requirements."],
   ["Protocols and foundations", "Validators, RPCs, bootnodes, indexers and testnet infrastructure operated by one accountable partner."],
   ["Trading and data teams", "Low-latency private endpoints, archive access and capacity engineered for predictable workloads."],
 ];

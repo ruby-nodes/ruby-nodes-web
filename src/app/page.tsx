@@ -10,7 +10,7 @@ import InstitutionalOverview from "@/components/institutional/InstitutionalOverv
 export const metadata: Metadata = {
   title: "Institutional Blockchain Infrastructure | Ruby Nodes",
   description:
-    "Dedicated validator, RPC and protocol infrastructure with global deployment, 24/7 operations and service-level commitments.",
+    "Dedicated validator, RPC and protocol infrastructure with multi-region deployment, continuous monitoring and service-level commitments.",
 };
 
 export default function Home() {
@@ -18,11 +18,11 @@ export default function Home() {
     <div className=" bg-c-bg text-c-text">
       <Hero />
       <InstitutionalOverview />
+      <SuccessStories />
       <ProminentEcosystems />
       <FAQ />
-      <News />
-      <SuccessStories />
       <AboutUs />
+      <News />
     </div>
   );
 }

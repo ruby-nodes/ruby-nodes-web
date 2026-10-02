@@ -1,81 +1,67 @@
 import Container from "@/components/common/Container";
 import RPCStaking from "@/components/staking/RPCStaking";
 import { Metadata } from "next";
-import Image from "next/image";
-import Ruby from "@/assets/rubys/01.png";
 
 export const metadata: Metadata = {
-  title: "Private Infrastructure | Ruby Nodes",
-  description:
-    "Dedicated servers and private networks. Custom infrastructure solutions tailored to your blockchain needs.",
+  title: "Dedicated Blockchain Infrastructure | Ruby Nodes",
+  description: "Dedicated RPC, archive-node, indexer and cross-chain infrastructure designed around workload, region and resilience requirements.",
 };
+
+const useCases = [
+  ["Private RPC endpoints", "Dedicated capacity and access boundaries for applications, trading systems, wallets and internal services."],
+  ["Archive nodes and indexers", "Historical blockchain access and supporting infrastructure for analytics, reconciliation and data products."],
+  ["Relayers and specialized nodes", "Bridge relayers and protocol-specific infrastructure operated within an agreed responsibility model."],
+];
+
+const deploymentDetails = [
+  "AMD EPYC bare-metal configurations",
+  "NVMe storage and up to 512 GB RAM",
+  "Multi-region deployment options",
+  "Load balancing and failover where applicable",
+  "Continuous monitoring and alerting",
+  "Capacity and latency validated during acceptance",
+];
 
 export default function PrivateInfrastructurePage() {
   return (
     <div className="bg-c-bg">
-      <Container className="flex flex-col items-start w-full pt-20">
-        <h1 className="~text-2xl-clamped/2xl font-bold text-c-text max-w-[700px] leading-[1.2]">
-          Private Infrastructure
-        </h1>
-        
-        <div className="prose prose-invert max-w-none mt-8">
-          <p className="text-lg font-semibold text-c-text">
-            Dedicated servers & RPCs
-          </p>
-          
-          <p className="text-c-text">
-            Besides running a public good infrastructure, there&apos;s also a need for private infra dedicated to the needs of our clients. 
-            Whether you are an arbitrage trader, dApp receiving heavy traffic or a data analytics project, 
-            our deployment can serve any of your infrastructure needs.
-          </p>
-
-          <div className="flex items-start gap-0 mt-8 mb-8">
-            <div className="flex-1">
-              <h2 className="text-xl font-bold mb-4 text-c-text">Examples</h2>
-              <ul className="list-disc pl-6 mt-2 mb-4 text-c-text">
-                <li>High-performance RPCs for traders</li>
-                <li>Latency in tens of milliseconds</li>
-                <li>Load-balancing and failover for maximum uptime</li>
-                <li>On-chain data storage services</li>
-                <li>Deployment anywhere in the world</li>
-              </ul>
-            </div>
-            
-            <div className="flex-shrink-0 hidden md:block -ml-8">
-              <Image src={Ruby} alt="Ruby" width={300} height={300} className="w-72 h-auto" />
-            </div>
-          </div>
-        </div>
+      <Container className="py-20">
+        <p className="mb-4 text-xs font-bold uppercase tracking-[0.18em] text-c-primary-text">Dedicated infrastructure</p>
+        <h1 className="max-w-4xl ~text-2xl-clamped/2xl font-bold leading-[1.15]">Private blockchain infrastructure designed around your workload</h1>
+        <p className="mt-6 max-w-3xl text-lg leading-8 text-c-text-inactive">Ruby Nodes designs and operates dedicated RPC, archive, indexing and cross-chain infrastructure with capacity, location and resilience defined before deployment.</p>
       </Container>
-      
-      <RPCStaking />
-      
-      <Container className="flex flex-col items-start w-full py-20">
-        <div className="prose prose-invert max-w-none">
-          <h2 className="text-xl font-bold mt-8 mb-4 text-c-text">Hardware Specifications</h2>
-          <p className="text-c-text">
-            We run on top-tier hardware including AMD EPYC processors, up to 512GB RAM, and NVMe SSD arrays.
-            Our infrastructure is distributed across multiple continents for optimal latency and reliability.
-          </p>
 
-          <h2 className="text-xl font-bold mt-8 mb-4 text-c-text">Use Cases</h2>
-          <ul className="list-disc pl-6 mt-2 mb-4 text-c-text">
-            <li>Private RPC infrastructure for dApps</li>
-            <li>High-performance RPCs for trading bots</li>
-            <li>Archive nodes and indexers</li>
-            <li>Data analytics</li>
-            <li>Wallet integrations</li>
-            <li>Bridge relayers and cross-chain infrastructure</li>
-          </ul>
+      <section className="border-y border-c-menu-border bg-c-container py-16">
+        <Container className="grid gap-5 md:grid-cols-3">
+          {useCases.map(([title, description]) => (
+            <article key={title} className="rounded-md border border-c-menu-border bg-c-bg p-7">
+              <h2 className="mb-3 text-md font-bold">{title}</h2>
+              <p className="text-sm leading-6 text-c-text-inactive">{description}</p>
+            </article>
+          ))}
+        </Container>
+      </section>
 
-          <h2 className="text-xl font-bold mt-8 mb-4 text-c-text">Get a Quote</h2>
-          <p className="text-c-text">
-            Contact us to discuss your infrastructure requirements and receive a custom quote.
-          </p>
-          <p className="text-c-text">
-            Email: <a href="mailto:peter@rubynodes.io" className="text-c-primary hover:underline">peter@rubynodes.io</a>
-          </p>
+      <Container className="grid gap-12 py-20 lg:grid-cols-2">
+        <div>
+          <h2 className="mb-4 text-xl font-bold">Deployment profile</h2>
+          <p className="leading-7 text-c-text-inactive">The final configuration depends on network software, workload, traffic profile, retention requirements and target regions.</p>
         </div>
+        <ul className="grid gap-3 text-sm">
+          {deploymentDetails.map((detail) => (
+            <li key={detail} className="border-b border-c-menu-border pb-3">✓ {detail}</li>
+          ))}
+        </ul>
+      </Container>
+
+      <section className="pb-20">
+        <RPCStaking />
+      </section>
+
+      <Container className="border-t border-c-menu-border py-16">
+        <h2 className="mb-4 text-xl font-bold">Request an infrastructure proposal</h2>
+        <p className="mb-5 max-w-3xl leading-7 text-c-text-inactive">Share the required networks, expected request volume, data-retention needs, regions and availability requirements. We will propose an architecture and operating scope.</p>
+        <a className="font-bold text-c-primary-text hover:text-c-text" href="mailto:peter@rubynodes.io?subject=Dedicated%20infrastructure%20enquiry">Contact Peter →</a>
       </Container>
     </div>
   );

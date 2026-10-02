@@ -1,5 +1,5 @@
 import React from "react";
-import { AboutUsData, FaqData, HeroData, StakingData } from "./types";
+import { AboutUsData, FaqData, HeroData, StakingData, SuccessStoriesData } from "./types";
 import FantomIcon from "@/assets/staking/fantom.svg";
 import SonicIcon from "@/assets/staking/sonic.svg";
 import JoystreamIcon from "@/assets/staking/joystream.svg";
@@ -836,7 +836,7 @@ const faqData = {
     {
       question: "Does Ruby Nodes take custody of client or delegated assets?",
       answer:
-        "No. Our validator and delegation services are non-custodial: Ruby Nodes cannot transfer or access a delegator's funds.",
+        "Delegators retain control of their assets, and Ruby Nodes cannot transfer delegated funds. For managed-validator deployments, signing-key ownership, access, operational authority and slashing responsibilities are defined for each engagement.",
     },
     {
       question: "Can infrastructure be dedicated to one client?",
@@ -868,22 +868,30 @@ const faqData = {
 
 const successStoriesData = [
   {
-    title: "Infrastructure partners of Mysten Labs",
-    description: "Ruby Nodes became a trusted infrastructure partner of the team behind the Sui blockchain. We were launch partners for Walrus decentralized storage network and we were in the first cohort of Seal (decentralized secrets management network on top of Sui and Walrus). Currently we are helping to build and support Sui Hypernet - a next generation networking protocol that will make blockchain systems more performant and resilient.",
+    eyebrow: "Mysten Labs ecosystem",
+    title: "Infrastructure across the Sui stack",
+    description: "Ruby Nodes supports multiple infrastructure layers in the Sui ecosystem, spanning decentralized storage, secrets management and networking.",
+    facts: ["Walrus launch partner", "Seal first cohort", "Supporting Sui Hypernet"],
   },
   {
-    title: "Launch partners of 0G",
-    description: "Following our testnet work with the 0G team, Ruby Nodes was onboarded as one of the first mainnet operators. We also operate storage nodes and public RPC infrastructure for the 0G community.",
+    eyebrow: "0G",
+    title: "From testnet participation to mainnet operations",
+    description: "Following our testnet work with the 0G team, Ruby Nodes was onboarded as an early mainnet operator and expanded its role across additional infrastructure services.",
+    facts: ["Mainnet validator", "Storage nodes", "Public RPC infrastructure"],
   },
   {
-    title: "IBP RPC infrastructure",
-    description: `For Polkadot's Infrastructure Builders Programme, we operate two bare-metal machines in New Zealand serving the Oceania region. The deployment hosts 34 load-balanced RPC nodes and 17 bootnodes on AMD EPYC 9554 64-core systems with 512 GB RAM and four 3.84 TB NVMe drives.`,
+    eyebrow: "Polkadot IBP · Oceania",
+    title: "Regional RPC and bootnode infrastructure",
+    description: "For Polkadot's Infrastructure Builders Programme, we operate two bare-metal systems in New Zealand on AMD EPYC 9554 processors with 512 GB RAM and four 3.84 TB NVMe drives.",
+    facts: ["34 load-balanced RPC nodes", "17 bootnodes", "2 bare-metal systems"],
   },
   {
-    title: "Avail genesis validator and RPC provider",
-    description: "Thanks to our efforts during Goldberg testnet and Clash of Nodes campaign, we became one of the partners of Avail. We helped the project with technical issues, promoted it on our media and we were also one of the RPC providers during the testnet which translated into running mainnet RPC as well due to our performance. We are proud to become one of the genesis operators and firm partners of the Avail project.",
+    eyebrow: "Avail",
+    title: "Testnet infrastructure through genesis",
+    description: "Ruby Nodes participated in Avail's Goldberg testnet and Clash of Nodes campaign, operated testnet RPC infrastructure and continued into the production network.",
+    facts: ["Goldberg testnet", "Testnet RPC provider", "Genesis operator"],
   },
-];
+] satisfies SuccessStoriesData;
 
 const indexData = {
   staking: stakingData,

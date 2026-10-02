@@ -25,7 +25,7 @@ const config: Config = {
     },
     fontFamily: {
       inter: ["Inter", "sans-serif"],
-      rubik: ["Arial", "Helvetica", "sans-serif"],
+      rubik: ["Rubik Variable", "Rubik", "Arial", "sans-serif"],
     },
     colors: {
       "c-primary": "#B32C3C",

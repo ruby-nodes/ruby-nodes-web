@@ -1,66 +1,51 @@
 import Container from "@/components/common/Container";
 import ValidatorStaking from "@/components/staking/ValidatorStaking";
 import { Metadata } from "next";
-import Image from "next/image";
-import Ruby from "@/assets/rubys/01.png";
 
 export const metadata: Metadata = {
-  title: "Validator Services | Ruby Nodes",
-  description:
-    "Professional validator services with industry-leading SLAs. Run and maintain validators across multiple blockchain networks.",
+  title: "Managed Validator Services | Ruby Nodes",
+  description: "Managed validator infrastructure with dedicated hardware, continuous monitoring and service-specific operational responsibilities.",
 };
+
+const capabilities = [
+  ["Dedicated infrastructure", "Validators run on high-performance bare-metal systems sized for the protocol and deployed in agreed locations."],
+  ["Managed operations", "Ruby Nodes monitors node health, coordinates protocol maintenance and responds to operational alerts."],
+  ["Service commitments", "Availability measurement, maintenance expectations, response targets and reporting are defined for each engagement."],
+];
 
 export default function ValidatorServicesPage() {
   return (
     <div className="bg-c-bg">
-      <Container className="flex flex-col items-start w-full pt-20">
-        <h1 className="~text-2xl-clamped/2xl font-bold text-c-text max-w-[700px] text-center leading-[1.2]">
-          Validator Services
-        </h1>
-        
-        <div className="prose prose-invert max-w-none mt-8">
-          <p className="text-lg font-semibold text-c-text">
-            Running validators across all the blockchain space
-          </p>
-          
-          <p className="text-c-text">
-            We currently operate validators on more than 25 blockchain networks, from established protocols such as
-            Ethereum or Sui to emerging ones like 0G or Somnia. All of our validators run on high-end dedicated bare metal 
-            machines with non-stop monitoring and alerting in place. We provide a worldwide coverage to bolster 
-            decentralization and resilience of blockchain networks.
-          </p>
-
-          <div className="flex items-start gap-0 mt-8 mb-8">
-            <div className="flex-1">
-              <h2 className="text-xl font-bold mb-4 text-c-text">What We Offer</h2>
-              <ul className="list-disc pl-6 mt-2 mb-4 text-c-text">
-                <li>99.99% uptime SLA</li>
-                <li>24/7 monitoring and alerting</li>
-                <li>Automated failover and redundancy where suitable</li>
-                <li>Performance optimization for maximum rewards</li>
-                <li>Multi-network support (Ethereum, Polkadot, Sui, and more)</li>
-                <li>Dedicated support team in multiple time zones</li>
-              </ul>
-            </div>
-            
-            <div className="flex-shrink-0 hidden md:block -ml-8">
-              <Image src={Ruby} alt="Ruby" width={300} height={300} className="w-72 h-auto" />
-            </div>
-          </div>
-        </div>
+      <Container className="py-20">
+        <p className="mb-4 text-xs font-bold uppercase tracking-[0.18em] text-c-primary-text">Managed validators</p>
+        <h1 className="max-w-4xl ~text-2xl-clamped/2xl font-bold leading-[1.15]">Production validator operations with explicit responsibility boundaries</h1>
+        <p className="mt-6 max-w-3xl text-lg leading-8 text-c-text-inactive">Ruby Nodes operates more than 15 production validators across established and emerging blockchain networks using dedicated hardware, automated provisioning and continuous monitoring.</p>
       </Container>
-      
-      <ValidatorStaking />
-      
-      <Container className="flex flex-col items-start w-full py-20">
-        <div className="prose prose-invert max-w-none">
-          <h2 className="text-xl font-bold mt-8 mb-4 text-c-text">Get Started</h2>
-          <p className="text-c-text">
-            Contact us to discuss your validator needs.
-          </p>
-          <p className="text-c-text">
-            Email: <a href="mailto:peter@rubynodes.io" className="text-c-primary hover:underline">peter@rubynodes.io</a>
-          </p>
+
+      <section className="border-y border-c-menu-border bg-c-container py-16">
+        <Container className="grid gap-5 md:grid-cols-3">
+          {capabilities.map(([title, description]) => (
+            <article key={title} className="rounded-md border border-c-menu-border bg-c-bg p-7">
+              <h2 className="mb-3 text-md font-bold">{title}</h2>
+              <p className="text-sm leading-6 text-c-text-inactive">{description}</p>
+            </article>
+          ))}
+        </Container>
+      </section>
+
+      <section className="py-20">
+        <ValidatorStaking />
+      </section>
+
+      <Container className="grid gap-12 pb-20 lg:grid-cols-2">
+        <div>
+          <h2 className="mb-4 text-xl font-bold">Custody and signing responsibilities</h2>
+          <p className="leading-7 text-c-text-inactive">Delegators retain control of their assets, and Ruby Nodes cannot transfer delegated funds. For managed deployments, signing-key ownership, access, operational authority and slashing responsibilities are agreed in writing before production.</p>
+        </div>
+        <div>
+          <h2 className="mb-4 text-xl font-bold">Discuss a validator deployment</h2>
+          <p className="mb-5 leading-7 text-c-text-inactive">Tell us the network, preferred locations, expected stake and governance requirements. We will propose the deployment and operating model.</p>
+          <a className="font-bold text-c-primary-text hover:text-c-text" href="mailto:peter@rubynodes.io?subject=Managed%20validator%20enquiry">Contact Peter →</a>
         </div>
       </Container>
     </div>

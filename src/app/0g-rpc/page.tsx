@@ -22,27 +22,26 @@ export default function ZeroGRPCPage() {
       
       <div className="prose prose-invert max-w-none mt-8">
         <p className="text-lg font-semibold text-c-text">
-          High-performance RPC endpoints for 0G Network
+          Dedicated RPC infrastructure for 0G Network
         </p>
         
         <p className="text-c-text">
-          0G is the largest AI L1 chain, an infinitely scalable, fully composable, and purpose-built modular 
-          blockchain for decentralized AI applications. Our RPC infrastructure provides reliable, low-latency 
-          access to the 0G Network and the Aristotle Mainnet, the world&apos;s first Decentralized AI Operating 
-          System (dAIOS).
+          0G is modular blockchain infrastructure designed for decentralized AI applications. Ruby Nodes
+          provides dedicated access to the 0G Network for production applications, data workloads and
+          internal services.
         </p>
 
         <div className="flex items-start gap-0 mt-8">
           <div className="flex-1">
             <h2 className="text-xl font-bold mb-4 text-c-text">What We Offer</h2>
             <ul className="list-disc pl-6 mt-2 mb-4 text-c-text">
-              <li>Your own dedicated RPC node</li>
-              <li>High-availability RPC endpoints with 99.99% uptime</li>
-              <li>Deployment of your node world-wide</li>
-              <li>Latency up to 50ms for your 0G requests</li>  
+              <li>Dedicated RPC nodes with isolated capacity</li>
+              <li>Availability targets defined for the deployment</li>
+              <li>Deployment in agreed regions</li>
+              <li>Latency and capacity validated during acceptance testing</li>
               <li>Archive node access for historical data queries</li>
               <li>WebSocket and HTTP endpoints</li>
-              <li>Best prices since we avoid expensive cloud deployments!</li>
+              <li>Bare-metal deployment with a service-specific commercial model</li>
             </ul>
           </div>
           
@@ -55,15 +54,14 @@ export default function ZeroGRPCPage() {
         <ul className="list-disc pl-6 mt-2 mb-4 text-c-text">
           <li>Running multiple 0G validators since the bootstrap of the first testnet</li>
           <li>One of the first mainnet validators</li>
-          <li>Running a high-performance RPC infrastructure for trading and arbitrages</li>
-          <li></li>
+          <li>Operating RPC infrastructure for latency-sensitive applications</li>
         </ul>
 
         <h2 className="text-xl font-bold mt-8 mb-4 text-c-text">Technical Specifications</h2>
         <p className="text-c-text">
-          All our RPCs are running on bare metal servers with high-end CPUs optimized for a single-thread frequency
-          which is crucial for Cosmos SDK-based chains like 0G. At the same time, we can deploy your RPC node anywhere
-          across the world which ensures the lowest latency possible for your requests.
+          RPC nodes run on dedicated bare-metal servers sized for 0G workloads. We agree the deployment
+          region, node mode, storage profile, capacity assumptions and monitoring scope before production,
+          then validate the endpoint against agreed acceptance criteria.
         </p>
 
         <h2 className="text-xl font-bold mt-8 mb-4 text-c-text">Get Started</h2>

@@ -34,7 +34,7 @@ export default function Hero() {
           {/* two-column layout: text (left) and image (right) */}
           <div className="w-full max-w-[1116px] mx-auto px-4 flex flex-col md:flex-row items-center md:items-start justify-between">
             <div className="z-30 flex flex-col items-start md:w-1/2">
-              <h1 className="~text-2xl-clamped/2xl font-bold text-c-text max-w-[700px] text-left leading-[1.2]">
+              <h1 className="text-2xl-clamped lg:text-[3.25rem] font-bold text-c-text max-w-[700px] text-left leading-[1.2]">
                 {title}
               </h1>
               <Paragraph text={description} className="max-w-[500px] mt-2.5 text-left" />
@@ -69,7 +69,7 @@ export default function Hero() {
                   className="p-8 hover:bg-c-container-accent transition-colors"
                 >
                   <div className="text-c-text font-semibold text-md mb-1">Validator Services</div>
-                  <div className="text-c-text-inactive text-sm">Run & maintain validators with SLAs</div>
+                  <div className="text-c-text-inactive text-sm">Managed validators with service-specific SLAs</div>
                 </Link>
                 
                 <Link 
@@ -101,6 +101,9 @@ export default function Hero() {
 
           {/* Logos row */}
           <div className="w-full max-w-[1116px] mx-auto px-4 mt-6 z-30">
+            <p className="mb-5 text-center text-xs font-bold uppercase tracking-[0.14em] text-c-text-inactive">
+              Selected networks and ecosystems we support
+            </p>
             <div className="flex items-center justify-center gap-3 flex-wrap">
               <div className="flex-shrink-0 w-[80px] flex items-center justify-center">
                 <Image src={LogoSui} alt="logo-sui" width={80} height={40} className="w-auto object-contain" />
@@ -153,7 +156,7 @@ export default function Hero() {
                 </div>
                 
                 <div className="p-6 text-center">
-                  <div className="text-c-primary-text font-bold text-xl mb-1">25+</div>
+                  <div className="text-c-primary-text font-bold text-xl mb-1">15+</div>
                   <div className="text-c-text-inactive text-sm">Production validators operated</div>
                 </div>
                 

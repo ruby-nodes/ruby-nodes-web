@@ -1,3 +1,4 @@
+import "@fontsource-variable/rubik";
 import "./globals.css";
 import Menu from "@/components/menu/menu";
 import Footer from "@/components/footer/footer";

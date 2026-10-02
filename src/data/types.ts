@@ -54,6 +54,8 @@ export type FooterData = {
 };
 
 export type SuccessStoriesData = {
+  eyebrow: string;
   title: string;
   description: string;
+  facts: string[];
 }[];
