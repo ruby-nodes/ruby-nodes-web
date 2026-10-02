@@ -25,11 +25,12 @@ const config: Config = {
     },
     fontFamily: {
       inter: ["Inter", "sans-serif"],
-      rubik: ["Rubik", "sans-serif"],
+      rubik: ["Arial", "Helvetica", "sans-serif"],
     },
     colors: {
       "c-primary": "#B32C3C",
       "c-primary-hover": "#C94747",
+      "c-primary-text": "#F06B78",
       "c-bg": "#060815",
       "c-text": "#FFFFFF",
       "c-text-inactive": "#A3A6BE",

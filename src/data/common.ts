@@ -9,7 +9,7 @@ const socialsData = {
 
 const menuData = {
   navigation: [
-    { label: "News", href: "/news" },
+    { label: "Institutions", href: "/institutional" },
     { 
       label: "Services", 
       href: "#services",
@@ -21,10 +21,10 @@ const menuData = {
       ]
     },
     { label: "Success Stories", href: "/#success-stories" },
-    { label: "FAQ", href: "/#faq" },
-    { label: "About Us", href: "/#about-us" },
+    { label: "Security", href: "/security" },
+    { label: "Company", href: "/#about-us" },
   ],
-  cta: { label: "Node status", href: "https://status.rubynodes.io" },
+  cta: { label: "Talk to us", href: "mailto:peter@rubynodes.io?subject=Infrastructure%20enquiry" },
 } satisfies MenuData;
 
 const footerData = {
@@ -33,6 +33,8 @@ const footerData = {
     { label: "FAQ", href: "/#faq" },
     { label: "News", href: "/news" },
     { label: "About Us", href: "/#about-us" },
+    { label: "Security", href: "/security" },
+    { label: "System Status", href: "https://status.rubynodes.io" },
     { label: "Privacy Policy", href: "/privacy-policy" },
   ],
 } satisfies FooterData;

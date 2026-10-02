@@ -70,7 +70,7 @@ export default function PeaqRPCPage() {
           Contact us to discuss your peaq RPC requirements and get access to our infrastructure.
         </p>
         <p className="text-c-text">
-          Email: <a href="mailto:hello@rubynodes.io" className="text-c-primary hover:underline">hello@rubynodes.io</a>
+          Email: <a href="mailto:peter@rubynodes.io" className="text-c-primary hover:underline">peter@rubynodes.io</a>
         </p>
       </div>
     </Container>

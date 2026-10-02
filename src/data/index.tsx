@@ -49,27 +49,27 @@ import MonadIcon from "@/assets/logos/monad.svg";
 const heroData = {
   title: (
     <span>
-      Ruby Toughness,
+      Institutional-grade
       <br />
-      Node Precision
+      blockchain infrastructure
     </span>
   ),
   description:
-    "Carved in the depths of bear market, Ruby Nodes is one of the most solid and experienced infrastructure providers that you can find in the space. We operate our own hardware on multiple continents while running over 30 various blockchains at the moment. Our skills range from running validators up to the L2 sequencers, RPCs, bootnodes or bridge relayers.",
+    "Dedicated validator, RPC and protocol infrastructure for financial institutions and blockchain networks. We operate our own high-performance hardware across multiple continents, backed by 24/7 monitoring and service-level commitments.",
   cta: {
-    label: "Status",
-    href: "https://status.rubynodes.io",
+    label: "Discuss your requirements",
+    href: "mailto:peter@rubynodes.io?subject=Institutional%20infrastructure%20enquiry",
   },
 } satisfies HeroData;
 
 const aboutUsData = {
-  title: "About us",
+  title: "An accountable infrastructure partner",
   description: `
-  In 2020, we kicked off our journey at a crypto-themed pub, accepting Bitcoin and Litecoin. Initially focused on content and events, we soon identified a niche for robust node infrastructure. Leveraging Pavel's deep crypto knowledge and Petr's backend expertise, we evolved from cloud services to our own high-efficiency bare metal servers, becoming leading node providers for multiple blockchains. Our expansion continued, and the rest is history.
+  Ruby Nodes has operated blockchain infrastructure since 2020. Led by founders Pavel and Petr, our team combines deep protocol knowledge with backend and infrastructure engineering. We progressed from cloud deployments to globally distributed, high-efficiency bare-metal systems and now support networks from validators and RPCs to sequencers, bootnodes and bridge relayers.
   `,
   cta: {
-    label: "Get Started",
-    href: "#",
+    label: "Contact the team",
+    href: "mailto:peter@rubynodes.io?subject=Infrastructure%20enquiry",
   },
 } satisfies AboutUsData;
 
@@ -834,34 +834,34 @@ const faqData = {
   title: "FAQ",
   items: [
     {
-      question: "What is staking?",
+      question: "Does Ruby Nodes take custody of client or delegated assets?",
       answer:
-        "Staking is a process of locking your tokens (be it ADA, DOT or FTM) and receiving rewards for doing so. At the same time, staking boost the security of the underlying network.",
+        "No. Our validator and delegation services are non-custodial: Ruby Nodes cannot transfer or access a delegator's funds.",
     },
     {
-      question: "Do Ruby Nodes take any custody of user's funds?",
+      question: "Can infrastructure be dedicated to one client?",
       answer:
-        "No, all of our service are fully non-custodial and we can't touch delegator's funds at any point of time.",
+        "Yes. We design private RPC, validator, archive-node, indexer and related deployments around each client's capacity, location, resilience and access requirements.",
     },
     {
-      question: "Why should you trust Ruby Nodes as a node operator?",
+      question: "How is service availability maintained?",
       answer:
-        "We started in as early as 2020 in the Polkadot ecosystem - since then we have built a huge community, became validators on almost all parachains and joined various validator DAOs. Since then, we have expanded to other ecosystems like Ethereum, Cardano or Fantom. This is what we love and we are here to stay!",
+        "Production services use continuous monitoring and alerting, high-performance dedicated hardware, and redundancy or automated failover where the protocol and deployment permit it. Service scope and commitments are agreed for each engagement.",
     },
     {
-      question: "How do you ensure a quality of your service?",
+      question: "Where can infrastructure be deployed?",
       answer:
-        "We run all the validators on the best hardware possible, we also employ backups and strict monitoring that ensures maximum uptime. Ruby Nodes also optimize heavily for performance, therefore you will usually find us among the nodes with highest APR.",
+        "We operate across multiple continents and can design deployments for geographic diversity, regional latency and resilience. Exact locations and data-residency needs are confirmed during architecture review.",
     },
     {
-      question: "What do you do with the staking rewards?",
+      question: "What support is available?",
       answer:
-        "We heavily invest into the community activities like organizing conferences, publishing educational articles or promoting the cryptocurrency world. We believe that validators are a firm part of crypto community and we should do our best to help the projects we operate on to thrive!",
+        "We provide continuous operational monitoring and agree escalation contacts, response expectations and reporting with each managed-service engagement.",
     },
     {
-      question: "Why should you support Ruby Nodes as a validator?",
+      question: "How does an engagement begin?",
       answer:
-        "On one hand, we bring the high-quality of service together with one of the highest APR on our validators in the ecosystem. On the other, you will also help to decentralize projects we support and their ecocystem by supporting a community validator - which, in turn, will support the ecosystem itself. We are proud to support Polkadot and other ecosystems from the early days and we definitely want to give something back in return.",
+        "We start with a technical and risk-requirements review, propose an architecture and service scope, and agree deployment, acceptance and support arrangements before production launch.",
     },
   ],
 } satisfies FaqData;
@@ -873,13 +873,11 @@ const successStoriesData = [
   },
   {
     title: "Launch partners of 0G",
-    description: "Thanks to our work with the 0G team and dedication during their testnet, we were onboarded one of the fist operators to the mainnet. Besides that, we provide additional services to the network like running storage nodes and public RPC for the 0G community.",
+    description: "Following our testnet work with the 0G team, Ruby Nodes was onboarded as one of the first mainnet operators. We also operate storage nodes and public RPC infrastructure for the 0G community.",
   },
   {
     title: "IBP RPC infrastructure",
-    description: `Infrastructure Builders Programme is an initiative that aims to ultimately decentralize Polkadot network\`s infrastructure (mainly RPCs and bootnodes) by using dedicated HW owned by community members. Currently we have two bare metal machines housed in New Zealand that are serving Oceania region and hosting 34 load-balanced RPC nodes together with 17 bootnodes.
-      We run on AMD EPYC 9554 64-core machines with 512 GB of RAM 4x 3.84 NVMe SSD drives.
-      Thanks to this setup, IBP is the fastest RPC provider  (with latency 50ms at most) while being the only one which is truly global, decentralized and geo-distributed.`,
+    description: `For Polkadot's Infrastructure Builders Programme, we operate two bare-metal machines in New Zealand serving the Oceania region. The deployment hosts 34 load-balanced RPC nodes and 17 bootnodes on AMD EPYC 9554 64-core systems with 512 GB RAM and four 3.84 TB NVMe drives.`,
   },
   {
     title: "Avail genesis validator and RPC provider",

@@ -2,7 +2,6 @@ import Ruby from "@/assets/rubys/01.png";
 import BgImage from "@/assets/hero-bg.svg";
 import Image from "next/image";
 import Paragraph from "../common/Paragraph";
-import Button from "../common/Button";
 import Link from "next/link";
 import Container from "../common/Container";
 import React from "react";
@@ -36,9 +35,23 @@ export default function Hero() {
           <div className="w-full max-w-[1116px] mx-auto px-4 flex flex-col md:flex-row items-center md:items-start justify-between">
             <div className="z-30 flex flex-col items-start md:w-1/2">
               <h1 className="~text-2xl-clamped/2xl font-bold text-c-text max-w-[700px] text-left leading-[1.2]">
-                <>Ruby Toughness,<br />Node Precision</>
+                {title}
               </h1>
               <Paragraph text={description} className="max-w-[500px] mt-2.5 text-left" />
+              <div className="flex flex-col sm:flex-row gap-3 mt-7 w-full sm:w-auto">
+                <Link
+                  href={cta.href}
+                  className="rounded-lg bg-c-primary px-8 py-4 text-center text-sm font-bold text-c-text transition-colors hover:bg-c-primary-hover"
+                >
+                  {cta.label}
+                </Link>
+                <Link
+                  href="/security"
+                  className="rounded-lg border border-c-primary px-8 py-4 text-center text-sm font-bold text-c-text transition-colors hover:bg-c-primary"
+                >
+                  Review our operating model
+                </Link>
+              </div>
             </div>
 
             {/* Right column: main ruby, aligned to the right of the page on md+ */}
@@ -121,39 +134,44 @@ export default function Hero() {
 
           {/* Header for stats section */}
           <div className="w-full max-w-[1116px] mx-auto px-4 mt-12 z-30">
-            <h2 className="text-c-text font-bold text-xl text-center">Ruby Nodes by numbers</h2>
+            <p className="text-c-primary-text text-xs font-bold uppercase tracking-[0.18em] text-center mb-2">Current operating footprint</p>
+            <h2 className="text-c-text font-bold text-xl text-center">Infrastructure at a glance</h2>
           </div>
 
           {/* Metrics table */}
           <div className="w-full max-w-[1116px] mx-auto px-4 mt-8 z-30">
             <div className="bg-c-container rounded-md overflow-hidden border border-c-menu-border">
-              <div className="grid grid-cols-2 md:grid-cols-5 divide-y md:divide-y-0 md:divide-x divide-c-menu-border">
+              <div className="grid grid-cols-1 md:grid-cols-5 divide-y md:divide-y-0 md:divide-x divide-c-menu-border">
                 <div className="p-6 text-center">
-                  <div className="text-c-primary font-bold text-xl mb-1">99.99%</div>
-                  <div className="text-c-text-inactive text-sm">Uptime</div>
+                  <div className="text-c-primary-text font-bold text-xl mb-1">99.99%</div>
+                  <div className="text-c-text-inactive text-sm">Contracted availability target*</div>
                 </div>
                 
                 <div className="p-6 text-center">
-                  <div className="text-c-primary font-bold text-xl mb-1">$100M</div>
-                  <div className="text-c-text-inactive text-sm">Secured Value</div>
+                  <div className="text-c-primary-text font-bold text-xl mb-1">$100M</div>
+                  <div className="text-c-text-inactive text-sm">Value secured across operated networks</div>
                 </div>
                 
                 <div className="p-6 text-center">
-                  <div className="text-c-primary font-bold text-xl mb-1">25+</div>
-                  <div className="text-c-text-inactive text-sm">Active Validators</div>
+                  <div className="text-c-primary-text font-bold text-xl mb-1">25+</div>
+                  <div className="text-c-text-inactive text-sm">Production validators operated</div>
                 </div>
                 
                 <div className="p-6 text-center">
-                  <div className="text-c-primary font-bold text-xl mb-1">60 TB</div>
-                  <div className="text-c-text-inactive text-sm">Data Served</div>
+                  <div className="text-c-primary-text font-bold text-xl mb-1">60 TB</div>
+                  <div className="text-c-text-inactive text-sm">Blockchain data served</div>
                 </div>
                 
                 <div className="p-6 text-center">
-                  <div className="text-c-primary font-bold text-xl mb-1">50M/mo</div>
-                  <div className="text-c-text-inactive text-sm">RPC Requests Served</div>
+                  <div className="text-c-primary-text font-bold text-xl mb-1">50M/mo</div>
+                  <div className="text-c-text-inactive text-sm">RPC request volume</div>
                 </div>
               </div>
             </div>
+            <p className="text-c-text-inactive text-xs text-center mt-4">
+              *Availability is a contractual target, not historical measured uptime. Other figures are rounded indicators
+              of the current production footprint and should be read as estimates.
+            </p>
           </div>
         </div>
       </Container>

@@ -56,7 +56,7 @@ export default function AppsAndToolingPage() {
           Interested in our tools or need custom development? Get in touch.
         </p>
         <p className="text-c-text">
-          Email: <a href="mailto:hello@rubynodes.io" className="text-c-primary hover:underline">hello@rubynodes.io</a>
+          Email: <a href="mailto:peter@rubynodes.io" className="text-c-primary hover:underline">peter@rubynodes.io</a>
         </p>
       </div>
     </Container>

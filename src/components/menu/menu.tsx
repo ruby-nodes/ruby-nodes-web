@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Button from "../common/Button";
 import Container from "../common/Container";
 import Hamburger from "./hamburgerIcon";
 import Logo from "./logo";
@@ -37,33 +36,24 @@ export default function Menu() {
         <Container className="flex justify-between items-center h-[84px]">
           <Logo />
           <div
+            id="primary-navigation"
             className={twMerge(
               "fixed xl:justify-between flex justify-center items-center gap-[3.75rem] flex-col xl:flex-row xl:static xl:h-auto top-[84px] transition-all h-[calc(100vh-84px)] bg-c-bg z-10 w-full xl:w-auto",
               open ? "left-0" : "left-[100%]"
             )}
           >
             <Navigation items={navigation} onClickLink={closeMenu} />
-            <Link href={cta.href} target="_blank" rel="noopener noreferrer" className="w-full xl:w-auto">
-              <Container>
-                <Button
-                  label={
-                    <span className="flex items-center gap-2">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                        <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
-                      </svg>
-                      {cta.label}
-                    </span>
-                  }
-                  variant="primary"
-                  onClick={closeMenu}
-                  className="w-full xl:w-auto"
-                />
-              </Container>
+            <Link
+              href={cta.href}
+              onClick={closeMenu}
+              className="mx-5 self-stretch rounded-lg bg-c-primary px-8 py-4 text-center text-sm font-bold text-c-text transition-colors hover:bg-c-primary-hover xl:mx-0 xl:self-auto"
+            >
+              {cta.label}
             </Link>
             <Socials links={links} />
             <div className="p-8 xl:hidden" />
           </div>
-          <Hamburger open={open} setOpen={setOpen} className="xl:hidden" />
+          <Hamburger open={open} setOpen={setOpen} className="xl:hidden" controls="primary-navigation" />
         </Container>
       </header>
       <div className="h-[84px]" />

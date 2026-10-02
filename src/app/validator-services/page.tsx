@@ -24,7 +24,7 @@ export default function ValidatorServicesPage() {
           </p>
           
           <p className="text-c-text">
-            We currrently operate validators on more than 25 blockchain networks, from leading protocols like 
+            We currently operate validators on more than 25 blockchain networks, from established protocols such as
             Ethereum or Sui to emerging ones like 0G or Somnia. All of our validators run on high-end dedicated bare metal 
             machines with non-stop monitoring and alerting in place. We provide a worldwide coverage to bolster 
             decentralization and resilience of blockchain networks.
@@ -59,7 +59,7 @@ export default function ValidatorServicesPage() {
             Contact us to discuss your validator needs.
           </p>
           <p className="text-c-text">
-            Email: <a href="mailto:hello@rubynodes.io" className="text-c-primary hover:underline">hello@rubynodes.io</a>
+            Email: <a href="mailto:peter@rubynodes.io" className="text-c-primary hover:underline">peter@rubynodes.io</a>
           </p>
         </div>
       </Container>

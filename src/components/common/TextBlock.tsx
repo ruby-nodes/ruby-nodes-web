@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Button from "./Button";
 import Paragraph from "./Paragraph";
 import Subheading from "./Subheading";
 import { twMerge } from "tailwind-merge";
@@ -24,8 +23,11 @@ export default function TextBlock({
     <div className={twMerge("text-c-text", className)}>
       <Subheading title={title} className="text-start" />
       <Paragraph text={description} className="mt-1" />
-      <Link href={cta.href} className="w-full md:w-auto">
-        <Button label={cta.label} className="mt-[2.4rem] w-full md:w-auto" />
+      <Link
+        href={cta.href}
+        className="mt-[2.4rem] inline-block w-full rounded-lg bg-c-primary px-[3.75rem] py-4 text-center text-sm font-bold text-c-text transition-colors hover:bg-c-primary-hover md:w-auto"
+      >
+        {cta.label}
       </Link>
     </div>
   );

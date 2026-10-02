@@ -22,9 +22,8 @@ export default function ProtocolServicesPage() {
         </p>
         
         <p className="text-c-text">
-          Operating a blockchain doesn&apos;t mean only spinning a handful of validators and RPC nodes. It also require teams
-          to operate indexers, bootnodes, testnet RPCs or validators or devnet network. This is why we relieve teams
-          from this infrastructure burden by offering the following.
+          Operating a blockchain requires more than validators and RPC nodes. Protocol teams also need reliable indexers,
+          bootnodes, testnet infrastructure and development networks. We take responsibility for these operational layers.
         </p>
 
         <div className="flex items-start gap-0 mt-8">
@@ -37,7 +36,7 @@ export default function ProtocolServicesPage() {
               <li>Integration of our monitoring and logging systems</li>
               <li>Performance monitoring and optimization</li>
               <li>Supporting more unique locations like Southeast Asia or LATAM with our RPCs</li>
-              <li>Running bootnodes to bolster networks`s resiliency</li>
+              <li>Running bootnodes to improve network resilience</li>
               <li>Community support and education</li>
             </ul>
           </div>
@@ -74,19 +73,19 @@ export default function ProtocolServicesPage() {
 
         <h2 className="text-xl font-bold mt-8 mb-4 text-c-text">Our Experience</h2>
         <p className="text-c-text">
-          There are several examples of protocols we are supporting behind the scenes, including some of the big names
-          <ul>
-            <li>Sui</li>
-            <li>Walrus</li>
-            <li>0G</li>
-            <li>zkVerify</li>
-            <li>And many more....</li>
-          </ul>
+          Our production experience includes the following protocols:
         </p>
+        <ul>
+          <li>Sui</li>
+          <li>Walrus</li>
+          <li>0G</li>
+          <li>zkVerify</li>
+          <li>Additional networks available on request</li>
+        </ul>
 
         <h2 className="text-xl font-bold mt-8 mb-4 text-c-text">Contact Us</h2>
         <p className="text-c-text">
-          Email: <a href="mailto:hello@rubynodes.io" className="text-c-primary hover:underline">hello@rubynodes.io</a>
+          Email: <a href="mailto:peter@rubynodes.io" className="text-c-primary hover:underline">peter@rubynodes.io</a>
         </p>
       </div>
     </Container>

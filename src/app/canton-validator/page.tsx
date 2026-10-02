@@ -145,10 +145,10 @@ export default function CantonValidatorPage() {
         <p className="text-c-text">
           Email:{" "}
           <a
-            href="mailto:hello@rubynodes.io"
+            href="mailto:peter@rubynodes.io"
             className="text-c-primary hover:underline"
           >
-            hello@rubynodes.io
+            peter@rubynodes.io
           </a>
         </p>
         <p className="text-c-text">

@@ -30,6 +30,8 @@ export default function Navigation({
     >
       {items.map((item) => {
         if (item.dropdown) {
+          const dropdownId = `${item.label.toLowerCase().replace(/\s+/g, "-")}-submenu`;
+
           return (
             <div
               key={item.label}
@@ -38,6 +40,10 @@ export default function Navigation({
               onMouseLeave={() => setOpenDropdown(null)}
             >
               <button
+                type="button"
+                aria-haspopup="true"
+                aria-expanded={openDropdown === item.label}
+                aria-controls={dropdownId}
                 onClick={() => setOpenDropdown(openDropdown === item.label ? null : item.label)}
                 className={twMerge(
                   "hover:text-c-text-inactive transition-colors duration-300 ease-in-out lg:text-sm cursor-pointer",
@@ -48,7 +54,7 @@ export default function Navigation({
               </button>
               
               {/* Dropdown menu */}
-              <div className={twMerge(
+              <div id={dropdownId} className={twMerge(
                 "lg:absolute left-0 mt-2 w-56 bg-c-container border border-c-menu-border rounded-md shadow-lg transition-all duration-200 z-50",
                 "hidden lg:group-hover:block lg:mt-2",
                 "before:content-[''] before:absolute before:left-0 before:right-0 before:-top-2 before:h-2 before:bg-transparent",

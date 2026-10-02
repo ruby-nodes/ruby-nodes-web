@@ -5,12 +5,14 @@ type HamburgerProps = {
   open: boolean;
   setOpen: (open: boolean) => void;
   className?: string;
+  controls?: string;
 };
 
 export default function Hamburger({
   open,
   setOpen,
   className,
+  controls,
 }: HamburgerProps) {
   const commonStyles =
     "w-full h-0.5 bg-c-text absolute transition-all duration-300 ";
@@ -28,6 +30,10 @@ export default function Hamburger({
 
   return (
     <button
+      type="button"
+      aria-label={open ? "Close navigation" : "Open navigation"}
+      aria-expanded={open}
+      aria-controls={controls}
       className={twMerge(className, "relative h-5 w-8 cursor-pointer ")}
       onClick={() => setOpen(!open)}
     >

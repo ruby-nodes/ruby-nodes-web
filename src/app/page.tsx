@@ -5,17 +5,19 @@ import News from "@/components/news/news";
 import ProminentEcosystems from "@/components/staking/ProminentEcosystems";
 import SuccessStories from "@/components/successStories/SuccessStories";
 import { Metadata } from "next";
+import InstitutionalOverview from "@/components/institutional/InstitutionalOverview";
 
 export const metadata: Metadata = {
-  title: "Ruby Nodes",
+  title: "Institutional Blockchain Infrastructure | Ruby Nodes",
   description:
-    "Ruby Nodes is a community of validators and delegators that are building the future of Web3.0. Stake with us to earn rewards and support the networks.",
+    "Dedicated validator, RPC and protocol infrastructure with global deployment, 24/7 operations and service-level commitments.",
 };
 
 export default function Home() {
   return (
     <div className=" bg-c-bg text-c-text">
       <Hero />
+      <InstitutionalOverview />
       <ProminentEcosystems />
       <FAQ />
       <News />
