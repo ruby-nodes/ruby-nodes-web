@@ -1,5 +1,5 @@
 import type { Config } from "tailwindcss";
-import { fluidExtractor, fluidCorePlugins, FluidConfig } from "fluid-tailwind";
+import fluid, { extract, type FluidThemeConfig } from "fluid-tailwind";
 
 const config: Config = {
   content: {
@@ -9,7 +9,7 @@ const config: Config = {
       "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
       "./src/stories/**/*.{js,ts,jsx,tsx}",
     ],
-    extract: fluidExtractor(),
+    extract,
   },
   safelist: ["leading-6"],
   theme: {
@@ -55,7 +55,7 @@ const config: Config = {
     },
     fluid: {
       defaultScreens: ["20rem", "81.25rem"],
-    } satisfies FluidConfig,
+    } satisfies FluidThemeConfig,
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -64,6 +64,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [require("@tailwindcss/typography"), fluidCorePlugins],
+  plugins: [require("@tailwindcss/typography"), fluid],
 };
 export default config;

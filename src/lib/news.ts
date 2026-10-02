@@ -10,11 +10,11 @@ const plainArticleSchema = z.object({
   slug: z.string().optional(),
 });
 
-// Helper function to read and parse the metadata from an MDX file
+// Helper function to read and parse the article metadata from an MDX file
 const parseMetadata = (fileContent: string) => {
-  // Match the content between "export const metadata =" and the next semicolon
+  // Match the content between "export const articleMetadata =" and the next semicolon
   const metadataMatch = fileContent.match(
-    /export\s+const\s+metadata\s*=\s*({[\s\S]*?});/
+    /export\s+const\s+articleMetadata\s*=\s*({[\s\S]*?});/
   );
 
   if (metadataMatch) {

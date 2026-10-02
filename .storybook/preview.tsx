@@ -1,11 +1,7 @@
-import type { Preview } from "@storybook/react";
+import type { Preview } from "@storybook/nextjs-vite";
+import "@fontsource-variable/rubik";
 import "../src/app/globals.css";
-import { Rubik } from "next/font/google";
-import { Inter } from "next/font/google";
 import React from "react";
-
-const rubik = Rubik({ subsets: ["latin"] });
-const inter = Inter({ subsets: ["latin"] });
 
 const preview: Preview = {
   parameters: {
@@ -31,7 +27,7 @@ const preview: Preview = {
   },
   decorators: [
     (Story) => (
-      <main className={inter.className + " " + rubik.className + "w-full"}>
+      <main className="w-full font-rubik">
         <Story />
       </main>
     ),

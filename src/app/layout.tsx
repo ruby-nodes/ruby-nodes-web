@@ -22,6 +22,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
+      data-scroll-behavior="smooth"
       className="overflow-x-hidden scroll-auto lg:scroll-smooth overscroll-none"
     >
       <body
