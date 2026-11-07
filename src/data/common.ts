@@ -21,6 +21,7 @@ const menuData = {
       ]
     },
     { label: "Success Stories", href: "/#success-stories" },
+    { label: "News", href: "/news" },
     { label: "Security", href: "/security" },
     { label: "Company", href: "/#about-us" },
   ],

@@ -7,7 +7,7 @@ const plainArticleSchema = z.object({
   description: z.string(),
   date: z.date(),
   imgSrc: z.string(),
-  slug: z.string().optional(),
+  slug: z.string(),
 });
 
 // Helper function to read and parse the article metadata from an MDX file
@@ -95,14 +95,6 @@ const fetchArticlesSchema = z.object({
 export type Article = z.infer<typeof articleSchema>;
 export type FetchArticlesResponse = z.infer<typeof fetchArticlesSchema>;
 
-const API_URL = process.env.NODE_ENV === 'development' 
-  ? "http://localhost:3000/api" 
-  : `${process.env.NEXT_PUBLIC_PROTOCOL ?? "https"}://${process.env.NEXT_PUBLIC_VERCEL_URL}/api`;
 export async function fetchArticles(params?: { limit?: number }) {
-  const data = await (await fetch(`${API_URL}/article`)).json();
-
-  const parsed = fetchArticlesSchema.parse(data);
-  return params?.limit
-    ? { ...parsed, data: parsed.data.slice(0, params.limit) }
-    : parsed;
+  return getArticles(params);
 }
