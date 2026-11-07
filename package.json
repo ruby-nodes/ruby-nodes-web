@@ -19,40 +19,48 @@
     "@fontsource-variable/rubik": "^5.3.0",
     "@mdx-js/loader": "^3.1.1",
     "@mdx-js/react": "^3.1.1",
-    "@next/mdx": "^16.3.8",
+    "@next/mdx": "^16.4.5",
     "@types/mdx": "^2.0.14",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "framer-motion": "^13.5.1",
     "lucide-react": "^1.50.0",
-    "next": "16.3.8",
+    "next": "16.4.5",
     "react": "^19.3.0",
     "react-dom": "^19.3.0",
     "sharp": "0.35.5",
     "tailwind-merge": "^3.7.0",
     "tailwindcss-animate": "^1.0.7",
     "tailwindcss-fluid-type": "^2.0.7",
-    "zod": "^4.6.5"
+    "zod": "^4.6.7"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^5.4.0",
-    "@storybook/addon-links": "^10.6.1",
-    "@storybook/addon-onboarding": "^10.6.1",
-    "@storybook/nextjs-vite": "^10.6.1",
+    "@storybook/addon-links": "^10.6.6",
+    "@storybook/addon-onboarding": "^10.6.6",
+    "@storybook/nextjs-vite": "^10.6.6",
     "@tailwindcss/typography": "^0.5.20",
     "@types/node": "^22.20.5",
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
     "autoprefixer": "^10.6.1",
     "eslint": "^9.39.5",
-    "eslint-config-next": "16.3.8",
-    "eslint-plugin-storybook": "^10.6.1",
+    "eslint-config-next": "16.4.5",
+    "eslint-plugin-storybook": "^10.6.6",
     "fluid-tailwind": "^1.0.4",
     "postcss": "^8.5.28",
     "prettier": "^3.9.9",
     "prettier-plugin-tailwindcss": "^0.8.1",
-    "storybook": "^10.6.1",
+    "storybook": "^10.6.6",
     "tailwindcss": "^3.4.19",
-    "typescript": "^5.9.3"
+    "typescript": "^5.9.3",
+    "vite": "^8.3.6"
+  },
+  "pnpm": {
+    "overrides": {
+      "@tailwindcss/typography>postcss-selector-parser": "^6.1.5",
+      "@joshwooding/vite-plugin-react-docgen-typescript>glob": "^14.0.2",
+      "@typescript-eslint/typescript-estree>minimatch": "^11.0.1"
+    }
   }
 }
