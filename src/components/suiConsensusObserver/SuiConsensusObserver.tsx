@@ -1,6 +1,7 @@
 import Container from "@/components/common/Container";
 import Link from "next/link";
 import styles from "./observer.module.css";
+import HeroDeliveryJourney from "./HeroDeliveryJourney";
 
 const contact =
   "mailto:peter@rubynodes.io?subject=Sui%20ConsensusObserver%20enquiry";
@@ -47,76 +48,6 @@ const plans = [
 
 function Eyebrow({ children }: { children: React.ReactNode }) {
   return <p className={styles.eyebrow}>{children}</p>;
-}
-
-function Topology() {
-  return (
-    <figure className={styles.topology}>
-      <div className={styles.diagramHeading}>
-        <span>THE CONSENSUS CONNECTION</span>
-        <span>FRANKFURT / OVH</span>
-      </div>
-      <div className={styles.validator}>
-        <svg viewBox="0 0 64 64" aria-hidden="true" className={styles.ruby}>
-          <path
-            d="M16 9h32l13 18-29 29L3 27Z"
-            fill="currentColor"
-            fillOpacity=".14"
-            stroke="currentColor"
-            strokeWidth="2"
-          />
-          <path
-            d="m16 9 8 18 8 29 8-29 8-18M3 27h58M24 27l8-18 8 18"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="1.5"
-          />
-        </svg>
-        <div>
-          <strong>Ruby validator</strong>
-          <span>Sui consensus · Frankfurt</span>
-        </div>
-        <span className={styles.nodeTag}>UPSTREAM</span>
-      </div>
-      <div className={styles.paths}>
-        <div>
-          <span className={styles.pathLabel}>DIRECT</span>
-          <span>Validator</span>
-          <span aria-hidden="true">→</span>
-          <strong>Observer</strong>
-        </div>
-        <div>
-          <span className={styles.pathLabel}>RELAY</span>
-          <span>Validator</span>
-          <span aria-hidden="true">→</span>
-          <strong className={styles.relayNode}>Ruby relay</strong>
-          <span aria-hidden="true">→</span>
-          <strong>Observer</strong>
-        </div>
-      </div>
-      <p className={styles.operatingLabel}>
-        EITHER PATH · CHOOSE WHO OPERATES THE OBSERVER
-      </p>
-      <div className={styles.diagramGrid}>
-        <div className={styles.node}>
-          <span className={styles.nodeIcon}>↗</span>
-          <strong>Your observer</strong>
-          <span>You host and operate</span>
-        </div>
-        <div className={`${styles.node} ${styles.managedNode}`}>
-          <span className={styles.nodeIcon}>◇</span>
-          <strong>Ruby-managed fullnode</strong>
-          <span>Frankfurt · private vRack</span>
-          <span className={styles.privateTag}>PRIVATE NETWORK OPTION</span>
-        </div>
-      </div>
-      <figcaption>
-        Choose an upstream path and an operating model. Private networking is
-        available for a managed Frankfurt deployment; the final topology is
-        agreed during onboarding.
-      </figcaption>
-    </figure>
-  );
 }
 
 export function SuiConsensusTeaser() {
@@ -174,7 +105,7 @@ export default function SuiConsensusObserver() {
                 <span>From $750 / month</span>
               </div>
             </div>
-            <Topology />
+            <HeroDeliveryJourney />
           </div>
         </Container>
       </section>

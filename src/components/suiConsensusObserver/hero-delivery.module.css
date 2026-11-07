@@ -1,0 +1,180 @@
+.panel {
+  container-type: inline-size;
+  padding: 1.4rem;
+  border: 1px solid var(--observer-border, #353b52);
+  border-radius: 1.25rem;
+  background:
+    radial-gradient(ellipse at 0 35%, #b32c3c16, transparent 70%),
+    var(--observer-panel, #10121f);
+  box-shadow: 0 2rem 7rem #0004;
+  min-width: 0;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  font-size: 0.64rem;
+  letter-spacing: 0.09em;
+  color: var(--observer-muted, #a3a6be);
+  padding-bottom: 1.2rem;
+  border-bottom: 1px solid var(--observer-border, #353b52);
+}
+.routes {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 1.2rem;
+  padding-block: 1.2rem;
+}
+.route {
+  min-width: 0;
+}
+.routeHeading {
+  min-height: 6.2rem;
+}
+.panel .routeHeading h2 {
+  font-size: 1.2rem;
+  line-height: 1.2;
+  font-weight: 500;
+  letter-spacing: -0.025em;
+}
+.routeHeading p {
+  color: var(--observer-muted, #a3a6be);
+  font-size: 0.75rem;
+  line-height: 1.5;
+  margin-top: 0.4rem;
+}
+.routeHeading > span {
+  display: block;
+  font-size: 0.56rem;
+  line-height: 1.5;
+  letter-spacing: 0.035em;
+  color: var(--observer-accent, #f06b78);
+  margin-top: 0.65rem;
+}
+.stage {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  min-height: 4.1rem;
+  padding: 0.65rem 0.6rem;
+  border-left: 2px solid #5a627d;
+  background: linear-gradient(100deg, #a3a6be0d, transparent);
+}
+.managed .stage {
+  border-color: var(--observer-accent, #f06b78);
+  background: linear-gradient(100deg, #f06b7812, transparent);
+}
+.ordinal {
+  font-size: 0.68rem;
+  color: var(--observer-muted, #a3a6be);
+  font-variant-numeric: tabular-nums;
+}
+.stage > div {
+  min-width: 0;
+}
+.role {
+  display: block;
+  color: var(--observer-muted, #a3a6be);
+  font-size: 0.55rem;
+  letter-spacing: 0.09em;
+}
+.stage strong {
+  display: block;
+  font-size: 0.82rem;
+  font-weight: 500;
+  line-height: 1.35;
+  margin-top: 0.2rem;
+}
+.stage small {
+  display: block;
+  color: var(--observer-muted, #a3a6be);
+  font-size: 0.65rem;
+  line-height: 1.4;
+  margin-top: 0.15rem;
+}
+.transfer {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  min-height: 2.15rem;
+  padding-left: 0.65rem;
+}
+.transfer > span {
+  color: var(--observer-muted, #a3a6be);
+}
+.transfer strong {
+  color: var(--observer-accent, #f06b78);
+  font-size: 0.75rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+.transfer small {
+  color: var(--observer-muted, #a3a6be);
+  font-size: 0.62rem;
+  line-height: 1.3;
+}
+.benefit {
+  color: var(--observer-accent, #f06b78);
+  font-size: 0.75rem;
+  line-height: 1.65;
+  padding: 1.15rem 0.75rem 0;
+}
+.caption {
+  display: grid;
+  gap: 0.4rem;
+  border-top: 1px solid var(--observer-border, #353b52);
+  padding-top: 1rem;
+  font-size: 0.63rem;
+  line-height: 1.6;
+  color: var(--observer-muted, #a3a6be);
+}
+.caption strong {
+  color: #fff;
+  font-weight: 500;
+}
+@container (max-width: 390px) {
+  .routes {
+    gap: 0.85rem;
+  }
+  .routeHeading {
+    min-height: 7.3rem;
+  }
+  .stage {
+    gap: 0.4rem;
+    padding-inline: 0.4rem;
+    min-height: 4.5rem;
+  }
+  .stage strong {
+    font-size: 0.76rem;
+  }
+  .ordinal {
+    font-size: 0.6rem;
+  }
+  .transfer {
+    flex-wrap: wrap;
+    column-gap: 0.35rem;
+    padding: 0.4rem;
+    min-height: 2.6rem;
+  }
+  .transfer small {
+    flex-basis: 100%;
+    padding-left: 1rem;
+  }
+  .benefit {
+    padding-inline: 0.4rem;
+  }
+}
+@media (forced-colors: active) {
+  .panel,
+  .header,
+  .stage,
+  .caption {
+    border-color: CanvasText;
+  }
+  .transfer strong,
+  .routeHeading > span,
+  .benefit {
+    color: CanvasText;
+  }
+}
