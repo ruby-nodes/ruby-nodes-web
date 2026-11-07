@@ -1,11 +1,13 @@
+import { pageMetadata } from "@/lib/seo";
 import { Metadata } from "next";
 import { ReactNode } from "react";
 
-export const metadata: Metadata = {
-  title: "Institutional Blockchain Infrastructure | Ruby Nodes",
-  description: "Dedicated, professionally operated blockchain infrastructure for institutional workloads.",
-  robots: { index: false, follow: false },
-};
+export const metadata: Metadata = pageMetadata(
+  "/institutional-deck",
+  "Institutional Blockchain Infrastructure | Ruby Nodes",
+  "Dedicated, professionally operated blockchain infrastructure for institutional workloads.",
+  { noindex: true },
+);
 
 const networks = ["Sui", "Solana", "Ethereum", "Celestia", "0G", "Walrus", "zkVerify", "peaq"];
 

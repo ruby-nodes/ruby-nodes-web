@@ -1,11 +1,15 @@
+import JsonLd from "@/components/common/JsonLd";
+import { organizationId, siteUrl } from "@/lib/seo";
+import { pageMetadata } from "@/lib/seo";
 import Container from "@/components/common/Container";
 import ValidatorStaking from "@/components/staking/ValidatorStaking";
 import { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title: "Managed Validator Services | Ruby Nodes",
-  description: "Managed validator infrastructure with dedicated hardware, continuous monitoring and service-specific operational responsibilities.",
-};
+export const metadata: Metadata = pageMetadata(
+  "/validator-services",
+  "Managed Validator Services | Ruby Nodes",
+  "Managed validator infrastructure with dedicated hardware, continuous monitoring and service-specific operational responsibilities.",
+);
 
 const capabilities = [
   ["Dedicated infrastructure", "Validators run on high-performance bare-metal systems sized for the protocol and deployed in agreed locations."],
@@ -15,6 +19,19 @@ const capabilities = [
 
 export default function ValidatorServicesPage() {
   return (
+    <>
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "@id": siteUrl("/validator-services#service"),
+          name: "Managed Validator Services",
+          description:
+            "Managed validator infrastructure with dedicated hardware, continuous monitoring and service-specific operational responsibilities.",
+          url: siteUrl("/validator-services"),
+          provider: { "@id": organizationId },
+        }}
+      />
     <div className="bg-c-bg">
       <Container className="py-20">
         <p className="mb-4 text-xs font-bold uppercase tracking-[0.18em] text-c-primary-text">Managed validators</p>
@@ -49,5 +66,6 @@ export default function ValidatorServicesPage() {
         </div>
       </Container>
     </div>
+    </>
   );
 }

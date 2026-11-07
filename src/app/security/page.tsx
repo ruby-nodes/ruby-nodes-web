@@ -1,10 +1,12 @@
+import { pageMetadata } from "@/lib/seo";
 import Container from "@/components/common/Container";
 import { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title: "Security & Resilience | Ruby Nodes",
-  description: "Ruby Nodes infrastructure ownership, access, monitoring, resilience and incident-response principles.",
-};
+export const metadata: Metadata = pageMetadata(
+  "/security",
+  "Security & Resilience | Ruby Nodes",
+  "Ruby Nodes infrastructure ownership, access, monitoring, resilience and incident-response principles.",
+);
 
 const controls = [
   ["Secure by default", "Every deployment starts from a consistent, security-focused baseline, reducing human error and keeping protection uniform as infrastructure grows."],

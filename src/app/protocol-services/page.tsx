@@ -1,10 +1,14 @@
+import JsonLd from "@/components/common/JsonLd";
+import { organizationId, siteUrl } from "@/lib/seo";
+import { pageMetadata } from "@/lib/seo";
 import Container from "@/components/common/Container";
 import { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title: "Protocol Infrastructure Services | Ruby Nodes",
-  description: "Managed validators, RPCs, indexers, bootnodes and development-network infrastructure for blockchain protocols.",
-};
+export const metadata: Metadata = pageMetadata(
+  "/protocol-services",
+  "Protocol Infrastructure Services | Ruby Nodes",
+  "Managed validators, RPCs, indexers, bootnodes and development-network infrastructure for blockchain protocols.",
+);
 
 const services = [
   ["Network infrastructure", "Public and private RPCs, bootnodes, indexers and other protocol-specific services."],
@@ -17,6 +21,19 @@ const experience = ["Sui", "Walrus", "0G", "zkVerify", "Additional networks avai
 
 export default function ProtocolServicesPage() {
   return (
+    <>
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "@id": siteUrl("/protocol-services#service"),
+          name: "Protocol Infrastructure Services",
+          description:
+            "Managed validators, RPCs, indexers, bootnodes and development-network infrastructure for blockchain protocols.",
+          url: siteUrl("/protocol-services"),
+          provider: { "@id": organizationId },
+        }}
+      />
     <div className="bg-c-bg">
       <Container className="py-20">
         <p className="mb-4 text-xs font-bold uppercase tracking-[0.18em] text-c-primary-text">For protocol teams</p>
@@ -60,5 +77,6 @@ export default function ProtocolServicesPage() {
         <a className="font-bold text-c-primary-text hover:text-c-text" href="mailto:peter@rubynodes.io?subject=Protocol%20infrastructure%20enquiry">Contact Peter →</a>
       </Container>
     </div>
+    </>
   );
 }

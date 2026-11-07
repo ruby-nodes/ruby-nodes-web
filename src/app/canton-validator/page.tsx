@@ -1,17 +1,33 @@
+import JsonLd from "@/components/common/JsonLd";
+import { organizationId, siteUrl } from "@/lib/seo";
+import { pageMetadata } from "@/lib/seo";
 import Container from "@/components/common/Container";
 import { Metadata } from "next";
 import Image from "next/image";
 import Ruby from "@/assets/rubys/01.png";
 import CantonLogo from "@/assets/logos/canton.svg";
 
-export const metadata: Metadata = {
-  title: "Canton Network Participant | Ruby Nodes",
-  description:
-    "Ruby Nodes operates dedicated Canton Network participant infrastructure with defined operational scope, monitoring and security controls.",
-};
+export const metadata: Metadata = pageMetadata(
+  "/canton-validator",
+  "Canton Network Participant | Ruby Nodes",
+  "Ruby Nodes operates dedicated Canton Network participant infrastructure with defined operational scope, monitoring and security controls.",
+);
 
 export default function CantonValidatorPage() {
   return (
+    <>
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "@id": siteUrl("/canton-validator#service"),
+          name: "Canton Network Participant",
+          description:
+            "Ruby Nodes operates dedicated Canton Network participant infrastructure with defined operational scope, monitoring and security controls.",
+          url: siteUrl("/canton-validator"),
+          provider: { "@id": organizationId },
+        }}
+      />
     <Container className="bg-c-bg min-h-screen flex flex-col items-start w-full py-20">
       <div className="flex items-center gap-4 flex-wrap">
         <h1 className="~text-2xl-clamped/2xl font-bold text-c-text leading-[1.2]">
@@ -155,5 +171,6 @@ export default function CantonValidatorPage() {
         </p>
       </div>
     </Container>
+    </>
   );
 }

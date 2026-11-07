@@ -1,12 +1,13 @@
+import { pageMetadata } from "@/lib/seo";
 import Container from "@/components/common/Container";
 import { Metadata } from "next";
 import ShowcaseCards from "@/components/appsAndTooling/ShowcaseCards";
 
-export const metadata: Metadata = {
-  title: "Apps & Tooling | Ruby Nodes",
-  description:
-    "Developer tools, monitoring solutions and SDKs. Build better blockchain applications with our suite of tools.",
-};
+export const metadata: Metadata = pageMetadata(
+  "/apps-and-tooling",
+  "Apps & Tooling | Ruby Nodes",
+  "Explore Ruby Nodes’ blockchain applications, infrastructure monitoring tools and custom development services.",
+);
 
 export default function AppsAndToolingPage() {
   return (

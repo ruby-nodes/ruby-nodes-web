@@ -1,17 +1,33 @@
+import JsonLd from "@/components/common/JsonLd";
+import { organizationId, siteUrl } from "@/lib/seo";
+import { pageMetadata } from "@/lib/seo";
 import Container from "@/components/common/Container";
 import { Metadata } from "next";
 import Image from "next/image";
 import Ruby from "@/assets/rubys/01.png";
 import PeaqLogo from "@/assets/logos/peaq.svg";
 
-export const metadata: Metadata = {
-  title: "Peaq RPC Infrastructure | Ruby Nodes",
-  description:
-    "High-performance Peaq RPC endpoints. Reliable infrastructure for DePIN applications on Peaq Network.",
-};
+export const metadata: Metadata = pageMetadata(
+  "/peaq-rpc",
+  "Peaq RPC Infrastructure | Ruby Nodes",
+  "High-performance Peaq RPC endpoints. Reliable infrastructure for DePIN applications on Peaq Network.",
+);
 
 export default function PeaqRPCPage() {
   return (
+    <>
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "@id": siteUrl("/peaq-rpc#service"),
+          name: "Peaq RPC Infrastructure",
+          description:
+            "High-performance Peaq RPC endpoints. Reliable infrastructure for DePIN applications on Peaq Network.",
+          url: siteUrl("/peaq-rpc"),
+          provider: { "@id": organizationId },
+        }}
+      />
     <Container className="bg-c-bg min-h-screen flex flex-col items-start w-full py-20">
       <div className="flex items-center gap-4">
         <h1 className="~text-2xl-clamped/2xl font-bold text-c-text leading-[1.2]">
@@ -74,5 +90,6 @@ export default function PeaqRPCPage() {
         </p>
       </div>
     </Container>
+    </>
   );
 }

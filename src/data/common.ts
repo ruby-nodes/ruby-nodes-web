@@ -17,6 +17,7 @@ const menuData = {
         { label: "Validator Services", href: "/validator-services" },
         { label: "Protocol Services", href: "/protocol-services" },
         { label: "Private Infrastructure", href: "/private-infrastructure" },
+        { label: "Sui Consensus Observer", href: "/sui-consensus-observer" },
         { label: "Apps & Tooling", href: "/apps-and-tooling" },
       ]
     },

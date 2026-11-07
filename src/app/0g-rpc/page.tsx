@@ -1,17 +1,33 @@
+import JsonLd from "@/components/common/JsonLd";
+import { organizationId, siteUrl } from "@/lib/seo";
+import { pageMetadata } from "@/lib/seo";
 import Container from "@/components/common/Container";
 import { Metadata } from "next";
 import Image from "next/image";
 import Ruby from "@/assets/rubys/01.png";
 import ZeroGLogo from "@/assets/logos/0g.svg";
 
-export const metadata: Metadata = {
-  title: "0G RPC Infrastructure | Ruby Nodes",
-  description:
-    "High-performance 0G RPC endpoints. Reliable infrastructure for decentralized AI applications on 0G Network.",
-};
+export const metadata: Metadata = pageMetadata(
+  "/0g-rpc",
+  "0G RPC Infrastructure | Ruby Nodes",
+  "High-performance 0G RPC endpoints. Reliable infrastructure for decentralized AI applications on 0G Network.",
+);
 
 export default function ZeroGRPCPage() {
   return (
+    <>
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "@id": siteUrl("/0g-rpc#service"),
+          name: "0G RPC Infrastructure",
+          description:
+            "High-performance 0G RPC endpoints. Reliable infrastructure for decentralized AI applications on 0G Network.",
+          url: siteUrl("/0g-rpc"),
+          provider: { "@id": organizationId },
+        }}
+      />
     <Container className="bg-c-bg min-h-screen flex flex-col items-start w-full py-20">
       <div className="flex items-center gap-4">
         <h1 className="~text-2xl-clamped/2xl font-bold text-c-text leading-[1.2]">
@@ -73,5 +89,6 @@ export default function ZeroGRPCPage() {
         </p>
       </div>
     </Container>
+    </>
   );
 }

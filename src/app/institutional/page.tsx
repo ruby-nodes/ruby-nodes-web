@@ -1,11 +1,13 @@
+import { pageMetadata } from "@/lib/seo";
 import Container from "@/components/common/Container";
 import Link from "next/link";
 import { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title: "Institutional Blockchain Infrastructure | Ruby Nodes",
-  description: "Dedicated blockchain infrastructure for financial institutions, custodians, funds and trading firms.",
-};
+export const metadata: Metadata = pageMetadata(
+  "/institutional",
+  "Institutional Blockchain Infrastructure | Ruby Nodes",
+  "Dedicated blockchain infrastructure for financial institutions, custodians, funds and trading firms.",
+);
 
 const services = [
   ["Dedicated RPC infrastructure", "Private endpoints, load balancing, regional deployments and capacity sized to production workloads."],

@@ -1,11 +1,12 @@
+import { pageMetadata } from "@/lib/seo";
 import Container from "@/components/common/Container";
 import { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title: "Privacy Policy | Ruby Nodes",
-  description:
-    "Privacy Policy for Ruby Nodes - Learn how we collect, use, and protect your personal information.",
-};
+export const metadata: Metadata = pageMetadata(
+  "/privacy-policy",
+  "Privacy Policy | Ruby Nodes",
+  "Privacy Policy for Ruby Nodes - Learn how we collect, use, and protect your personal information.",
+);
 
 export default function PrivacyPolicyPage() {
   return (

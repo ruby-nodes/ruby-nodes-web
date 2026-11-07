@@ -1,3 +1,4 @@
+import { pageMetadata } from "@/lib/seo";
 import Button from "@/components/common/Button";
 import Container from "@/components/common/Container";
 import NewsCard from "@/components/news/newsCard";
@@ -11,11 +12,11 @@ type NewsPageProps = {
   }>;
 };
 
-export const metadata: Metadata = {
-  title: "News",
-  description:
-    "Read the latest news and updates from Ruby Nodes. Stay up to date with the latest developments in the blockchain space.",
-};
+export const metadata: Metadata = pageMetadata(
+  "/news",
+  "News & Updates | Ruby Nodes",
+  "Read the latest news and updates from Ruby Nodes. Stay up to date with the latest developments in the blockchain space.",
+);
 
 export default async function NewsPage({ searchParams }: NewsPageProps) {
   const resolvedSearchParams = await searchParams;

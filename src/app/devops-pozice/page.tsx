@@ -1,11 +1,12 @@
+import { pageMetadata } from "@/lib/seo";
 import Container from "@/components/common/Container";
 import { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title: "DevOps inženýr | Ruby Nodes",
-  description:
-    "Hledáme DevOps inženýra pro svět kryptoměn. Remote-first pozice v Brně s možností plného úvazku nebo spolupráce na IČO.",
-};
+export const metadata: Metadata = pageMetadata(
+  "/devops-pozice",
+  "DevOps inženýr | Ruby Nodes",
+  "Hledáme DevOps inženýra pro svět kryptoměn. Remote-first pozice v Brně s možností plného úvazku nebo spolupráce na IČO.",
+);
 
 export default function DevOpsPozicePage() {
   return (

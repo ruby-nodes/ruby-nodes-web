@@ -1,11 +1,15 @@
+import JsonLd from "@/components/common/JsonLd";
+import { organizationId, siteUrl } from "@/lib/seo";
+import { pageMetadata } from "@/lib/seo";
 import Container from "@/components/common/Container";
 import RPCStaking from "@/components/staking/RPCStaking";
 import { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title: "Dedicated Blockchain Infrastructure | Ruby Nodes",
-  description: "Dedicated RPC, archive-node, indexer and cross-chain infrastructure designed around workload, region and resilience requirements.",
-};
+export const metadata: Metadata = pageMetadata(
+  "/private-infrastructure",
+  "Dedicated Blockchain Infrastructure | Ruby Nodes",
+  "Dedicated RPC, archive-node, indexer and cross-chain infrastructure designed around workload, region and resilience requirements.",
+);
 
 const useCases = [
   ["Private RPC endpoints", "Dedicated capacity and access boundaries for applications, trading systems, wallets and internal services."],
@@ -24,6 +28,19 @@ const deploymentDetails = [
 
 export default function PrivateInfrastructurePage() {
   return (
+    <>
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "@id": siteUrl("/private-infrastructure#service"),
+          name: "Dedicated Blockchain Infrastructure",
+          description:
+            "Dedicated RPC, archive-node, indexer and cross-chain infrastructure designed around workload, region and resilience requirements.",
+          url: siteUrl("/private-infrastructure"),
+          provider: { "@id": organizationId },
+        }}
+      />
     <div className="bg-c-bg">
       <Container className="py-20">
         <p className="mb-4 text-xs font-bold uppercase tracking-[0.18em] text-c-primary-text">Dedicated infrastructure</p>
@@ -64,5 +81,6 @@ export default function PrivateInfrastructurePage() {
         <a className="font-bold text-c-primary-text hover:text-c-text" href="mailto:peter@rubynodes.io?subject=Dedicated%20infrastructure%20enquiry">Contact Peter →</a>
       </Container>
     </div>
+    </>
   );
 }

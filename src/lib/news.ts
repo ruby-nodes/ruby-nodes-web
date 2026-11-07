@@ -63,7 +63,7 @@ export function getArticles(opts?: { limit?: number }) {
 
   const withUrls = withIndex.map((article) => ({
     ...article,
-    href: `/news/article/${article.index}/${article.slug}`,
+    href: `/news/article/1/${article.slug}`,
   }));
 
   return {
